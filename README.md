@@ -66,6 +66,9 @@ the no-desolder Android conversion path is mapped.
 5. **Install-seal contract (560 bytes)** explains the red-blink vs `cap.exe`.
 6. **NVRAM unlock flags** (bits 42/43) persist but only gate the official
    updater, not the running block layer.
+7. **`FS_DIRTY_ALL` is RPMB-backed** — SBL1 reads it from RPMB; restoring
+   `boot0`/`boot1`/`user` (even chip-off) does **not** clear it.
+   → [`notes/session20-boot0-forensic-fs-dirty-rpmb.md`](notes/session20-boot0-forensic-fs-dirty-rpmb.md)
 
 ---
 
