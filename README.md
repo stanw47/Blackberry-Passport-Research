@@ -42,6 +42,12 @@ blocker is now understood: **`FS_DIRTY_ALL` is stored in RPMB**, so restoring
 strength is that **MSM8974AA is the exact `imggen` target**, making a no-desolder
 Android conversion feasible once it boots.
 
+**A replacement main board is on the way.** Once it arrives, the Passport will be
+returned to service on the new board, and the current (bricked) board becomes a
+**dedicated test unit** — experimentation on it will follow (recovery attempts,
+UART capture, chip-off/chip-replacement trials, and the `imggen`/RAM-loader
+Android path), without risking the working device.
+
 ---
 
 ## Completed
@@ -76,10 +82,12 @@ Android conversion feasible once it boots.
 
 ## Future Plans
 
-1. Locate **UART test points** and capture the live FS_DIRTY/Nuke sequence.
-2. Compare **chip-off restore vs full eMMC chip replacement** (a blank chip
+1. **Fit the incoming replacement main board** and return the Passport to service.
+2. On the old (bricked) board: locate **UART test points** and capture the live
+   FS_DIRTY/Nuke sequence.
+3. Compare **chip-off restore vs full eMMC chip replacement** (a blank chip
    re-provisions RPMB).
-3. Once bootable: the no-desolder `imggen`/RAM-loader Android conversion.
+4. Once a board boots: the no-desolder `imggen`/RAM-loader Android conversion.
 
 ---
 
