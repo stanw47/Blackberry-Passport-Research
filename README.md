@@ -34,13 +34,19 @@
 
 ## Current Status
 
-The Passport was **rooted (uid-0)**, but after a raw `CMD6` experiment it entered
-a **red-blink loop** (`11011` "Flash Erase Failure") and is currently
-**non-bootable**. Autoloader recovery fails at ~13% ("Signature Trailer"). The
-blocker is now understood: **`FS_DIRTY_ALL` is stored in RPMB**, so restoring
-`boot0`/`boot1`/`user` (even chip-off) will **not** clear it. The device's real
-strength is that **MSM8974AA is the exact `imggen` target**, making a no-desolder
-Android conversion feasible once it boots.
+The Passport was **rooted (uid-0)** and bootable, but after a raw `CMD6`
+experiment it entered a **permanent red-blink loop** (`11011`, "Flash Erase
+Failure") and is now **non-bootable**. Autoloader recovery fails at ~13%
+("Signature Trailer"). Two independent root-cause findings:
+
+- The **erase failure is a policy failure**: an armed security wipe tries to
+  erase the boot region against a **fused card-level write-protect**
+  (`BOOT_WP[173] = 0x04`, permanent), so BootROM can never complete the erase.
+- Separately, **`FS_DIRTY_ALL` is RPMB-backed**, so even a perfect chip-off
+  restore of `boot0`/`boot1`/`user` may **not** clear it.
+
+The device's real strength remains that **MSM8974AA is the exact `imggen`
+target**, so a no-desolder Android conversion is **mapped but not yet proven**.
 
 **A replacement main board is on the way.** Once it arrives, the Passport will be
 returned to service on the new board, and the current (bricked) board becomes a
@@ -61,10 +67,13 @@ Android path), without risking the working device.
 
 ## Achieved
 
-- **Driver write-protect model fully mapped** (why the software lane is closed).
+- **Real uid-0 root** (previously) via the getroot/pathtrust ritual.
+- **eMMC dumps recovered**: `boot0` (SBL1), `boot1` (blank), `os0` (QNX IFS).
+- **Full driver write-protect model decoded** (gate `0xF182`, handler `0x108D0`,
+  per-open-node `ext`; CID live-read; no ext_csd cache).
 - **`FS_DIRTY_ALL` root-caused to RPMB** — a decisive negative for chip-off restore.
-- **No-desolder Android path identified** (`imggen` boot0/user, `ext_csd[179]=0x08`).
-- **Per-node `ext` insight** — identical WP probes diverge by open context.
+- **Install-seal (`F9 40`) contract root-caused** — explains the red-blink vs `cap.exe`.
+- **`imggen` boot0/user images generated and validated offline** (not flashed).
 
 ## In Progress
 
