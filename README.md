@@ -21,11 +21,11 @@
 
 | Field | Value |
 |---|---|
-| Model | BlackBerry Passport **SQW100** |
+| Model | BlackBerry Passport **SQW100-1** |
 | Codename | `passport` / `windermere` |
 | SoC | Qualcomm **MSM8974AA** (Snapdragon 801) |
-| OS / software | **BB10 / QNX**, `BLACKBERRY-603C`, WindermereEMEA |
-| Current build | 10.3.3.3216 (rooted autoloader) |
+| OS / software | **BB10 / QNX 10.3.3.3216** (same OS as the Classic), `BLACKBERRY-603C`, WindermereEMEA |
+| Current build | **10.3.3.3216** (rooted autoloader) |
 | Previous builds | stock 10.3.3 |
 | Carrier / unlock | carrier-unlocked; bootloader locked; boot-partition WP permanent |
 | SIM | single |
@@ -55,10 +55,10 @@ Android conversion feasible once it boots.
 
 ## Achieved
 
-- ✅ **Driver write-protect model fully mapped** (why the software lane is closed).
-- ✅ **`FS_DIRTY_ALL` root-caused to RPMB** — a decisive negative for chip-off restore.
-- ✅ **No-desolder Android path identified** (`imggen` boot0/user, `ext_csd[179]=0x08`).
-- ✅ **Per-node `ext` insight** — identical WP probes diverge by open context.
+- **Driver write-protect model fully mapped** (why the software lane is closed).
+- **`FS_DIRTY_ALL` root-caused to RPMB** — a decisive negative for chip-off restore.
+- **No-desolder Android path identified** (`imggen` boot0/user, `ext_csd[179]=0x08`).
+- **Per-node `ext` insight** — identical WP probes diverge by open context.
 
 ## In Progress
 
@@ -85,12 +85,18 @@ Android conversion feasible once it boots.
 
 ## Community Activity
 
-- **balika011's conversion guide** is the canonical end-to-end unlock (desolder →
-  `imggen` boot0/user → `ext_csd[179]=0x08` → fastboot → recovery → LineageOS).
-- **BBAndroids** published `imggen` (GPL) and `passport_stage3`; the community
-  shares rooted autoloaders. The **no-desolder** path is the active frontier.
-
----
+- **balika011 (Balazs Triszka)** ported **LineageOS 18.1 (Android 11)** to the
+  Passport by swapping the eMMC and reflashing `boot0`/`boot1`; **Guizmox**
+  helped stabilise it. Prototype Passports have an **unlocked bootloader** (no
+  desoldering needed). An eMMC compatibility list is maintained at balika011.hu.
+- **Guizmox** documented the Passport **Android prototypes** (builds AAA249 ...
+  AAC014, Android 4.4-5.1) that made the port possible.
+- **Zinwa P26** - a 2026 DIY kit replacing the mainboard with a Helio G99,
+  12 GB RAM, 256 GB and Android 14 (kit only; an original Passport is required).
+- **BerryCore (sw7ft)** - Talkbutton dictation and the BerryCore userland run on
+  the Passport.
+- Hubs: CrackBerry (the "Passport running Lineage OS 18" thread), XDA,
+  balika011.hu, and the BlackBerry community Discord.
 
 ## Repository layout
 
