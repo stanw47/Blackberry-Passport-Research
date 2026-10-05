@@ -43,3 +43,9 @@ NON-HLOS.bin
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# --- KEEP small essential research artifacts (negate the blanket ignores) ---
+!recon/bootloaders-imggen/*.mbn
+!recon/bootloaders-imggen/*.img
+!recon/bootloaders-imggen/*.bin
+!recon/dumps-passport/*.bin
