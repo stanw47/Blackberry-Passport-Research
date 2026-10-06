@@ -83,3 +83,40 @@ read `shell_data_file:file`, set only `bbdiag_prop`, connect to `init`
 - `recon/passport-android-dump/sepolicy-analysis/policy.cil.gz` — full CIL.
 - `tools/session25/dump_cil.c`, `dump_av.c` — parsers.
 - This note; `session24-hardening-and-dirtycow.md` (Dirty COW primitive).
+
+## 7. Binder-service RE result (negative) + the vold-helper path
+
+Pulled and inspected `/system/bin/subsystem_ramdump` (30 KB, service name
+`subsystem_ramdump`, ramdumps to `/data/ramdump`|`/sdcard/ramdump`) and
+`/system/bin/reset_cause` (72 KB, service name `reset_cause`, reads/writes the
+reset-cause block device, drops root after init). Both are libbinder services,
+but the CIL is decisive:
+
+- `diagnostics` has only `binder transfer` (not `call`) on both, and no
+  `service_manager find` — **ddt cannot call them**.
+- `shell` has no binder rules for them at all; only `unconfineddomain` has
+  `binder call` on `vold`/`rmt_storage`/`nvramd`. Binder route closed.
+
+Remaining viable target: **vold's helper execs** (helpers run in the `vold`
+domain: root + full `block_device` rw). vold execs (strings):
+`blkid`, `fsck_msdos`, `e2fsck`, `fsck.f2fs`, `chkexfatfs`, `make_ext4fs`,
+`mkfs.f2fs`, `mkfatfs`, `newfs_msdos`, `mkswap`, `resize2fs`.
+
+Live state: a microSD card **is inserted and mounted**:
+`/dev/block/vold/179:64` → `/mnt/media_rw/sdcard1` (vfat) → `/storage/sdcard1`
+(FUSE). `sm`/`vdc` are unavailable to shell (`sm` absent; `vdc` not
+executable), so re-triggering volume detection needs a physical
+eject/reinsert (or Settings unmount/mount).
+
+Plan (prepared, not yet executed):
+1. Build a syscall-only ARMv7 payload that reads the by-name partitions and
+   writes them to `/storage/emulated/0/` (sdcard_type, vold-writable, shell-
+   readable) — e.g. `dump_boot.img`.
+2. Dirty-COW it over `/system/bin/blkid` (9508 B; payload fits). Volatile:
+   reboot restores blkid.
+3. User ejects/reinserts the SD card → vold runs blkid as root in the vold
+   domain → payload dumps partitions.
+4. `adb pull /sdcard/dump_boot.img`.
+Risk: while blkid is patched, volume detection runs our payload instead; if it
+fails the card may not mount until reboot. No flash writes.
+
