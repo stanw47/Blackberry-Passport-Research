@@ -62,34 +62,31 @@ vendor/modem/...`). To rebuild a flashable Android set from the prototype we
 need the prototype's `boot`/`recovery`/`modem`/`data` (root/EDL) and the
 boot-chain parts not in `backup_bootchain` (`hyp/pmic/devcfg/cmnlib/keymaster`).
 
-## 3. Android prototype root path — the `diagnostics` service
+## 3. Android prototype root path — the `diagnostics` service (CORRECTED in session 24)
 
-`com.blackberry.ddt.IDiagnosticService` is reachable from `shell` (logcat:
-"Permission granted for native system process"). Transaction map:
-`1=admin 2=append 3=append_log 4=get_guid 5=get_sysvars 6=send 7=open`.
+> **Correction (session 24):** the "privileged file-read primitive" below was
+> wrong. `FileTask` only checks existence and returns the path — it never reads
+> file contents. A debug token **is** present, so the service is actually an
+> **exec** primitive (`append_log` dtype 11 → `ExecTask` as uid 1301 ddt), not a
+> read primitive, and SELinux blocks it from `/dev/block` and `/data/local/tmp`.
+> See `session24-hardening-and-dirtycow.md` for the full re-analysis and the
+> working Dirty COW (ptrace) primitive.
 
-**Working chain (verified live):**
-1. `service call diagnostics 6 i32 1 i32 0 i32 0 i32 0 i32 0 s16 c s16 x`
-   (`send`) → returns an event ID (a 64-bit euid).
-2. `service call diagnostics 3 i32 <euid_lo> i32 <euid_hi> i32 1 s16 <path>`
-   (`append_log(euid, dtype=1, params)`) → logcat:
-   `runTask 0x1` → `Got task: UsrTasks$FileTask[… args=/nvram/prdid/pin]`.
+`com.blackberry.ddt.IDiagnosticService` is reachable from `shell`. Transaction
+map (from `IDiagnosticService$Stub$Proxy`): `1=send 2=append 3=append_log
+4=open 5=get_guid 6=get_sysvars 7=admin`.
 
-The **FileTask runs inside the `DiagnosticsService` process (`u:r:diagnostics:
-s0`)** and reads the file **as the diagnostics domain** — which can read
-`/nvram/*` (shell cannot). This is a **privileged file-read primitive**.
-
-**Limits:** the captured output is written to `/data/ddt/ss/storage/` (shell
-cannot read), and `append_log` only allows `dtype` 1/2/0x1001 (file/logcat)
-without a debug token — the `exec` logtype (12) is gated. `send` with a JSON
-`cmds` array (Tests format) did not run an exec task. So: privileged read
-exists; **exfiltration needs either a debug token (unlock `exec`) or a route to
-read `/data/ddt`**.
-
-Next: a proper binder client (native armv7 or a Dalvik `app_process` snippet) to
-(a) drive `send`→`append_log` with real 64-bit args, (b) try the `exec`/`nvram`/
-`devmem` logtypes, and (c) point a FileTask at `/dev/block/*` to confirm the
-diagnostics domain can read partitions.
+Verified in session 24:
+- `isTokenPresent()` is **true** (`bb_tokenserviced` running); token gates are
+  open.
+- `append_log(euid,dtype=11,params)` → `exec://params` → `SysTasks$ExecTask`
+  → `Runtime.exec(params)` as `uid=1301(ddt)` in `u:r:diagnostics:s0`, with
+  gids `system,log,shell,nvram,reset_cause`. Exfil via logcat
+  (`/system/bin/log`); helper `tools/session24/dcx.sh`.
+- `FileTask` is an existence check only; `send` returns an event ID, not an
+  euid.
+- SELinux denies `diagnostics` search on `/dev/block` and `/data/local/tmp`;
+  `/nvram` is readable; no setuid binaries exist anywhere.
 
 ## 4. Artifacts
 - This note.
