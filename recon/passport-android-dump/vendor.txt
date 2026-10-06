@@ -1,0 +1,10 @@
+app
+backup_bootchain
+bin
+bootstrap
+etc
+firmware
+lib
+media
+pittpatt
+/vendor

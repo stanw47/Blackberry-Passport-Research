@@ -1,0 +1,3 @@
+mocana_shim 7704 6 - Live 0x00000000 0x00000000
+moc_crypto 438571 1 mocana_shim,[permanent], Live 0x00000000 0x00000000
+moc_platform_mod 4738 1 moc_crypto, Live 0x00000000 0x00000000

@@ -1,0 +1,4 @@
+-rw-r--r-- root     root        66956 2015-04-06 04:22 BCM4339_003.001.009.0108.0504_RC.hcd
+-rw-r--r-- root     root       550785 2015-04-06 04:22 firmware_bcm4339.bin
+-rw-r--r-- root     root       550785 2015-04-06 04:22 firmware_bcm4339_apsta.bin
+-rw-r--r-- root     root       532110 2015-04-06 04:22 firmware_bcm4339_mfg.bin

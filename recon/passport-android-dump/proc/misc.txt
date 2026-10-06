@@ -1,0 +1,65 @@
+ 38 network_throughput
+ 39 network_latency
+ 40 cpu_dma_latency
+ 41 ramdump_smem
+ 42 xt_qtaguid
+ 43 ramdump_audio-ocmem
+ 44 msm_rtac
+ 45 msm_acdb
+ 46 ashmem
+ 47 binder
+ 48 uhid
+236 device-mapper
+ 49 alarm
+223 uinput
+ 50 keychord
+ 51 hbtp_input
+  1 psaux
+ 52 rmnet_ctrl
+ 53 usb_accessory
+ 54 android_rndis_qc
+ 55 mtp_usb
+ 56 ccid_bulk
+ 57 ccid_ctrl
+ 58 usb_bbauth
+ 59 android_adb
+ 60 rmnet_mux_ctrl
+ 61 android_mbim
+200 tun
+ 62 tgt
+ 63 bcm2079x
+237 loop-control
+ 64 genlock
+183 hw_random
+229 fuse
+ 65 usf1
+ 66 msm_amrwb_in
+ 67 msm_qcelp
+ 68 msm_evrc
+ 69 msm_amrwbplus
+ 70 msm_amrwb
+ 71 msm_amrnb
+ 72 msm_mp3
+ 73 msm_multi_aac
+ 74 msm_aac
+ 75 msm_wmapro
+ 76 msm_wma
+ 77 msm_amrnb_in
+ 78 msm_evrc_in
+ 79 msm_qcelp_in
+ 80 msm_aac_in
+ 81 dsp_debug
+ 82 nmea
+ 83 qmi2
+ 84 qmi1
+ 85 qmi0
+ 86 subsys_venus
+ 87 ramdump_venus
+ 88 ramdump_pronto
+ 89 subsys_wcnss
+ 90 ramdump_modem
+ 91 subsys_modem
+ 92 subsys_adsp
+ 93 ramdump_adsp
+ 94 rfkill
+ 95 ion

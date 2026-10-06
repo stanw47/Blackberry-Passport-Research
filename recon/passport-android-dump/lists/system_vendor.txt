@@ -1,0 +1,9 @@
+drwxr-xr-x root     shell             2015-04-06 04:28 app
+drwxr-xr-x root     shell             2015-04-06 04:22 backup_bootchain
+drwxr-xr-x root     shell             2015-04-06 04:26 bin
+drwxr-xr-x root     shell             2015-04-06 04:16 bootstrap
+drwxr-xr-x root     shell             2015-04-06 04:23 etc
+drwxr-xr-x root     shell             2015-04-06 04:22 firmware
+drwxr-xr-x root     shell             2015-04-06 04:26 lib
+drwxr-xr-x root     shell             2015-04-06 04:23 media
+drwxr-xr-x root     shell             2015-04-06 04:22 pittpatt

@@ -1,0 +1,6 @@
+drwxr-xr-x root     root              2015-04-06 04:22 icu
+drwxr-xr-x root     root              2015-04-06 04:23 idc
+drwxr-xr-x root     root              2015-04-06 04:22 keychars
+drwxr-xr-x root     root              2015-04-06 04:23 keylayout
+drwxr-xr-x root     root              2015-04-06 04:22 share
+drwxr-xr-x root     root              2015-04-06 04:23 srec

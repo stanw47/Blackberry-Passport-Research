@@ -1,0 +1,14 @@
+drwxr-xr-x root     root              2015-04-06 04:30 app
+drwxr-xr-x root     shell             2015-04-06 04:26 bin
+-rw-r--r-- root     root         6120 2015-04-06 04:17 build.prop
+drwxr-xr-x root     root              2015-04-06 04:30 etc
+drwxr-xr-x root     root              2015-04-06 04:25 fonts
+drwxr-xr-x root     root              2015-04-06 04:28 framework
+drwxr-xr-x root     root              2015-04-06 04:26 lib
+drwx------ root     root              1970-01-01 08:00 lost+found
+drwxr-xr-x root     root              2015-04-06 04:22 media
+drwxr-xr-x root     root              2015-04-06 04:30 priv-app
+drwxr-xr-x root     root              2015-04-06 04:22 tts
+drwxr-xr-x root     root              2015-04-06 04:23 usr
+drwxr-xr-x root     shell             2015-04-06 04:28 vendor
+drwxr-xr-x root     shell             2015-04-06 04:26 xbin

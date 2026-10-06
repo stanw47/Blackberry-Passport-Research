@@ -1,0 +1,55 @@
+00000000-059fffff : System RAM
+  00008000-009ee48f : Kernel code
+  00f10000-010e19a7 : Kernel data
+0d200000-0f9fffff : System RAM
+0ff00000-5fffffff : System RAM
+80000000-dedfffff : System RAM
+dff00000-dff7dfff : System RAM
+f9017000-f9017fff : msm-watchdog
+f920c100-f92fbfff : f9200000.dwc3
+f9824900-f9824a9f : mmc1
+f98a4900-f98a4a1b : mmc2
+f991e000-f991efff : msm_serial_hsl
+f9923000-f9923fff : f9923000.i2c
+f9924000-f9924fff : f9924000.i2c
+f9928000-f9928fff : f9928000.i2c
+f9965000-f9965fff : f9965000.i2c
+f9966000-f9966fff : spi_qsd
+f9967000-f9967fff : f9967000.i2c
+f9968000-f9968fff : f9968000.i2c
+fb21b000-fb21dfff : pmu_base
+fc380000-fc3e9fff : fc380000.msm-bimc
+fc401680-fc401683 : restart_reg
+fc4016c0-fc4016c3 : restart_reg
+fc401700-fc401703 : clk_base
+fc4281d0-fc4291cf : vmpm
+fc460000-fc463fff : fc460000.msm-sys-noc
+fc468000-fc46bfff : fc468000.msm-periph-noc
+fc470000-fc473fff : fc470000.msm-ocmem-noc
+fc478000-fc47bfff : fc478000.msm-mmss-noc
+fc480000-fc483fff : fc480000.msm-config-noc
+fc4a8000-fc4a9fff : tsens_physical
+fc4bc000-fc4bcfff : tsens_eeprom_physical
+fc820000-fc82001f : rmb_base
+fc880000-fc8800ff : qdsp6_base
+fd485300-fd48530b : halt_base
+fda00020-fda0002f : csi_clk_mux
+fda00030-fda00033 : csiphy_clk_mux
+fda00038-fda0003b : csiphy_clk_mux
+fda00040-fda00043 : csiphy_clk_mux
+fda04000-fda040ff : fda04000.qcom,cpp
+fda08000-fda080ff : fda08000.qcom,csid
+fda08400-fda084ff : fda08400.qcom,csid
+fda08800-fda088ff : fda08800.qcom,csid
+fda08c00-fda08cff : fda08c00.qcom,csid
+fda0a000-fda0a4ff : fda0a000.qcom,ispif
+fda0ac00-fda0adff : fda0ac00.qcom,csiphy
+fda0b000-fda0b1ff : fda0b000.qcom,csiphy
+fda0b400-fda0b5ff : fda0b400.qcom,csiphy
+fda0c000-fda0cfff : fda0c000.qcom,cci
+fdb00000-fdb0ffff : kgsl-3d0
+fdb20000-fdb2ffff : kgsl-3d0
+fdc80000-fdc803ff : vbif_base
+fdce0000-fdce3fff : wrapper_base
+fe200000-fe2000ff : qdsp6_base
+fec00000-fed7ffff : fdd00000.qcom,ocmem

@@ -1,0 +1,87 @@
+-rw-r--r-- root     root       279358 2015-04-06 04:30 NOTICE.html.gz
+drwxr-xr-x root     root              2015-04-06 04:23 acdbdata
+-rw-r--r-- root     root          279 2015-04-06 04:23 android_common.spf
+-rw-r--r-- root     root       652739 2015-04-06 04:22 apns-conf.xml
+-rw-r--r-- root     root         6428 2015-04-06 04:22 audio_effects.conf
+-rw-r--r-- root     root         6536 2015-04-06 04:22 audio_policy.conf
+drwxr-xr-x root     root              2015-04-06 04:23 bluetooth
+-rw-r--r-- root     root        30438 2015-04-06 04:23 cacert_location.pem
+-rw-r--r-- root     root         1045 2015-04-06 04:23 clatd.conf
+drwxr-xr-x root     root              2015-04-06 04:23 cne
+drwxr-xr-x root     root              2015-04-06 04:23 data
+drwxr-xr-x root     root              2015-04-06 04:23 dhcpcd
+drwxr-xr-x root     root              2015-04-06 04:23 dpm
+-rw-r--r-- root     root         1362 2015-04-06 04:23 ethertypes
+-rw-r--r-- root     root        16641 2015-04-06 04:17 event-log-tags
+-rw-r--r-- root     root        13118 2015-04-06 04:22 fallback_fonts.xml
+drwxr-xr-x root     root              2015-04-06 04:23 firmware
+-rw-r--r-- root     root         1826 2015-04-06 04:23 flp.conf
+-rw-r--r-- root     root        14641 2015-04-06 04:22 fonts.xml
+-rw-r--r-- root     root         9886 2015-04-06 04:23 ftm_test_config
+-rw-r--r-- root     root         2552 2015-04-06 04:23 generic_qc_spf.conf
+-rw-r--r-- root     root         3309 2015-04-06 04:23 gps.conf
+-rw-r--r-- root     root          600 2015-04-06 04:22 hosts
+-rw-r--r-- root     root         1773 2015-04-06 04:23 init.crda.sh
+-rw-r--r-- root     root         4987 2015-04-06 04:23 init.qcom.audio.sh
+-rw-r--r-- root     root         3651 2015-04-06 04:23 init.qcom.coex.sh
+-rw-r--r-- root     root         1725 2015-04-06 04:23 init.qcom.efs.sync.sh
+-rw-r--r-- root     root         4022 2015-04-06 04:23 init.qcom.modem_links.sh
+-rw-r--r-- root     root        35079 2015-04-06 04:23 init.qcom.post_boot.sh
+-rw-r--r-- root     root         2767 2015-04-06 04:23 init.qcom.sdio.sh
+-rw-r--r-- root     root         2688 2015-04-06 04:23 init.qcom.uicc.sh
+-rw-r--r-- root     root        19544 2015-04-06 04:23 init.qcom.wifi.sh
+-rw-r--r-- root     root         3227 2015-04-06 04:23 init.seed_wifi_mac.sh
+-rw-r--r-- root     root         2900 2015-04-06 04:22 iptables-blacklist.sh
+-rw-r--r-- root     root         4503 2015-04-06 04:23 izat.conf
+-rw-r--r-- root     root         2163 2015-04-06 04:22 libnfc-brcm-20795a00-wolverine.conf
+-rw-r--r-- root     root          755 2015-04-06 04:22 libnfc-brcm-20795a00.conf
+-rw-r--r-- root     root         2254 2015-04-06 04:22 libnfc-brcm-20795a10-wolverine.conf
+-rw-r--r-- root     root          752 2015-04-06 04:22 libnfc-brcm-20795a10.conf
+-rw-r--r-- root     root         2531 2015-04-06 04:22 libnfc-brcm-20795a20-oslo.conf
+-rw-r--r-- root     root          766 2015-04-06 04:22 libnfc-brcm-20795a20.conf
+-rw-r--r-- root     root           88 2015-04-06 04:22 libnfc-brcm-fime.conf
+-rw-r--r-- root     root         6728 2015-04-06 04:22 libnfc-brcm.conf
+drwxr-xr-x root     root              2015-04-06 04:23 logmask
+-rw-r--r-- root     root         1678 2015-04-06 04:23 lowi.conf
+-rw-r--r-- root     root        13607 2015-04-06 04:22 media_codecs.xml
+-rw-r--r-- root     root         4560 2015-04-06 04:22 media_codecs_google_audio.xml
+-rw-r--r-- root     root          973 2015-04-06 04:22 media_codecs_google_telephony.xml
+-rw-r--r-- root     root         5586 2015-04-06 04:22 media_codecs_google_video.xml
+-rw-r--r-- root     root        25666 2015-04-06 04:22 media_profiles.xml
+-rw-r--r-- root     root        69037 2015-04-06 04:22 mixer_paths.xml
+-rw-r--r-- root     root        33439 2015-04-06 04:22 mixer_paths_auxpcm.xml
+-rw-r--r-- root     root         1994 2015-04-06 04:23 mkshrc
+drwxr-xr-x root     root              2015-04-06 04:23 mplogsvc
+-rw-r--r-- root     root          938 2015-04-06 04:23 msap.conf
+-rw-r--r-- root     root          227 2015-04-06 04:23 oslo.spf
+-rw-r--r-- root     root        21148 2015-04-06 04:23 oslo_control.spf
+-rw-r--r-- root     root         5230 2015-04-06 04:23 oslo_log.spf
+drwxr-xr-x root     root              2015-04-06 04:23 permissions
+drwxr-xr-x root     root              2015-04-06 04:26 ppp
+drwxr-xr-x root     root              2015-04-06 04:23 preferred-apps
+-rw-r--r-- root     root       112975 2015-04-06 04:22 preloaded-classes
+-rw-r--r-- root     root         3740 2015-04-06 04:23 qca6234-service.sh
+-rw-r--r-- root     root          422 2015-04-06 04:23 quipc.conf
+drwxr-xr-x root     root              2015-04-06 04:23 qxdm
+-rw-r--r-- root     root       303427 2015-04-06 04:26 recovery-resource.dat
+-rw-r--r-- root     root         1473 2015-04-06 04:23 sap.conf
+-rw-r--r-- root     root         5943 2015-04-06 04:22 sec_config
+drwxr-xr-x root     root              2015-04-06 04:25 security
+-rw-r--r-- root     root         4519 2015-04-06 04:23 sensor_def_bbry.conf
+-rw-r--r-- root     root         4953 2015-04-06 04:22 system_fonts.xml
+-rw-r--r-- root     root          727 2015-04-06 04:23 thermal-engine-8974.conf
+drwxr-xr-x root     root              2015-04-06 04:23 updatecmds
+drwxr-xr-x root     root              2015-04-06 04:23 usf
+-rw-r--r-- root     root         2605 2015-04-06 04:23 usf_post_boot.sh
+-rw-r--r-- root     root         4509 2015-04-06 04:23 usf_settings.sh
+-rw-r--r-- root     root        13187 2015-04-06 04:22 voicemail-conf.xml
+-rw-r--r-- root     root         1629 2015-04-06 04:23 vold.fstab
+-rw-r--r-- root     root         2880 2015-04-06 04:22 whitelist_appops.xml
+drwxr-xr-x root     root              2015-04-06 04:22 wifi
+-rw-r--r-- root     root          242 2015-04-06 04:23 wolverine.spf
+-rw-r--r-- root     root        20495 2015-04-06 04:23 wolverine_control.spf
+-rw-r--r-- root     root         5167 2015-04-06 04:23 wolverine_log.spf
+-rw-r--r-- root     root         1024 2015-04-06 04:23 wolverine_model.spf
+-rw-r--r-- root     root         9320 2015-04-06 04:23 wolverine_physical.spf
+-rw-r--r-- root     root         1265 2015-04-06 04:23 xtra_root_cert.pem
+-rw-r--r-- root     root         3470 2015-04-06 04:23 xtwifi.conf

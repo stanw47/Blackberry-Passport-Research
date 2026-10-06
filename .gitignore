@@ -52,3 +52,15 @@ desktop.ini
 !recon/bootloaders-imggen/imggen/*.mbn
 !recon/bootloaders-imggen/imggen/*.img
 !recon/bootloaders-imggen/imggen/*.bin
+
+# --- Passport Android prototype dump (session22) ---
+# Full /system tree, APK decompiles, pulled vendor libs: large, keep local only.
+recon/passport-android-dump/system_tree/
+recon/passport-android-dump/decomp/
+recon/passport-android-dump/vendor/lib/
+recon/passport-android-dump/vendor/bootstrap/
+recon/passport-android-dump/vendor/pittpatt/
+recon/passport-android-dump/vendor/firmware/
+# but KEEP the small boot-chain package + extracted parts + certs:
+!recon/passport-android-dump/vendor/backup_bootchain/
+!recon/passport-android-dump/vendor/backup_bootchain/**

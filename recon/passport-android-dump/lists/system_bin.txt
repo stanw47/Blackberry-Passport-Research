@@ -1,0 +1,277 @@
+lstat '/system/bin/ATFWD-daemon' failed: Permission denied
+lstat '/system/bin/PktRspTest' failed: Permission denied
+lstat '/system/bin/StoreKeybox' failed: Permission denied
+-rwxr-xr-x root     shell      117220 2015-04-06 04:26 adb
+lstat '/system/bin/adsprpcd' failed: Permission denied
+-rwxr-xr-x root     shell         210 2015-04-06 04:22 am
+lrwxr-xr-x root     shell             2015-04-06 04:26 app_process -> app_process32
+-rwxr-xr-x root     shell       13588 2015-04-06 04:26 app_process32
+-rwxr-xr-x root     shell       49496 2015-04-06 04:26 applypatch
+-rwxr-xr-x root     shell         213 2015-04-06 04:22 appops
+-rwxr-xr-x root     shell         215 2015-04-06 04:22 appwidget
+-rwxr-xr-x root     shell       21984 2015-04-06 04:26 atrace
+lstat '/system/bin/audiod' failed: Permission denied
+-rwxr-xr-x root     shell        9384 2015-04-06 04:26 avp_ctl
+lstat '/system/bin/bb_tokenserviced' failed: Permission denied
+lstat '/system/bin/bbauthd' failed: Permission denied
+-rwxr-xr-x root     shell       13612 2015-04-06 04:26 bcc
+lstat '/system/bin/bkup_bc_update' failed: Permission denied
+-rwxr-xr-x root     shell        9508 2015-04-06 04:26 blkid
+-rwxr-xr-x root     shell         199 2015-04-06 04:22 bmgr
+lstat '/system/bin/bootanimation' failed: Permission denied
+-rwxr-xr-x root     shell       21832 2015-04-06 04:26 brctl
+-rwxr-xr-x root     shell        9544 2015-04-06 04:26 btnvtool
+-rwxr-xr-x root     shell         156 2015-04-06 04:22 bu
+-rwxr-xr-x root     shell        5340 2015-04-06 04:26 bugreport
+-rwxr-xr-x root     shell         511 2015-04-06 04:22 bugreport_service
+-rwxr-xr-x root     shell       62688 2015-04-06 04:26 camera_test
+lrwxr-xr-x root     shell             2015-04-06 04:26 cat -> toolbox
+lstat '/system/bin/charger_monitor' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 chcon -> toolbox
+-rwxr-xr-x root     shell       17628 2015-04-06 04:26 chkexfatfs
+lrwxr-xr-x root     shell             2015-04-06 04:26 chmod -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 chown -> toolbox
+lstat '/system/bin/clatd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 clear -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 cmp -> toolbox
+lstat '/system/bin/cnd' failed: Permission denied
+-rwxr-xr-x root     shell         207 2015-04-06 04:22 content
+lrwxr-xr-x root     shell             2015-04-06 04:26 cp -> toolbox
+-rwxr-xr-x root     shell        9436 2015-04-06 04:26 cplay
+-rwxr-xr-x root     shell       62744 2015-04-06 04:26 curl
+lrwxr-xr-x root     shell             2015-04-06 04:26 dalvikvm -> dalvikvm32
+-rwxr-xr-x root     shell        9436 2015-04-06 04:26 dalvikvm32
+lrwxr-xr-x root     shell             2015-04-06 04:26 date -> toolbox
+lstat '/system/bin/dcmd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 dd -> toolbox
+lstat '/system/bin/debuggerd' failed: Permission denied
+-rwxr-xr-x root     shell       79176 2015-04-06 04:26 dex2oat
+lrwxr-xr-x root     shell             2015-04-06 04:26 df -> toolbox
+lstat '/system/bin/dhcpcd' failed: Permission denied
+lstat '/system/bin/diag_callback_client' failed: Permission denied
+lstat '/system/bin/diag_dci_sample' failed: Permission denied
+lstat '/system/bin/diag_klog' failed: Permission denied
+lstat '/system/bin/diag_mdlog' failed: Permission denied
+lstat '/system/bin/diag_proxy' failed: Permission denied
+lstat '/system/bin/diag_socket_log' failed: Permission denied
+lstat '/system/bin/diag_uart_log' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 dmesg -> toolbox
+lstat '/system/bin/dnsmasq' failed: Permission denied
+-rwxr-xr-x root     shell         156 2015-04-06 04:23 dpm
+lstat '/system/bin/dpmd' failed: Permission denied
+lstat '/system/bin/drmdiagapp' failed: Permission denied
+lstat '/system/bin/drmserver' failed: Permission denied
+lstat '/system/bin/ds' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 du -> toolbox
+lstat '/system/bin/dumpstate' failed: Permission denied
+-rwxr-xr-x root     shell        9440 2015-04-06 04:26 dumpsys
+lstat '/system/bin/dun-server' failed: Permission denied
+-rwxr-xr-x root     shell      150428 2015-04-06 04:26 e2fsck
+-rwxr-xr-x root     shell        5288 2015-04-06 04:26 ebtables
+-rwxr-xr-x root     shell       12112 2015-04-06 04:26 efsks
+-rwxr-xr-x root     shell       13640 2015-04-06 04:26 fmconfig
+-rwxr-xr-x root     shell        5288 2015-04-06 04:26 fmfactorytest
+-rwxr-xr-x root     shell       13532 2015-04-06 04:26 fmfactorytestserver
+-rwxr-xr-x root     shell       34064 2015-04-06 04:26 fsck_msdos
+-rwxr-xr-x root     shell       58812 2015-04-06 04:26 ftmdaemon
+lstat '/system/bin/garden_app' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 getenforce -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 getevent -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 getprop -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 getsebool -> toolbox
+lstat '/system/bin/gpsone_daemon' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 grep -> toolbox
+-rwxr-xr-x root     shell        9440 2015-04-06 04:26 gzip
+-rwxr-xr-x root     shell      129012 2015-04-06 04:26 hci_qcomm_init
+lrwxr-xr-x root     shell             2015-04-06 04:26 hd -> toolbox
+lstat '/system/bin/hostapd' failed: Permission denied
+lstat '/system/bin/hostapd_cli' failed: Permission denied
+lstat '/system/bin/hvdcp' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 id -> toolbox
+-rwxr-xr-x root     shell       21784 2015-04-06 04:26 idmap
+lrwxr-xr-x root     shell             2015-04-06 04:26 ifconfig -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 iftop -> toolbox
+-rwxr-xr-x root     shell         194 2015-04-06 04:22 ime
+lstat '/system/bin/ims_rtp_daemon' failed: Permission denied
+lstat '/system/bin/imscmservice' failed: Permission denied
+lstat '/system/bin/imsdatadaemon' failed: Permission denied
+lstat '/system/bin/imsqmidaemon' failed: Permission denied
+-rwxr-xr-x root     shell         201 2015-04-06 04:22 input
+lrwxr-xr-x root     shell             2015-04-06 04:26 insmod -> toolbox
+lstat '/system/bin/install-recovery.sh' failed: Permission denied
+lstat '/system/bin/installd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 ioctl -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 ionice -> toolbox
+-rwxr-xr-x root     shell      165484 2015-04-06 04:26 ip
+-rwxr-xr-x root     shell      233100 2015-04-06 04:26 ip6tables
+-rwxr-xr-x root     shell      228840 2015-04-06 04:26 iptables
+lstat '/system/bin/irsc_util' failed: Permission denied
+lstat '/system/bin/isdbtmmtest' failed: Permission denied
+-rwxr-xr-x root     shell      130416 2015-04-06 04:26 keymaster_test
+lstat '/system/bin/keystore' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 kill -> toolbox
+lstat '/system/bin/ks' failed: Permission denied
+-rwxr-xr-x root     shell       92630 2015-04-06 04:26 linker
+lstat '/system/bin/lmkd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 ln -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 load_policy -> toolbox
+lstat '/system/bin/loc_launcher' failed: Permission denied
+lstat '/system/bin/location-mq' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 log -> toolbox
+-rwxr-xr-x root     shell       17684 2015-04-06 04:26 logcat
+lstat '/system/bin/logd' failed: Permission denied
+-rwxr-xr-x root     shell       13596 2015-04-06 04:26 logwrapper
+lstat '/system/bin/lowi-server' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 ls -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 lsmod -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 lsof -> toolbox
+-rwxr-xr-x root     shell       13648 2015-04-06 04:26 make_ext4fs
+-rwxr-xr-x root     shell       83216 2015-04-06 04:26 mcDriverDaemon
+-rwxr-xr-x root     shell        5360 2015-04-06 04:23 mcStarter
+lrwxr-xr-x root     shell             2015-04-06 04:26 md5 -> toolbox
+lstat '/system/bin/mdnsd' failed: Permission denied
+-rwxr-xr-x root     shell         210 2015-04-06 04:23 media
+lstat '/system/bin/mediaserver' failed: Permission denied
+lstat '/system/bin/mfg_battery' failed: Permission denied
+lstat '/system/bin/mfg_battery_monitor' failed: Permission denied
+lstat '/system/bin/mfg_customization' failed: Permission denied
+lstat '/system/bin/mfg_dc' failed: Permission denied
+lstat '/system/bin/mfg_properties' failed: Permission denied
+lstat '/system/bin/mfgradiosrvqc' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 mkdir -> toolbox
+-rwxr-xr-x root     shell       23568 2015-04-06 04:26 mkfatfs
+lrwxr-xr-x root     shell             2015-04-06 04:26 mknod -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 mkswap -> toolbox
+lstat '/system/bin/mm-pp-daemon' failed: Permission denied
+-rwxr-xr-x root     shell       58816 2015-04-06 04:26 mm-qcamera-app
+lstat '/system/bin/mm-qcamera-daemon' failed: Permission denied
+-rwxr-xr-x root     shell       13584 2015-04-06 04:26 mm-qjpeg-dec-test
+-rwxr-xr-x root     shell       13584 2015-04-06 04:26 mm-qjpeg-enc-test
+-rwxr-xr-x root     shell       17688 2015-04-06 04:26 mm-qomx-idec-test
+-rwxr-xr-x root     shell       21784 2015-04-06 04:26 mm-qomx-ienc-test
+-rwxr-xr-x root     shell       42296 2015-04-06 04:26 mm-vdec-omx-test
+-rwxr-xr-x root     shell       34080 2015-04-06 04:26 mm-venc-omx-test720p
+-rwxr-xr-x root     shell      145044 2015-04-06 04:26 mm-vidc-omx-test
+-rwxr-xr-x root     shell       13480 2015-04-06 04:26 mm-video-driver-test
+-rwxr-xr-x root     shell       13532 2015-04-06 04:26 mm-video-encdrv-test
+-rwxr-xr-x root     shell         217 2015-04-06 04:22 monkey
+lrwxr-xr-x root     shell             2015-04-06 04:26 mount -> toolbox
+lstat '/system/bin/mpdecision' failed: Permission denied
+lstat '/system/bin/mplogsvc' failed: Permission denied
+lstat '/system/bin/mtpd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 mv -> toolbox
+-rwxr-xr-x root     shell        5288 2015-04-06 04:26 n_smux
+lrwxr-xr-x root     shell             2015-04-06 04:26 nandread -> toolbox
+lstat '/system/bin/ndc' failed: Permission denied
+-rwxr-s--- root     inet         5460 2015-04-06 04:26 netcfg
+lstat '/system/bin/netd' failed: Permission denied
+lstat '/system/bin/netmgrd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 netstat -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 newfs_msdos -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 nohup -> toolbox
+lstat '/system/bin/nonhlos_util' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 notify -> toolbox
+lstat '/system/bin/nvramd' failed: Permission denied
+-rwxr-xr-x root     shell       79208 2015-04-06 04:26 oatdump
+lstat '/system/bin/ota_simulator' failed: Permission denied
+-rwxr-xr-x root     shell       50448 2015-04-06 04:26 patchoat
+lstat '/system/bin/perfd' failed: Permission denied
+-rwxr-xr-x root     root        30160 2015-04-06 04:26 ping
+-rwxr-xr-x root     shell       30424 2015-04-06 04:26 ping6
+-rwxr-xr-x root     shell         191 2015-04-06 04:22 pm
+lstat '/system/bin/pppd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 printenv -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 prlimit -> toolbox
+-rwxr-xr-x root     shell       13712 2015-04-06 04:23 profiler_daemon
+lrwxr-xr-x root     shell             2015-04-06 04:26 ps -> toolbox
+-rwxr-xr-x root     shell       28084 2015-04-06 04:26 qcks
+lstat '/system/bin/qcom-system-daemon' failed: Permission denied
+lstat '/system/bin/qmuxd' failed: Permission denied
+lstat '/system/bin/qseecom_sample_client' failed: Permission denied
+lstat '/system/bin/qseecom_security_test' failed: Permission denied
+lstat '/system/bin/qseecomd' failed: Permission denied
+lstat '/system/bin/quipc_igsn' failed: Permission denied
+lstat '/system/bin/quipc_main' failed: Permission denied
+lstat '/system/bin/racoon' failed: Permission denied
+-rwxr-xr-x root     shell       34124 2015-04-06 04:26 radish
+lrwxr-xr-x root     shell             2015-04-06 04:26 readlink -> toolbox
+-rwxr-xr-x root     shell        5288 2015-04-06 04:26 reboot
+lrwxr-xr-x root     shell             2015-04-06 04:26 renice -> toolbox
+-rwxr-xr-x root     shell         188 2015-04-06 04:23 requestsync
+lstat '/system/bin/reset_cause' failed: Permission denied
+-rwxr-xr-x root     shell       34012 2015-04-06 04:26 resize2fs
+lrwxr-xr-x root     shell             2015-04-06 04:26 restorecon -> toolbox
+lstat '/system/bin/rfs_access' failed: Permission denied
+lstat '/system/bin/rild' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 rm -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 rmdir -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 rmmod -> toolbox
+lstat '/system/bin/rmt_storage' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 route -> toolbox
+-rwxr-x--- root     shell        9436 2015-04-06 04:26 run-as
+lrwxr-xr-x root     shell             2015-04-06 04:26 runcon -> toolbox
+lstat '/system/bin/sapd' failed: Permission denied
+-rwxr-xr-x root     shell        5288 2015-04-06 04:26 schedtest
+lrwxr-xr-x root     shell             2015-04-06 04:26 schedtop -> toolbox
+-rwxr-xr-x root     shell        9388 2015-04-06 04:26 screencap
+-rwxr-xr-x root     shell       95652 2015-04-06 04:26 screenrecord
+lstat '/system/bin/sdcard' failed: Permission denied
+lstat '/system/bin/secure_ui_sample_client' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 sendevent -> toolbox
+-rwxr-xr-x root     shell        5288 2015-04-06 04:26 sensorservice
+-rwxr-xr-x root     shell        9440 2015-04-06 04:26 service
+lstat '/system/bin/servicemanager' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 setenforce -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 setprop -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 setsebool -> toolbox
+-rwxr-xr-x root     shell         178 2015-04-06 04:23 settings
+-rwxr-xr-x root     shell        5340 2015-04-06 04:26 setup_fs
+-rwxr-xr-x root     shell      157408 2015-04-06 04:26 sh
+lrwxr-xr-x root     shell             2015-04-06 04:26 sleep -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 smd -> toolbox
+lstat '/system/bin/spfmain' failed: Permission denied
+lstat '/system/bin/ssr_diag' failed: Permission denied
+lstat '/system/bin/ssr_setup' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 start -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 stop -> toolbox
+lstat '/system/bin/stp_server' failed: Permission denied
+lstat '/system/bin/subsystem_ramdump' failed: Permission denied
+lstat '/system/bin/surfaceflinger' failed: Permission denied
+-rwxr-xr-x root     shell         192 2015-04-06 04:22 svc
+lrwxr-xr-x root     shell             2015-04-06 04:26 swapoff -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 swapon -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 sync -> toolbox
+lstat '/system/bin/sys_ramdump' failed: Permission denied
+-rwxr-xr-x root     shell       67192 2015-04-06 04:26 tc
+lstat '/system/bin/test_diag' failed: Permission denied
+lstat '/system/bin/thermal-engine' failed: Permission denied
+lstat '/system/bin/time_daemon' failed: Permission denied
+-rwxr-xr-x root     shell        5340 2015-04-06 04:26 tinycap
+-rwxr-xr-x root     shell        9384 2015-04-06 04:26 tinymix
+-rwxr-xr-x root     shell        5348 2015-04-06 04:26 tinypcminfo
+-rwxr-xr-x root     shell        9436 2015-04-06 04:26 tinyplay
+-rwxr-xr-x root     shell      159012 2015-04-06 04:26 toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 top -> toolbox
+lrwxr-xr-x root     shell             2015-04-06 04:26 touch -> toolbox
+-rwxr-xr-x root     shell        3814 2015-04-06 04:23 uiautomator
+lrwxr-xr-x root     shell             2015-04-06 04:26 umount -> toolbox
+lstat '/system/bin/uncrypt' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 uptime -> toolbox
+lstat '/system/bin/usb_uicc_client' failed: Permission denied
+lstat '/system/bin/usf_epos' failed: Permission denied
+lstat '/system/bin/usf_pairing' failed: Permission denied
+lstat '/system/bin/usf_sw_calib' failed: Permission denied
+lstat '/system/bin/usf_sync_gesture' failed: Permission denied
+lstat '/system/bin/usf_tester' failed: Permission denied
+lstat '/system/bin/vdc' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 vmstat -> toolbox
+lstat '/system/bin/vold' failed: Permission denied
+lstat '/system/bin/vtnvfsd' failed: Permission denied
+lrwxr-xr-x root     shell             2015-04-06 04:26 watchprops -> toolbox
+lstat '/system/bin/watermark' failed: Permission denied
+-rwxr-xr-x root     shell        9436 2015-04-06 04:26 wdsdaemon
+lrwxr-xr-x root     shell             2015-04-06 04:26 wipe -> toolbox
+-rwxr-xr-x root     shell         190 2015-04-06 04:23 wm
+lstat '/system/bin/wpa_supplicant' failed: Permission denied
+lstat '/system/bin/xtwifi-client' failed: Permission denied
+lstat '/system/bin/xtwifi-inet-agent' failed: Permission denied

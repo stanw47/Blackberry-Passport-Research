@@ -1,0 +1,2 @@
+3.4.0-grsec-g0ea3e38
+#1 SMP PREEMPT Sun Apr 5 17:23:36 EDT 2015

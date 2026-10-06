@@ -1,0 +1,277 @@
+
+WINDOW MANAGER LAST ANR (dumpsys window lastanr)
+  <no ANR has occurred since boot>
+
+WINDOW MANAGER POLICY STATE (dumpsys window policy)
+    mSafeMode=false mSystemReady=true mSystemBooted=true
+    mLidState=1 mLidOpenRotation=-1 mCameraLensCoverState=-1 mHdmiPlugged=false
+    mLastSystemUiFlags=0x8600 mResettingSystemUiFlags=0x0 mForceClearedSystemUiFlags=0x0
+    mWakeGestureEnabledSetting=true
+    mSupportAutoRotation=true
+    mUiMode=1 mDockMode=0 mCarDockRotation=-1 mDeskDockRotation=-1
+    mUserRotationMode=0 mUserRotation=0 mAllowAllRotations=0
+    mCurrentAppOrientation=1
+    mCarDockEnablesAccelerometer=true mDeskDockEnablesAccelerometer=true
+    mLidKeyboardAccessibility=0 mLidNavigationAccessibility=0 mLidControlsSleep=true
+    mShortPressOnPowerBehavior=1 mLongPressOnPowerBehavior=1
+    mDoublePressOnPowerBehavior=0 mTriplePressOnPowerBehavior=0
+    mHasSoftInput=true
+    mAwake=true
+    mScreenOnEarly=true mScreenOnFully=true
+    mKeyguardDrawComplete=true mWindowManagerDrawComplete=true
+    mOrientationSensorEnabled=true
+    mOverscanScreen=(0,0) 1440x1440
+    mRestrictedOverscanScreen=(0,0) 1440x1320
+    mUnrestrictedScreen=(0,0) 1440x1440
+    mRestrictedScreen=(0,0) 1440x1320
+    mStableFullscreen=(0,0)-(1440,1320)
+    mStable=(0,63)-(1440,1320)
+    mSystem=(0,0)-(1440,1440)
+    mCur=(0,63)-(1440,1320)
+    mContent=(0,63)-(1440,1320)
+    mVoiceContent=(0,63)-(1440,1320)
+    mDock=(0,63)-(1440,1320)
+    mDockLayer=268435456 mStatusBarLayer=151000
+    mShowingLockscreen=false mShowingDream=false mDreamingLockscreen=false
+    mStatusBar=Window{2932407d u0 StatusBar}
+    isStatusBarKeyguard=false    mNavigationBar=Window{20722c6c u0 NavigationBar}
+    mFocusedWindow=Window{22ceab9c u0 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}
+    mFocusedApp=Token{119b9b42 ActivityRecord{15137d8d u0 com.blackberry.blackberrylauncher/.MainActivity t55}}
+    mTopFullscreenOpaqueWindowState=Window{22ceab9c u0 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}
+    mTopIsFullscreen=false mHideLockScreen=false
+    mForceStatusBar=false mForceStatusBarFromKeyguard=false
+    mDismissKeyguard=0 mWinDismissingKeyguard=null mHomePressed=false
+    mAllowLockscreenWhenOn=false mLockScreenTimeout=30000 mLockScreenTimerActive=false
+    mEndcallBehavior=2 mIncallPowerBehavior=1 mLongPressOnHomeBehavior=0
+    mLandscapeRotation=0 mSeascapeRotation=0
+    mPortraitRotation=0 mUpsideDownRotation=0
+    mDemoHdmiRotation=0 mDemoHdmiRotationLock=false
+    mUndockedHdmiRotation=-1
+    mKeyMapping.size=0
+    BarController.StatusBar
+      mState=WINDOW_STATE_SHOWING
+      mTransientBar=TRANSIENT_BAR_NONE
+    BarController.NavigationBar
+      mState=WINDOW_STATE_SHOWING
+      mTransientBar=TRANSIENT_BAR_NONE
+    PolicyControl.sImmersiveStatusFilter=null
+    PolicyControl.sImmersiveNavigationFilter=null
+    PolicyControl.sImmersivePreconfirmationsFilter=null
+    WakeGestureListener
+      mTriggerRequested=false
+      mSensor=null
+    WindowOrientationListener
+      mEnabled=true
+      mCurrentRotation=0
+      mSensor={Sensor name="Unknown", vendor="Unknown", version=1, type=1, maxRange=39.24, resolution=0.00119682, power=0.2, minDelay=5000}
+      mRate=2
+      mProposedRotation=-1
+      mPredictedRotation=-1
+      mLastFilteredX=-0.047101963
+      mLastFilteredY=0.18241566
+      mLastFilteredZ=10.089753
+      mTiltHistory={last: 89.0}
+      mFlat=true
+      mSwinging=false
+      mAccelerating=false
+      mOverhead=false
+
+WINDOW MANAGER ANIMATOR STATE (dumpsys window animator)
+    DisplayContentsAnimator #0:
+      Window #0: WindowStateAnimator{108777f1 com.android.systemui.ImageWallpaper}
+      Window #1: WindowStateAnimator{59fafd6 com.android.settings/com.android.settings.Settings}
+      Window #2: WindowStateAnimator{22154257 com.android.systemui/com.android.systemui.recents.RecentsActivity}
+      Window #3: WindowStateAnimator{238df144 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}
+      Window #4: WindowStateAnimator{18aa22d InputMethod}
+      Window #5: WindowStateAnimator{13ef362 KeyguardScrim}
+      Window #6: WindowStateAnimator{15c1acf3 StatusBar}
+      Window #7: WindowStateAnimator{3d1addb0 Heads Up}
+      Window #8: WindowStateAnimator{1a1c3429 NavigationBar}
+      Window #9: WindowStateAnimator{369ce3ae SearchPanel}
+    DisplayContentsAnimator #1:
+
+    mBulkUpdateParams=0x8 ORIENTATION_CHANGE_COMPLETE
+
+WINDOW MANAGER SESSIONS (dumpsys window sessions)
+  Session Session{bef27f 20615:u0a10078}:
+    mNumWindow=0 mClientDead=false mSurfaceSession=android.view.SurfaceSession@14c0254f
+  Session Session{17fd38e 748:1000}:
+    mNumWindow=1 mClientDead=false mSurfaceSession=android.view.SurfaceSession@b4824dc
+  Session Session{2cb1431 23587:1000}:
+    mNumWindow=1 mClientDead=false mSurfaceSession=android.view.SurfaceSession@271ae9e5
+  Session Session{56316e6 1025:u0a10023}:
+    mNumWindow=6 mClientDead=false mSurfaceSession=android.view.SurfaceSession@25d78cba
+  Session Session{18d9ca27 1263:u0a10034}:
+    mNumWindow=1 mClientDead=false mSurfaceSession=android.view.SurfaceSession@1b83c76b
+  Session Session{1c6b49ed 1196:u0a10002}:
+    mNumWindow=1 mClientDead=false mSurfaceSession=android.view.SurfaceSession@5a0b2c8
+  Session Session{3fb75262 22040:u0a10065}:
+    mNumWindow=0 mClientDead=false mSurfaceSession=android.view.SurfaceSession@2a953f61
+
+
+WINDOW MANAGER DISPLAY CONTENTS (dumpsys window displays)
+  Display: mDisplayId=0
+    init=1440x1440 400dpi cur=1440x1440 app=1440x1320 rng=1335x1257-1440x1377
+    deferred=false layoutNeeded=false
+  mStacks[1]0
+    mStackId=0
+    mDeferDetach=false
+    {taskId=58 appTokens=[AppWindowToken{1b31eb48 token=Token{12c91eb ActivityRecord{9d2f13a u0 com.android.systemui/.recents.RecentsActivity t58}}}] mdr=false}
+    {taskId=55 appTokens=[AppWindowToken{3f9b6753 token=Token{119b9b42 ActivityRecord{15137d8d u0 com.blackberry.blackberrylauncher/.MainActivity t55}}}] mdr=false}
+  mStacks[0]1
+    mStackId=1
+    mDeferDetach=false
+    {taskId=69 appTokens=[AppWindowToken{2140b865 token=Token{2b421d5c ActivityRecord{3dfcafcf u0 com.android.settings/.Settings t69}}}] mdr=false}
+
+  Application tokens in top down Z order:
+  mStackId=0
+    mTaskId=55
+    Activity #0 AppWindowToken{3f9b6753 token=Token{119b9b42 ActivityRecord{15137d8d u0 com.blackberry.blackberrylauncher/.MainActivity t55}}}:
+      windows=[Window{22ceab9c u0 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}]
+      windowType=2 hidden=false hasVisible=true
+      app=true voiceInteraction=false
+      allAppWindows=[Window{22ceab9c u0 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}]
+      groupId=55 appFullscreen=true requestedOrientation=1
+      hiddenRequested=false clientHidden=false willBeHidden=false reportedDrawn=true reportedVisible=true
+      numInterestingWindows=1 numDrawnWindows=1 inPendingTransaction=false allDrawn=true (animator=true)
+      startingData=null removed=false firstWindowDrawn=true mDeferRemoval=false
+    mTaskId=58
+    Activity #0 AppWindowToken{1b31eb48 token=Token{12c91eb ActivityRecord{9d2f13a u0 com.android.systemui/.recents.RecentsActivity t58}}}:
+      windows=[Window{26f9cbdb u0 com.android.systemui/com.android.systemui.recents.RecentsActivity}]
+      windowType=2 hidden=true hasVisible=true
+      app=true voiceInteraction=false
+      allAppWindows=[Window{26f9cbdb u0 com.android.systemui/com.android.systemui.recents.RecentsActivity}]
+      groupId=58 appFullscreen=true requestedOrientation=-1
+      hiddenRequested=true clientHidden=true willBeHidden=false reportedDrawn=false reportedVisible=false
+      numInterestingWindows=1 numDrawnWindows=1 inPendingTransaction=false allDrawn=true (animator=true)
+      startingData=com.android.server.wm.StartingData@e1ba86 removed=false firstWindowDrawn=true mDeferRemoval=false
+  mStackId=1
+    mTaskId=69
+    Activity #0 AppWindowToken{2140b865 token=Token{2b421d5c ActivityRecord{3dfcafcf u0 com.android.settings/.Settings t69}}}:
+      windows=[Window{1f5a6a84 u0 com.android.settings/com.android.settings.Settings}]
+      windowType=2 hidden=true hasVisible=true
+      app=true voiceInteraction=false
+      allAppWindows=[Window{1f5a6a84 u0 com.android.settings/com.android.settings.Settings}]
+      groupId=69 appFullscreen=true requestedOrientation=-1
+      hiddenRequested=true clientHidden=true willBeHidden=false reportedDrawn=false reportedVisible=false
+      numInterestingWindows=1 numDrawnWindows=1 inPendingTransaction=false allDrawn=true (animator=true)
+      startingData=null removed=false firstWindowDrawn=true mDeferRemoval=false
+
+
+  Display: mDisplayId=1
+    init=0x0 0dpi cur=0x0 app=0x-120 rng=-105x-183-0x0
+    deferred=false layoutNeeded=false
+
+  Application tokens in top down Z order:
+    None
+
+
+
+WINDOW MANAGER TOKENS (dumpsys window tokens)
+  All tokens:
+  WindowToken{30956f47 null}
+  AppWindowToken{2140b865 token=Token{2b421d5c ActivityRecord{3dfcafcf u0 com.android.settings/.Settings t69}}}
+  WindowToken{f723374 android.os.Binder@45eaa64}
+  AppWindowToken{3f9b6753 token=Token{119b9b42 ActivityRecord{15137d8d u0 com.blackberry.blackberrylauncher/.MainActivity t55}}}
+  WindowToken{1f05709d android.os.Binder@d7c2f9}
+  AppWindowToken{1b31eb48 token=Token{12c91eb ActivityRecord{9d2f13a u0 com.android.systemui/.recents.RecentsActivity t58}}}
+
+  Wallpaper tokens:
+  Wallpaper #0 WindowToken{f723374 android.os.Binder@45eaa64}
+
+WINDOW MANAGER WINDOWS (dumpsys window windows)
+  Window #9 Window{bd269d6 u0 SearchPanel}:
+    mDisplayId=0 mSession=Session{56316e6 1025:u0a10023} mClient=android.os.BinderProxy@3d48d9f1
+    mOwnerUid=10023 mShowToOwnerOnly=false package=com.android.systemui appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillxfill) gr=#800053 sim=#31 ty=2024 fl=#1820100 fmt=-3 surfaceInsets=Rect(0, 0 - 0, 0)}
+    Requested w=1440 h=1440 mLayoutSeq=1613
+    mHasSurface=false mShownFrame=[0.0,0.0][0.0,0.0] isReadyForDisplay()=false
+    WindowStateAnimator{369ce3ae SearchPanel}:
+      mShownAlpha=0.0 mAlpha=1.0 mLastAlpha=0.0
+  Window #8 Window{20722c6c u0 NavigationBar}:
+    mDisplayId=0 mSession=Session{56316e6 1025:u0a10023} mClient=android.os.BinderProxy@1a56511f
+    mOwnerUid=10023 mShowToOwnerOnly=false package=com.android.systemui appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=2019 fl=#1840068 fmt=-3 surfaceInsets=Rect(0, 0 - 0, 0)}
+    Requested w=1440 h=120 mLayoutSeq=1613
+    mHasSurface=true mShownFrame=[0.0,1320.0][1440.0,1440.0] isReadyForDisplay()=true
+    WindowStateAnimator{1a1c3429 NavigationBar}:
+      mAnimating=false mLocalAnimating=false mAnimationIsEntrance=true mAnimation=null
+      Surface: shown=true layer=201000 alpha=1.0 rect=(0.0,1320.0) 1440.0 x 120.0
+    mLastFreezeDuration=+390ms
+  Window #7 Window{39498cb1 u0 Heads Up}:
+    mDisplayId=0 mSession=Session{56316e6 1025:u0a10023} mClient=android.os.BinderProxy@148ba358
+    mOwnerUid=10023 mShowToOwnerOnly=false package=com.android.systemui appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillx625) gr=#30 sim=#20 ty=2014 fl=#1820328 fmt=-3 wanim=0x7f0c0027 surfaceInsets=Rect(0, 0 - 0, 0)}
+    Requested w=1440 h=625 mLayoutSeq=1467
+    mHasSurface=false mShownFrame=[0.0,0.0][1440.0,625.0] isReadyForDisplay()=false
+    WindowStateAnimator{3d1addb0 Heads Up}:
+  Window #6 Window{2932407d u0 StatusBar}:
+    mDisplayId=0 mSession=Session{56316e6 1025:u0a10023} mClient=android.os.BinderProxy@2ed2d6d4
+    mOwnerUid=10023 mShowToOwnerOnly=false package=com.android.systemui appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillx63) gr=#30 sim=#10 ty=2000 fl=#81840048 fmt=-3 vsysui=0x600 surfaceInsets=Rect(0, 0 - 0, 0)}
+    Requested w=1440 h=63 mLayoutSeq=1613
+    mHasSurface=true mShownFrame=[0.0,0.0][1440.0,63.0] isReadyForDisplay()=true
+    WindowStateAnimator{15c1acf3 StatusBar}:
+      mAnimating=false mLocalAnimating=false mAnimationIsEntrance=true mAnimation=null
+      Surface: shown=true layer=151000 alpha=1.0 rect=(0.0,0.0) 1440.0 x 63.0
+    mLastFreezeDuration=+386ms
+  Window #5 Window{22170345 u0 KeyguardScrim}:
+    mDisplayId=0 mSession=Session{17fd38e 748:1000} mClient=android.view.ViewRootImpl$W@126947bc
+    mOwnerUid=1000 mShowToOwnerOnly=false package=android appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillxfill) sim=#10 ty=2029 fl=#1110900 pfl=0x1 fmt=-3 or=5 vsysui=0x3610000 surfaceInsets=Rect(0, 0 - 0, 0)}
+    Requested w=1440 h=1320 mLayoutSeq=41
+    mHasSurface=false mShownFrame=[0.0,0.0][1440.0,1320.0] isReadyForDisplay()=false
+    WindowStateAnimator{13ef362 KeyguardScrim}:
+  Window #4 Window{1e7fb972 u0 InputMethod}:
+    mDisplayId=0 mSession=Session{18d9ca27 1263:u0a10034} mClient=android.os.BinderProxy@379767d
+    mOwnerUid=10034 mShowToOwnerOnly=true package=com.blackberry.inputmethod.latin appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillxfill) gr=#50 sim=#120 ty=2011 fl=#1800108 fmt=-2 wanim=0x1030056 vsysui=0x300 surfaceInsets=Rect(0, 0 - 0, 0) needsMenuKey=2}
+    Requested w=1440 h=1440 mLayoutSeq=1081
+    mIsImWindow=true mIsWallpaper=false mIsFloatingLayer=true mWallpaperVisible=false
+    mHasSurface=false mShownFrame=[0.0,63.0][1440.0,1440.0] isReadyForDisplay()=false
+    WindowStateAnimator{18aa22d InputMethod}:
+      mShownAlpha=1.0 mAlpha=1.0 mLastAlpha=0.0
+  Window #3 Window{22ceab9c u0 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}:
+    mDisplayId=0 mSession=Session{1c6b49ed 1196:u0a10002} mClient=android.os.BinderProxy@3b458f0f
+    mOwnerUid=10002 mShowToOwnerOnly=true package=com.blackberry.blackberrylauncher appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#81110100 fmt=-2 wanim=0x1030466 vsysui=0x600 surfaceInsets=Rect(0, 0 - 0, 0) needsMenuKey=2}
+    Requested w=1440 h=1440 mLayoutSeq=1613
+    mHasSurface=true mShownFrame=[0.0,0.0][1440.0,1440.0] isReadyForDisplay()=true
+    WindowStateAnimator{238df144 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}:
+      Surface: shown=true layer=21015 alpha=1.0 rect=(0.0,0.0) 1440.0 x 1440.0
+    mLastFreezeDuration=+340ms
+  Window #2 Window{26f9cbdb u0 com.android.systemui/com.android.systemui.recents.RecentsActivity}:
+    mDisplayId=0 mSession=Session{56316e6 1025:u0a10023} mClient=android.os.BinderProxy@166a1cea
+    mOwnerUid=10023 mShowToOwnerOnly=true package=com.android.systemui appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#81910100 fmt=-2 wanim=0x7f0c0005 vsysui=0x700 surfaceInsets=Rect(0, 0 - 0, 0) needsMenuKey=2}
+    Requested w=1440 h=1440 mLayoutSeq=1443
+    mHasSurface=false mShownFrame=[0.0,0.0][1440.0,1440.0] isReadyForDisplay()=false
+    WindowStateAnimator{22154257 com.android.systemui/com.android.systemui.recents.RecentsActivity}:
+    mLastFreezeDuration=+859ms
+  Window #1 Window{1f5a6a84 u0 com.android.settings/com.android.settings.Settings}:
+    mDisplayId=0 mSession=Session{2cb1431 23587:1000} mClient=android.os.BinderProxy@c4ed897
+    mOwnerUid=1000 mShowToOwnerOnly=true package=com.android.settings appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=1 fl=#81810100 wanim=0x1030466 vsysui=0x600 surfaceInsets=Rect(0, 0 - 0, 0) needsMenuKey=2}
+    Requested w=1440 h=1440 mLayoutSeq=1564
+    mHasSurface=false mShownFrame=[0.0,0.0][1440.0,1440.0] isReadyForDisplay()=false
+    WindowStateAnimator{59fafd6 com.android.settings/com.android.settings.Settings}:
+  Window #0 Window{206b85b7 u0 com.android.systemui.ImageWallpaper}:
+    mDisplayId=0 mSession=Session{56316e6 1025:u0a10023} mClient=android.os.BinderProxy@95d7451
+    mOwnerUid=10023 mShowToOwnerOnly=true package=null appop=NONE
+    mAttrs=WM.LayoutParams{(0,0)(2142x1440) gr=#800033 ty=2013 fl=#318 fmt=2 wanim=0x10302e5 surfaceInsets=Rect(0, 0 - 0, 0)}
+    Requested w=2142 h=1440 mLayoutSeq=1613
+    mIsImWindow=false mIsWallpaper=true mIsFloatingLayer=true mWallpaperVisible=true
+    Offsets x=-351 y=0
+    mHasSurface=true mShownFrame=[-351.0,0.0][1791.0,1440.0] isReadyForDisplay()=true
+    WindowStateAnimator{108777f1 com.android.systemui.ImageWallpaper}:
+      Surface: shown=true layer=21000 alpha=1.0 rect=(-351.0,0.0) 2142.0 x 1440.0
+    mLastFreezeDuration=+405ms
+    mWallpaperX=0.5 mWallpaperY=0.5
+
+  mCurConfiguration={1.0 ?mcc?mnc en_US ldltr sw534dp w576dp h502dp 400dpi nrml port finger -keyb/v/h -nav/h s.34}
+  mHasPermanentDpad=false
+  mCurrentFocus=Window{22ceab9c u0 com.blackberry.blackberrylauncher/com.blackberry.blackberrylauncher.MainActivity}
+  mFocusedApp=AppWindowToken{2140b865 token=Token{2b421d5c ActivityRecord{3dfcafcf u0 com.android.settings/.Settings t69}}}
+  mInputMethodTarget=Window{22b4dbc2 u0 com.android.settings/com.android.settings.SubSettings}
+  mInTouchMode=true mLayoutSeq=1613
+  mLastDisplayFreezeDuration=+420ms due to Window{206b85b7 u0 com.android.systemui.ImageWallpaper}

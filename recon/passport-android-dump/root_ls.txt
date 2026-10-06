@@ -1,0 +1,60 @@
+drwxr-xr-x root     root              1970-02-20 03:57 acct
+-rw-r--r-- root     root          524 1970-01-01 08:00 addon_verity_key
+drwxrwx--- system   cache             2026-10-06 18:25 cache
+lrwxrwxrwx root     root              1970-01-01 08:00 charger -> /sbin/healthd
+dr-x------ root     root              1970-02-20 03:57 config
+lrwxrwxrwx root     root              1970-02-20 03:57 d -> /sys/kernel/debug
+drwxrwx--x system   system            2026-10-06 15:31 data
+-rw-r--r-- root     root          472 1970-01-01 08:00 default.prop
+drwxr-xr-x root     root              2026-10-06 14:43 dev
+lrwxrwxrwx root     root              1970-02-20 03:57 etc -> /system/etc
+-rw-r--r-- root     root        41402 1970-01-01 08:00 file_contexts
+dr-xr-x--- system   system            1970-01-01 08:00 firmware
+-rw-r----- root     root         1147 1970-01-01 08:00 fstab.qcom
+-rwxr-x--- root     root       342544 1970-01-01 08:00 init
+-rwxr-x--- root     root         2696 1970-01-01 08:00 init.class_main.sh
+-rwxr-x--- root     root         1207 1970-01-01 08:00 init.environ.rc
+-rwxr-x--- root     root         2417 1970-01-01 08:00 init.factory.sfi.rc
+-rwxr-x--- root     root         1702 1970-01-01 08:00 init.mdm.sh
+-rwxr-x--- root     root          490 1970-01-01 08:00 init.metrics.rc
+-rwxr-x--- root     root         7509 1970-01-01 08:00 init.oem.rc
+-rwxr-x--- root     root         7064 1970-01-01 08:00 init.qcom.class_core.sh
+-rwxr-x--- root     root         6655 1970-01-01 08:00 init.qcom.early_boot.sh
+-rwxr-x--- root     root        12570 1970-01-01 08:00 init.qcom.factory.sh
+-rwxr-x--- root     root        28069 1970-01-01 08:00 init.qcom.rc
+-rwxr-x--- root     root         5760 1970-01-01 08:00 init.qcom.sh
+-rwxr-x--- root     root         4561 1970-01-01 08:00 init.qcom.ssr.sh
+-rwxr-x--- root     root         2962 1970-01-01 08:00 init.qcom.syspart_fixup.sh
+-rwxr-x--- root     root        38883 1970-01-01 08:00 init.qcom.usb.rc
+-rwxr-x--- root     root         9322 1970-01-01 08:00 init.qcom.usb.sh
+-rwxr-x--- root     root        24103 1970-01-01 08:00 init.rc
+-rwxr-x--- root     root         9994 1970-01-01 08:00 init.target.rc
+-rwxr-x--- root     root         1927 1970-01-01 08:00 init.trace.rc
+-rwxr-x--- root     root         4054 1970-01-01 08:00 init.usb.rc
+-rwxr-x--- root     root          301 1970-01-01 08:00 init.zygote32.rc
+drwxrwxr-x root     system            1970-02-20 03:57 mnt
+-rw-r--r-- root     root       501197 1970-01-01 08:00 moc_crypto.ko.3.4.0
+-rw-r--r-- root     root           40 1970-01-01 08:00 moc_crypto.ko.sig.3.4.0
+-rw-r--r-- root     root         8429 1970-01-01 08:00 moc_platform_mod.ko
+-rw-r--r-- root     root       396876 1970-01-01 08:00 mocana_shim.ko
+drwxrwxr-x root     root              1970-02-20 03:57 nvram
+lstat '//persist' failed: Permission denied
+dr-xr-xr-x root     root              1970-01-01 08:00 proc
+-rw-r--r-- root     root         4253 1970-01-01 08:00 property_contexts
+drwxr-xr-x root     root              1970-01-01 08:00 res
+drwx------ root     root              2015-04-06 04:21 root
+drwxr-x--- root     root              1970-01-01 08:00 sbin
+lrwxrwxrwx root     root              1970-02-20 03:57 sdcard -> /storage/emulated/legacy
+-rw-r--r-- root     root         1015 1970-01-01 08:00 seapp_contexts
+-rw-r--r-- root     root           73 1970-01-01 08:00 selinux_version
+-rw-r--r-- root     root       215355 1970-01-01 08:00 sepolicy
+-rw-r--r-- root     root        11087 1970-01-01 08:00 service_contexts
+drwxr-x--x root     sdcard_r          1970-02-20 03:57 storage
+dr-xr-xr-x root     root              1970-02-20 03:57 sys
+drwxr-xr-x root     root              1970-01-01 08:00 system
+-rw-r--r-- root     root          256 1970-01-01 08:00 system_signature
+lrwxrwxrwx root     root              1970-02-20 03:57 tombstones -> /data/tombstones
+-rw-r--r-- root     root         9721 1970-01-01 08:00 ueventd.qcom.rc
+-rw-r--r-- root     root         4523 1970-01-01 08:00 ueventd.rc
+lrwxrwxrwx root     root              1970-02-20 03:57 vendor -> /system/vendor
+-rw-r--r-- root     root          524 1970-01-01 08:00 verity_key

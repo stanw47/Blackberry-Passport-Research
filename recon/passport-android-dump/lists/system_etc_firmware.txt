@@ -1,0 +1,35 @@
+-rw-r--r-- root     root        26140 2015-04-06 04:22 BCM20795A0_001.001.023.0003.0025_Customers_I2CPLM_NCD_Unsigned_configdata.ncd
+-rw-r--r-- root     root        22352 2015-04-06 04:22 BCM20795A1_001.002.012.0003.0078_Customers_I2CPLM_NCD_Signed_configdata.ncd
+-rw-r--r-- root     root        22352 2015-04-06 04:22 BCM20795A1_001.002.012.0003.0078_Customers_I2CPLM_NCD_Unsigned_configdata.ncd
+-rw-r--r-- root     root        19052 2015-04-06 04:22 BCM20795A2_001.003.025.0005.0035_Generic_I2C_NCD_Signed_configdata.ncd
+-rw-r--r-- root     root        19052 2015-04-06 04:22 BCM20795A2_001.003.025.0005.0035_Generic_I2C_NCD_Unsigned_configdata.ncd
+-rw-r--r-- root     root        27214 2015-04-06 04:23 Signedrompatch_v20.bin
+-rw-r--r-- root     root        34300 2015-04-06 04:23 Signedrompatch_v21.bin
+-rw-r--r-- root     root        40440 2015-04-06 04:23 Signedrompatch_v24.bin
+-rw-r--r-- root     root        44672 2015-04-06 04:23 Signedrompatch_v30.bin
+-rw-r--r-- root     root         1156 2015-04-06 04:23 a225_pfp.fw
+-rw-r--r-- root     root         9220 2015-04-06 04:23 a225_pm4.fw
+-rw-r--r-- root     root         9220 2015-04-06 04:23 a225p5_pm4.fw
+-rw-r--r-- root     root         1156 2015-04-06 04:23 a300_pfp.fw
+-rw-r--r-- root     root         9220 2015-04-06 04:23 a300_pm4.fw
+-rw-r--r-- root     root         2212 2015-04-06 04:23 a330_pfp.fw
+-rw-r--r-- root     root         9220 2015-04-06 04:23 a330_pm4.fw
+drwxr-xr-x root     root              2015-04-06 04:23 camera
+-rw-r--r-- root     root        16128 2015-04-06 04:23 cpp_firmware_v1_1_1.fw
+-rw-r--r-- root     root        16384 2015-04-06 04:23 cpp_firmware_v1_1_6.fw
+-rw-r--r-- root     root        16384 2015-04-06 04:23 cpp_firmware_v1_2_0.fw
+-rw-r--r-- root     root         1156 2015-04-06 04:23 leia_pfp_470.fw
+-rw-r--r-- root     root         9220 2015-04-06 04:23 leia_pm4_470.fw
+-rw-r--r-- root     root           75 2015-04-06 04:23 nfc_test.bin
+-rw-r--r-- root     root        32828 2015-04-06 04:23 sensor-hub.bin
+-rw-r--r-- root     root       126704 2015-04-06 04:23 sensor_hub_mx_venice.bin
+drwxr-xr-x root     root              2015-04-06 04:23 synaptics
+-rw-r--r-- root     root          212 2015-04-06 04:16 venus.b00
+-rw-r--r-- root     root         6600 2015-04-06 04:16 venus.b01
+-rw-r--r-- root     root       955952 2015-04-06 04:16 venus.b02
+-rw-r--r-- root     root         5472 2015-04-06 04:16 venus.b03
+-rw-r--r-- root     root           32 2015-04-06 04:16 venus.b04
+-rw-r--r-- root     root       973744 2015-04-06 04:16 venus.mbn
+-rw-r--r-- root     root         6812 2015-04-06 04:16 venus.mdt
+drwxr-xr-x root     root              2015-04-06 04:16 wcd9320
+drwxr-xr-x root     root              2015-04-06 04:16 wlan

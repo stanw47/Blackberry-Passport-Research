@@ -1,0 +1,53 @@
+Linux version 3.4.0-grsec-g0ea3e38 (ec_agent@br605cnc) (gcc version 4.8 (GCC) ) #1 SMP PREEMPT Sun Apr 5 17:23:36 EDT 2015
+===CPUINFO===
+Processor	: ARMv7 Processor rev 1 (v7l)
+processor	: 0
+BogoMIPS	: 38.40
+
+processor	: 1
+BogoMIPS	: 38.40
+
+processor	: 2
+BogoMIPS	: 38.40
+
+processor	: 3
+BogoMIPS	: 38.40
+
+Features	: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt 
+CPU implementer	: 0x51
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0x06f
+CPU revision	: 1
+
+Hardware	: Qualcomm MSM8974PRO-AA
+Revision	: 0000
+Serial		: 0000000000000000
+===MODULES===
+mocana_shim 7704 6 - Live 0x00000000 0x00000000
+moc_crypto 438571 1 mocana_shim,[permanent], Live 0x00000000 0x00000000
+moc_platform_mod 4738 1 moc_crypto, Live 0x00000000 0x00000000
+===FILESYSTEMS===
+nodev	sysfs
+nodev	rootfs
+nodev	bdev
+nodev	proc
+nodev	cgroup
+nodev	tmpfs
+nodev	debugfs
+nodev	securityfs
+nodev	sockfs
+nodev	pipefs
+nodev	anon_inodefs
+nodev	devpts
+	ext3
+	ext2
+	ext4
+nodev	ramfs
+	vfat
+	fuseblk
+nodev	fuse
+nodev	fusectl
+nodev	selinuxfs
+===VERSION===
+3.4.0-grsec-g0ea3e38

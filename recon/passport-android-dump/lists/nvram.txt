@@ -1,0 +1,8 @@
+lstat '/nvram/blog' failed: Permission denied
+lstat '/nvram/boardid' failed: Permission denied
+lstat '/nvram/nvuser' failed: Permission denied
+lstat '/nvram/perm' failed: Permission denied
+lstat '/nvram/prdid' failed: Permission denied
+/nvram/nvuser: Permission denied
+/nvram/perm: Permission denied
+/nvram/blog: Permission denied
