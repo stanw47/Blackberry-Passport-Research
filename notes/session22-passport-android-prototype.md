@@ -97,6 +97,28 @@ Evidence favours production (it boots the production-PKI chain with
 (same production key) should accept these images** — the basis for a
 no-desolder Android route (flash via EDL/ISP, not desolder).
 
+### 4b. DECISIVE comparison vs the retail Passport BB10 boot chain
+
+We already hold the **retail Passport's `boot0` dump** (`recon/dumps-passport/
+bb0_full.bin`, windermere EMEA, plus `priv-research/working/passport_boot0.img`).
+Extracting its X.509 certs and comparing to the Android prototype:
+
+| cert | Passport BB10 `boot0` | Android prototype | match |
+|---|---|---|---|
+| BB Root CA (secure) | sha256 `931828f4…` | sha256 `931828f4…` | **IDENTICAL** |
+| BB Attestation CA (secure) | sha256 `e55af2b1…` | sha256 `e55af2b1…` | **IDENTICAL** |
+| leaf | `CN=Bryon Hummel`, SW_ID `0x0` | `CN=Bryon Hummel`, SW_ID `0xC` | same issuer/CN |
+
+**So the retail Passport BB10 and the Android prototype use the SAME production
+signing chain** (BB Root CA (secure) → BB Attestation CA (secure) → per-image
+leaf signed by BlackBerry's image-signing key). There is **no separate
+engineering/test key** on the prototype for image signing — it is the production
+PKI. **Implication:** if the retail Passport is fused with the production root
+key (it is, being retail), the prototype's **production-signed Android images
+should be accepted by a retail Passport** — the core requirement for a
+no-desolder Android conversion (the remaining blockers are writing the
+boot-chain/boot/system partitions, i.e. EDL/ISP, and the eMMC boot-partition WP).
+
 ## 5. Implication for "no-desolder Android on Passport"
 
 The prototype supplies a **production-signed Android boot chain + full system**
