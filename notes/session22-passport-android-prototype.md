@@ -124,8 +124,17 @@ Read-only probing only. Environment: SELinux **enforcing**, kernel
 
 - **`/dev/kgsl-3d0`** — `crw-rw-rw-` (`u:object_r:gpu_device:s0`), Adreno 330
   (`fdb00000.qcom,kgsl-3d0`), `libgsl.so` present. Kernel surface (same class as
-  the KEYone KGSL/IOMMU work). `libgsl.so` shows the SHAREDMEM/GPUMEM-era KGSL
-  ABI (`ioctl_kgsl_*`, `gsl_create_syncobj`, `kgsl_sharedmem_alloc`, ...).
+  the KEYone KGSL/IOMMU work). `libgsl.so` shows the **SHAREDMEM-era KGSL ABI**
+  (`gsl_create_syncobj`, `gsl_command_issueib`, `gsl_memory_alloc_pure`,
+  `gsl_device_getinfo`, `IOCTL_KGSL_*`) on kernel **3.4.0-grsec** (Apr 2015).
+  **Candidate primitive:** Jann Horn's KGSL page-pool bug (CVE-2023-21666 class)
+  — on KGSL built **without `CONFIG_QCOM_KGSL_USE_SHMEM`**, GPU-shared pages come
+  from KGSL's own page pool, are inserted into VMAs without `VM_PFNMAP`, and are
+  returned to the pool on free **without a refcount check** → cross-process page
+  UAF / **data leakage** (`get_user_pages`/`vmsplice`). This is an info-leak /
+  page-UAF primitive, not direct kernel R/W; a full root still needs a second
+  stage + a grsec bypass. Also relevant: syncobj / `freememontimestamp` races
+  (the `pending_free` guard exists in upstream 3.4 `kgsl.c`).
 - **`/dev/binder`, `/dev/ashmem`** — `0666` (grsec-hardened).
 - **`diagnostics` service** (`com.blackberry.ddt.IDiagnosticService`, txn codes:
   1=admin, 2=append, 3=append_log, 4=get_guid, 5=get_sysvars, 6=send, 7=open) —
