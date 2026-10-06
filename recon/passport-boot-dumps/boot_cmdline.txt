@@ -1,0 +1,1 @@
+androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 androidboot.imagetype=sfi build_number=AAA787 trace_event=sched:sched_switch,irq:irq_handler_entry

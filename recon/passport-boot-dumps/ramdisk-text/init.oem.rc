@@ -1,0 +1,221 @@
+import init.factory.${ro.boot.imagetype}.rc
+
+on early-init
+    mkdir /nvram         0775 root root
+    mkdir /nvram/blog    0770 root root
+    mkdir /nvram/perm    0770 root root
+    mkdir /nvram/nvuser  0770 root root
+    mkdir /nvram/prdid   0770 root root
+    mkdir /nvram/boardid 0770 root root
+    insmod -f 3 /moc_platform_mod.ko
+    insmod -f 3 /moc_crypto.ko.3.4.0
+    insmod -f 3 /mocana_shim.ko
+
+on post-fs
+    chown battlog root /proc/timer_stats
+    chmod 0660 /proc/timer_stats
+    mkdir /persist/cellular       0771 radio radio
+    mkdir /persist/cellular/swoop 0770 radio swoop_radio
+    mkdir /persist/gps            0700 system system
+    mkdir /persist/dcm            0770 dcmd dcmd
+
+#sensor-i2c, device name will change from /dev/i2c-12 to /dev/sensor-i2c
+    chown system system /dev/i2c-12
+#sensor-interrupts
+    chown system system /sys/class/sensors/vl6180/device/interrupt/edge
+    chown system system /sys/class/sensors/vl6180/device/interrupt/active_low
+    chown system system /sys/class/sensors/lsm303d/device/accelerometer/anti_aliasing_frequency
+    chown system system /sys/class/sensors/lsm303d/device/accelerometer/enable_device
+    chown system system /sys/class/sensors/lsm303d/device/accelerometer/full_scale
+    chown system system /sys/class/sensors/lsm303d/device/accelerometer/pollrate_ms
+    chown system system /sys/class/sensors/lsm303d/device/magnetometer/enable_device
+    chown system system /sys/class/sensors/lsm303d/device/magnetometer/pollrate_ms
+    chown system system /sys/class/sensors/lsm303d/device/magnetometer/full_scale
+    chown system system /sys/class/sensors/l3gd20/device/enable_device
+    chown system system /sys/class/sensors/l3gd20/device/enable_polling
+    chown system system /sys/class/sensors/l3gd20/device/pollrate_ms
+    chown system system /sys/class/sensors/l3gd20/device/fifo_mode
+    chown system system /sys/class/sensors/l3gd20/device/fifo_samples
+    chown system system /sys/class/sensors/l3gd20/device/range
+    chown system system /sys/class/sensors/sensor_hub/device/interrupt/edge
+    chown system system /sys/class/sensors/sensor_hub/device/interrupt/active_low
+    chown system system /sys/class/sensors/sensor_hub/device/reset/value
+
+on post-fs-data
+    mkdir /data/config  0755 dcmd system
+    mkdir /data/metrics 0770 root root
+    mkdir /data/reset_cause  0750 reset_cause reset_cause
+    # Folder for system ramdump storage
+    mkdir /data/sysrdump 0775 systemrdump systemrdump
+    mkdir /data/ddt 0775 ddt ddt
+    mkdir /data/radio 0775 radio radio
+
+on boot
+    chown system system /sys/class/leds/led:rgb_red/brightness
+    chown system system /sys/class/leds/led:rgb_green/brightness
+    chown system system /sys/class/leds/led:rgb_blue/brightness
+    chown system system /sys/class/leds/led:rgb_red/blink
+    chown system system /sys/class/leds/led:rgb_green/blink
+    chown system system /sys/class/leds/led:rgb_blue/blink
+    chown system system /sys/class/graphics/fb0/ls_sample
+    chmod 0664 /sys/class/leds/led:rgb_red/brightness
+    chmod 0664 /sys/class/leds/led:rgb_green/brightness
+    chmod 0664 /sys/class/leds/led:rgb_blue/brightness
+    chmod 0664 /sys/class/timed_output/vibrator/enable
+    # Folder for diagnostics service
+
+    # give system acess for reset cause files
+    chown reset_cause reset_cause /sys/reset_region/reset
+    chmod 0660 /sys/reset_region/reset
+
+#JI844536 will remove service ipblacklist when we are out of stealth mode
+on property:sys.boot_completed=1
+    start ipblacklist
+service ipblacklist /system/bin/sh /system/etc/iptables-blacklist.sh
+     seclabel u:r:ipblacklist:s0
+     user root
+     group root
+     oneshot
+
+on firmware_mounts_complete
+    start nonhlos_util
+
+service nonhlos_util /system/bin/nonhlos_util
+     seclabel u:r:nonhlos_util:s0
+     user system
+     group system
+     oneshot
+     disabled
+
+# keypad language configuration.
+on property:ro.hwf.keypadlanguage=*
+    write /sys/devices/keypad/kl ${ro.hwf.keypadlanguage}
+
+# set core dump file location and size limit on userdebug/eng builds
+on property:ro.debuggable=1
+    setrlimit 4 -1 -1
+    write /proc/sys/kernel/core_pattern /data/tombstones/core.%e.%p.%t
+
+service vtnvfsd_blog  /system/bin/vtnvfsd -b /dev/block/bootdevice/by-name -s blog:/nvram/blog:rw
+   seclabel u:r:vtnvfsd:s0
+   class core
+   group mfg_client
+
+service vtnvfsd  /system/bin/vtnvfsd -g mfg_stp -b /dev/block/bootdevice/by-name -s boardid:/nvram/boardid:rwmfi  -s nvuser:/nvram/nvuser:rw -s perm:/nvram/perm:rw -s prdid:/nvram/prdid:rwmfi
+   class core
+   seclabel u:r:vtnvfsd:s0
+   group nvram drmrpc mfg_client
+
+# Diagnostic service
+service ds /system/bin/ds start
+   class main
+   seclabel u:r:diagnostics:s0
+   user ddt
+   group ddt system nvram log reset_cause shell
+
+# reset-cause service
+service reset-cause /system/bin/reset_cause
+   seclabel u:r:reset_cause:s0
+   class late_start
+   user  root
+   group reset_cause nvram input log
+
+# token service
+# until tokens are supported end-end, use the -d option
+# which will just do all of the validation of the tokens
+# but will not perform any actions if the tokens are not
+# valid. (it still checks for existence, but does not act
+# on expiry)
+service token_service /system/bin/bb_tokenserviced -d
+  class main
+  seclabel u:r:token_service:s0
+  socket tokenservice stream 660 token_service system
+  user  token_service
+  group token_service nvram token
+
+# watermark service: For now it is started with system privilege.
+# It will be changed to the proper group later.
+service watermark /system/bin/watermark
+   seclabel u:r:watermark:s0
+   class main
+   user system
+   group graphics nvram deviceid
+   disabled
+on property:service.bootanim.exit=1
+   start watermark
+
+# Bugreport is triggered by holding down volume down, volume up
+service bugreport /system/bin/bugreport_service
+    class main
+    disabled
+    oneshot
+    keycodes 114 115
+
+# SPF System Protection Framework
+service spfmain /system/bin/spfmain
+    seclabel u:r:spfmain:s0
+    class core
+
+# MP Logging Service
+service mplogsvc /system/bin/mplogsvc
+   seclabel u:r:mplogsvc:s0
+   class late_start
+   user mplog
+   group mplog radio qcom_diag
+   oneshot
+
+# device configuration service
+service dcmd /system/bin/dcmd start
+   class main
+   user dcmd
+   group dcmd swoop_radio
+   seclabel u:r:dcmd:s0
+   disabled
+   oneshot
+on property:vendor.cellular.ril.sim_state=READY
+   start dcmd
+on property:vendor.cellular.ril.sim_state=ABSENT
+   start dcmd
+
+# system ramdump service to enable/disable ramdump feature
+# based on system property setting
+service sys_ramdump_svc /system/bin/sys_ramdump -m
+   class main
+   user root
+   group systemrdump nvram
+   disabled
+   oneshot
+on property:ctrl.ramdump.enabled=1
+   start sys_ramdump_svc
+on property:ctrl.ramdump.enabled=0
+   start sys_ramdump_svc
+
+on property:ro.console_en=1
+   start console
+
+service ota_simulator /system/bin/ota_simulator
+   class main
+   group shell cache
+   seclabel u:r:ota_simulator:s0
+
+service bkup_bc_update /system/bin/bkup_bc_update
+   seclabel u:r:bkup_bc_update:s0
+   class core
+   user root
+   group nvram mfg_stp
+   oneshot
+
+service diag_proxy /system/bin/diag_proxy
+    class main
+    user radio
+    group qcom_diag inet
+    seclabel u:r:diag_proxy:s0
+
+service bbauthd /system/bin/bbauthd
+    class core
+    disabled
+    socket bbauth seqpacket 660 bbauth bbauth
+    user bbauth
+    # librtas and libdevice_password need access to nvram device ids and password
+    group bbauth nvram deviceid devicepwd
+    seclabel u:r:bbauth:s0

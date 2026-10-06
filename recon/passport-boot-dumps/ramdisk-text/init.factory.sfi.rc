@@ -1,0 +1,64 @@
+# ----------------------------------------------------------------------------- #
+#                                                                               #
+# Copyright (c) 2015 BlackBerry Limited, All rights reserved.                   #
+#                                                                               #
+# This software is provided as-is. BlackBerry hereby disclaims all conditions,  #
+# endorsements, guarantees, representations, or warranties of any kind, express #
+# or implied, including without limitation any conditions, endorsements,        #
+# guarantees, representations or warranties of durability, fitness for a        #
+# particular purpose or use, merchantability, merchantable quality,             #
+# noninfringement, dealing, or usage of trade.                                  #
+#                                                                               #
+# ----------------------------------------------------------------------------- #
+
+on boot
+    mkdir /dev/socket/mfg 775 mfg_stp mfg_stp
+    class_start stp
+
+service mfgbattmon /system/bin/mfg_battery_monitor
+    class stp
+    seclabel u:r:mfgbattmon:s0
+    user root
+    group mfg_battmon mfg_stp system root
+    oneshot
+
+service mfgradiosrvqc /system/bin/mfgradiosrvqc
+    class stp
+    seclabel u:r:mfgradio:s0
+    user mfg_radio
+    group mfg_radio mfg_stp radio log qcom_diag
+
+service stp_server /system/bin/stp_server
+    #It would be a good idea to have all the handlers under the stp class
+    #A class can start/stop all processes together
+    class stp
+    seclabel u:r:stp_server:s0
+    user mfg_stp
+    #Will need to define multiple group access here
+    group mfg_stp mfg_client bbauth log
+    onrestart rm /dev/socket/mfg/stp_client_server
+    onrestart rm /dev/socket/mfg/stp_handler_server
+
+service mfg_battery /system/bin/mfg_battery
+    class stp
+    seclabel u:r:mfg_battery:s0
+    user mfg_stp
+    group mfg_stp log
+
+service mfg_custom /system/bin/mfg_customization
+    class stp
+    seclabel u:r:mfg_customization:s0
+    user mfg_stp
+    group mfg_stp mfg_radio log system nvram drmrpc deviceid bluetooth
+
+service mfg_dc /system/bin/mfg_dc
+    class stp
+    seclabel u:r:mfg_dc:s0
+    user mfg_stp
+    group mfg_stp log
+
+service mfg_properties /system/bin/mfg_properties
+    class stp
+    seclabel u:r:mfg_properties:s0
+    user mfg_stp
+    group mfg_stp mfg_radio log nvram deviceid bluetooth
