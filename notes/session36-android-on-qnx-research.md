@@ -166,3 +166,44 @@ direction**. But "wise" depends on staging:
 2. Then ART/zygote + SurfaceFlinger/HALs.
 3. Only then package **sole-OS** (stock IFS + custom RCFS/user via our
    autoloader). Sole-OS adds risk, little early benefit.
+
+## 10. Container → sole-OS: the actual translation
+
+Insight: the BB10 container's Android player already runs Android **as QNX
+processes over QNX services**. "Sole OS" does not re-port anything — it changes
+**who starts the Android system, who owns the display/input, and what BB10
+userland remains**. Same kernel (untouched), same boot chain (untouched).
+
+| aspect | container (today, BB10) | sole OS (target) |
+|---|---|---|
+| start | BB10 launcher runs `android_launcher`/`init.cfg` on demand | boot scripts run `init.cfg` as the system sequence |
+| identity | sandboxed `.ns` app identity (`1000:10011`) | system identities/abilities |
+| display | Android surfaces composited into a BB10 window (`libhwcwindow`/`libgralloc_screen`) | `surfaceflinger` owns the display (fullscreen QNX Screen window/display API) |
+| input | BB10 input → player window | Screen/`devc-serusb`/touch → Android InputFlinger |
+| Android services | `servicemanager`, zygote/`app_process`, `surfaceflinger`, HALs — all already running | **same processes**, now the system |
+| host services | BB10 services (screen, audio, camera, PPS, telephony, power) + bridges | **keep them headless** (drivers/radio are the optimized part) and keep the same bridges |
+| telephony | BB10 stack; Android RIL bridges to it | keep BB10 radio daemons headless + bridge (fastest), or port Android RIL (huge) |
+| storage | container-private area | `/data`,`/cache`,`/system` mapped; `vold` replaced by a QNX fs server |
+| SELinux | adapted/permissive in the player | same; QNX secpol/abilities stay the real boundary |
+| UI | BB10 home + app windows | Android launcher/`system_server` owns UI; BB10 apps/UI removed |
+| kernel / boot chain | QNX `procnto` / stock signed IFS | **identical** (stock signed IFS; RCFS+user replaced) |
+
+### Phases
+
+1. **Container** (today) — iterative A11 work, unbrickable.
+2. **Kiosk/hybrid** (small delta): autostart the player **fullscreen** at boot,
+   suppress BB10 UI; all host services remain. This is already 80% of "sole OS"
+   from the user's perspective.
+3. **True sole-OS**: slim the RCFS to QNX services + the Android userland; no
+   BB10 apps/UI; ship as an autoloader (stock IFS + custom RCFS/user).
+
+### Decisions to make
+
+- Keep BB10's modem/power/security daemons as host services (reuse, optimized)
+  vs porting Android equivalents.
+- Display ownership model (fullscreen Screen window vs direct display API).
+- `/data` filesystem server choice (qnx6/other vs a ported ext4/f2fs server).
+- SELinux stance (permissive vs mapping policy to QNX security).
+
+The heavy work stays the **A11 userspace port (WS1-WS8)**; the container→sole-OS
+step itself is a boot/ownership/UI-removal change plus packaging.
