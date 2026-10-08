@@ -53,3 +53,26 @@ it flashes on a rooted device.
   custom record sets (custom IFS/RFS/UFS/MBR), then build custom autoloaders.
 - **Gate unchanged**: no QCFM record type targets `boot0`/`boot1` — the
   boot-region write still needs the loader path or hardware (session29/30/31).
+
+## 5. Update — QCFM (`.signed`) packer also proven (same day)
+
+Port of `qcfm.pas: _packMFCQ` (ver=2, fast mode) → `tools/autoloader/qcfm_pack.py`.
+Layout confirmed against the balika container:
+
+```
+@0x00 mhf1 (32B): 'mfcq',0,ver=1,nheaders=0,headersz=data_off,0,flags=0x20,0
+@0x20 mhf2 (28B): 'mfcq',0,ver=0x20000,length=28,nheaders=N,headersz,data_crc=0
+@0x3C N x { cf2 (44B: 'pfcq',ver,length=60,_type,rrecOffset=44,nrec=1,
+                 hwv=0,sig=0,blocksize=0x10000) + rr2 (16B: 'rrcq',len=16,
+                 offset=0,count=ceil(size/0x10000)) }
+[zeros to data_off = 0x5C + 60*N]
+data blocks (files zero-padded to whole 64 KiB blocks)
+```
+
+**Proof**: extracted the balika `v2.0-android.signed` records
+(IFS/RCFS/SIG2/MBR/UFS), repacked → **sha256 identical** (`55836c1b…`,
+824,508,808 B).
+
+⇒ We can now manufacture the full delivery chain ourselves:
+records (`.signed`) → autoloader (`.exe`) → patched `cap.exe` → device updater.
+This is the "adapt the OS/IFS/user image to the stock boot chain" toolset.
