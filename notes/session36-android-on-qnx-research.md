@@ -96,3 +96,22 @@ collection already holds the reference binaries and a working A11 build harness.
   2011-08-25 (Alien Dalvik + QNX phones); OSnews 2011; Myriad PR.
 - Our repos: Classic `specimens/`, `runtime/`, `graft/`; sessions 22-38, 56-72;
   Passport sessions 30-35.
+
+## 8. Addendum — the Passport QNX kernel, acquired (2026-10-08)
+
+- Pulled from the retail (root, `__root` → `cat`): **`/proc/boot/procnto-smp-instr`**
+  (696,320 B, ARM ELF, statically linked, stripped; md5
+  `af654bcbe42c7ae5cc0485acc88aa975`; saved
+  `~/priv-research/kernel/procnto-smp-instr-passport-E538.bin`).
+- Identifies itself as **QNX Version 8.0.0**, source branch
+  `svn.ott.qnx.com/product/branches/deckard/BB10_3_3/services/system/proc/…`,
+  `IFS_BOARD=qc8974-rimboot-secure`, `BOOT_LOADER=RIMBOOT`, `DECKARD_DEBUG=0`.
+  (The source itself is proprietary/never released; the `bb_kernel_AAO474`
+  clone we hold is BlackBerry's **GPL Linux** kernel for the Priv — a different
+  thing.)
+- **No in-kernel Linux/Android support**: no `binder`/`ashmem`/`linux` strings.
+  ⇒ Android-on-QNX is entirely **userspace** (RIM model), the kernel needs zero
+  changes. (`PERFTUNE_ENABLE_ANDROID_START=yes` is a BB perf tune.)
+- The kernel is the **instrumented** build (`-instr`) → QNX `tracelogger`/system
+  profiler can trace the A11 chain load / the `libutils` static-init crash at
+  kernel level — a real accelerator for the current wall.
