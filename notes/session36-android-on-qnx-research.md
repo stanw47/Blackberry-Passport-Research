@@ -115,3 +115,54 @@ collection already holds the reference binaries and a working A11 build harness.
 - The kernel is the **instrumented** build (`-instr`) → QNX `tracelogger`/system
   profiler can trace the A11 chain load / the `libutils` static-init crash at
   kernel level — a real accelerator for the current wall.
+
+## 9. Architectural assessment — is this wise? is it proven?
+
+### 9.1 Precedent: Android userspace on non-Linux kernels (yes, proven)
+
+| implementation | host kernel | status |
+|---|---|---|
+| RIM PlayBook "app player" (Android 2.3) | QNX Neutrino 6.5 | **shipped** (2011-2012) |
+| RIM/BlackBerry "Player" (Android 4.3, API18) | QNX Neutrino (BB10) | **shipped to millions** (2013-2015); we hold the binaries |
+| QNX "Runtime for APK" (QNX CAR etc.) | QNX Neutrino | **commercial product** — docs: *"Dalvik VM ported from Linux onto QNX… runs natively (not emulated)"* |
+| Myriad Alien Dalvik | MeeGo (Linux), iPad demo (XNU) | commercial demos; Dalvik portability proven |
+
+Key nuance: every one of these is a **port of the Android userspace**, never
+unmodified Android. The Linux kernel is *not* what makes Android "Android"; the
+native layer + framework/ART are. Replacing the kernel glue with host-OS glue is
+exactly what RIM did.
+
+### 9.2 Why it can work here
+
+- Boot chain untouched (stock signed IFS), drivers/radio/RIL already optimal in
+  QNX — no BSP bring-up (the reason this route exists at all).
+- The mapping surface is known and demonstrated: bionic→libc.so.3,
+  binder→QNX resmgr, ashmem→shared memory, gralloc/HWC→QNX Screen+img,
+  props/log→PPS/slog2, HALs→QNX services.
+- QNX is POSIX + fine-grained IPC/scheduling — friendly to a userspace-only port.
+
+### 9.3 Why it is still hard (honest risks)
+
+- **ART (WS5) is make-or-break**: Android 11's ART assumes Linux futex/timers/
+  memfd/ashmem/perf/seccomp; recompiling it on QNX pthreads is the single
+  largest workstream.
+- **Graphics cliff**: A11 expects gralloc4/HWC2/dmabuf; mapping to QNX Screen is
+  possible (RIM did gralloc1/hwc1) but compatibility/perf will be an issue.
+- **Kernel assumptions leak**: lowmemorykiller/PSI/binderfs/ION/SELinux/netlink;
+  apps that poke `/proc`, `/sys` or Linux ioctls will fail.
+- **Effort/quality**: RIM had a full team for years and its 4.3 runtime was still
+  called sluggish; A11 is bigger. Expect a *LineageOS-without-Play* level
+  experience, not a modern daily driver. No GMS.
+- **Maintenance**: a permanent bespoke AOSP fork with no upstream support.
+
+### 9.4 Verdict
+
+Architecturally **sound and precedented**, and for this owner (no hardware
+tools, no boot-chain risk, community-distributable) it is the **only viable
+direction**. But "wise" depends on staging:
+
+1. Finish the A11 userspace **in the container** first (BB10 stays; unbrickable,
+   iterative). Prove binder + servicemanager + one real app.
+2. Then ART/zygote + SurfaceFlinger/HALs.
+3. Only then package **sole-OS** (stock IFS + custom RCFS/user via our
+   autoloader). Sole-OS adds risk, little early benefit.
