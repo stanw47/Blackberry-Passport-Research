@@ -26,6 +26,7 @@ and re-copy if they change.
 | `probe_binder_step.c` | step-by-step `/dev/binder` open/ioctl/mmap probe |
 | `probe_binder_devctl.c` | tries the driver via QNX `devctl` with the numbers found in RIM's libbionic |
 | `binder_a11.h` | A11 binder UAPI header used by the probes |
+| `start.S` | probe entry point (copy of Classic `ws1/start.S`): QNX crt sequence — argc/argv/envp, `_init_libc(argc,argv,envp)`, `main`, `exit`. **Required** for `devctl`/connection paths; never use plain `b main` |
 | `rim_libbionic.so` | **specimen**: RIM's 4.3 libbionic from the Passport runtime dump; contains `ioctl_binder` (the driver bridge) |
 | `ioctl_binder.dis` | objdump of `ioctl_binder` (`0xf228–0xf424`) — the bridge to port |
 
