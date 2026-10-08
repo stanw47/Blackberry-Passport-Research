@@ -26,6 +26,24 @@ and re-copy if they change.
 | `probe_binder_step.c` | step-by-step `/dev/binder` open/ioctl/mmap probe |
 | `probe_binder_devctl.c` | tries the driver via QNX `devctl` with the numbers found in RIM's libbionic |
 | `binder_a11.h` | A11 binder UAPI header used by the probes |
+| `rim_libbionic.so` | **specimen**: RIM's 4.3 libbionic from the Passport runtime dump; contains `ioctl_binder` (the driver bridge) |
+| `ioctl_binder.dis` | objdump of `ioctl_binder` (`0xf228–0xf424`) — the bridge to port |
+
+## `ioctl_binder` observations (from the disassembly)
+
+- Compares the request against **0xC0186201** (BINDER_WRITE_READ) and
+  **0xC108620C** (ProcessState ctor setup) in the entry block.
+- Copies a **24-byte** `binder_write_read` from the caller's arg and walks the
+  write buffer as 32-bit commands; command words are checked against
+  **0x80286300 / 0x80286301** (unsigned `(cmd + 0x7fd79d00) <= 1`) before
+  entering the transaction path — i.e. RIM's BC_ command encoding for the
+  4.3 wire is not the AOSP one and needs mapping.
+- Builds QNX io messages with a 16-bit type field **0x106** (`_IO_MSG | 6`) and
+  sends them via `MsgSend*`/`devctl` (both imported).
+- Callers in RIM's libbinder (`specimens` in the session37 dump):
+  `ProcessState::ProcessState` `0x27f70`/`0x2808a`, `IPCThreadState::
+  talkWithDriver` `0x22c10`, version path `0x2799e`, `binder_qnx_fd` `0x287bc`
+  (request table in `notes/session40`).
 
 ## Build (Passport)
 

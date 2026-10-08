@@ -1,0 +1,206 @@
+
+/home/stanw47/priv-research/working/passport-player43/extracted/sys.android.gYABgKAOw1czN6neiAT72SGO.ns/native/system/lib/libbionic.so:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+0000f228 <ioctl_binder@@Base>:
+    f228:	b40e      	push	{r1, r2, r3}
+    f22a:	4684      	mov	ip, r0
+    f22c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    f230:	b0ac      	sub	sp, #176	@ 0xb0
+    f232:	ab35      	add	r3, sp, #212	@ 0xd4
+    f234:	4c7b      	ldr	r4, [pc, #492]	@ (f424 <ioctl_binder@@Base+0x1fc>)
+    f236:	f853 1b04 	ldr.w	r1, [r3], #4
+    f23a:	4a7b      	ldr	r2, [pc, #492]	@ (f428 <ioctl_binder@@Base+0x200>)
+    f23c:	447c      	add	r4, pc
+    f23e:	9404      	str	r4, [sp, #16]
+    f240:	3304      	adds	r3, #4
+    f242:	58a2      	ldr	r2, [r4, r2]
+    f244:	9310      	str	r3, [sp, #64]	@ 0x40
+    f246:	4b74      	ldr	r3, [pc, #464]	@ (f418 <ioctl_binder@@Base+0x1f0>)
+    f248:	6810      	ldr	r0, [r2, #0]
+    f24a:	9c36      	ldr	r4, [sp, #216]	@ 0xd8
+    f24c:	4299      	cmp	r1, r3
+    f24e:	9205      	str	r2, [sp, #20]
+    f250:	902b      	str	r0, [sp, #172]	@ 0xac
+    f252:	d004      	beq.n	f25e <ioctl_binder@@Base+0x36>
+    f254:	4b71      	ldr	r3, [pc, #452]	@ (f41c <ioctl_binder@@Base+0x1f4>)
+    f256:	4299      	cmp	r1, r3
+    f258:	f040 80ce 	bne.w	f3f8 <ioctl_binder@@Base+0x1d0>
+    f25c:	e0a9      	b.n	f3b2 <ioctl_binder@@Base+0x18a>
+    f25e:	f44f 7383 	mov.w	r3, #262	@ 0x106
+    f262:	910d      	str	r1, [sp, #52]	@ 0x34
+    f264:	f8ad 3030 	strh.w	r3, [sp, #48]	@ 0x30
+    f268:	2100      	movs	r1, #0
+    f26a:	2318      	movs	r3, #24
+    f26c:	2210      	movs	r2, #16
+    f26e:	eb0d 0603 	add.w	r6, sp, r3
+    f272:	910f      	str	r1, [sp, #60]	@ 0x3c
+    f274:	46a6      	mov	lr, r4
+    f276:	a90c      	add	r1, sp, #48	@ 0x30
+    f278:	9124      	str	r1, [sp, #144]	@ 0x90
+    f27a:	4635      	mov	r5, r6
+    f27c:	9225      	str	r2, [sp, #148]	@ 0x94
+    f27e:	9626      	str	r6, [sp, #152]	@ 0x98
+    f280:	9327      	str	r3, [sp, #156]	@ 0x9c
+    f282:	930e      	str	r3, [sp, #56]	@ 0x38
+    f284:	9614      	str	r6, [sp, #80]	@ 0x50
+    f286:	9315      	str	r3, [sp, #84]	@ 0x54
+    f288:	f8ad 2032 	strh.w	r2, [sp, #50]	@ 0x32
+    f28c:	9112      	str	r1, [sp, #72]	@ 0x48
+    f28e:	9213      	str	r2, [sp, #76]	@ 0x4c
+    f290:	e8be 000f 	ldmia.w	lr!, {r0, r1, r2, r3}
+    f294:	68a7      	ldr	r7, [r4, #8]
+    f296:	c50f      	stmia	r5!, {r0, r1, r2, r3}
+    f298:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+    f29a:	e89e 0003 	ldmia.w	lr, {r0, r1}
+    f29e:	2b00      	cmp	r3, #0
+    f2a0:	bfc4      	itt	gt
+    f2a2:	9329      	strgt	r3, [sp, #164]	@ 0xa4
+    f2a4:	f04f 0803 	movgt.w	r8, #3
+    f2a8:	e885 0003 	stmia.w	r5, {r0, r1}
+    f2ac:	bfd2      	itee	le
+    f2ae:	f04f 0802 	movle.w	r8, #2
+    f2b2:	9a0b      	ldrgt	r2, [sp, #44]	@ 0x2c
+    f2b4:	9228      	strgt	r2, [sp, #160]	@ 0xa0
+    f2b6:	9a06      	ldr	r2, [sp, #24]
+    f2b8:	2a00      	cmp	r2, #0
+    f2ba:	dd5e      	ble.n	f37a <ioctl_binder@@Base+0x152>
+    f2bc:	2128      	movs	r1, #40	@ 0x28
+    f2be:	9217      	str	r2, [sp, #92]	@ 0x5c
+    f2c0:	1855      	adds	r5, r2, r1
+    f2c2:	9108      	str	r1, [sp, #32]
+    f2c4:	9907      	ldr	r1, [sp, #28]
+    f2c6:	463b      	mov	r3, r7
+    f2c8:	9716      	str	r7, [sp, #88]	@ 0x58
+    f2ca:	a812      	add	r0, sp, #72	@ 0x48
+    f2cc:	9403      	str	r4, [sp, #12]
+    f2ce:	1a52      	subs	r2, r2, r1
+    f2d0:	f102 0903 	add.w	r9, r2, #3
+    f2d4:	ea32 0222 	bics.w	r2, r2, r2, asr #32
+    f2d8:	bf28      	it	cs
+    f2da:	464a      	movcs	r2, r9
+    f2dc:	f022 0903 	bic.w	r9, r2, #3
+    f2e0:	2203      	movs	r2, #3
+    f2e2:	44b9      	add	r9, r7
+    f2e4:	e045      	b.n	f372 <ioctl_binder@@Base+0x14a>
+    f2e6:	4619      	mov	r1, r3
+    f2e8:	f8df a140 	ldr.w	sl, [pc, #320]	@ f42c <ioctl_binder@@Base+0x204>
+    f2ec:	f851 bb04 	ldr.w	fp, [r1], #4
+    f2f0:	44da      	add	sl, fp
+    f2f2:	f3cb 4e8b 	ubfx	lr, fp, #18, #12
+    f2f6:	f1ba 0f01 	cmp.w	sl, #1
+    f2fa:	d838      	bhi.n	f36e <ioctl_binder@@Base+0x146>
+    f2fc:	ebc1 0a09 	rsb	sl, r1, r9
+    f300:	f02a 0a03 	bic.w	sl, sl, #3
+    f304:	f1ba 0f27 	cmp.w	sl, #39	@ 0x27
+    f308:	d807      	bhi.n	f31a <ioctl_binder@@Base+0xf2>
+    f30a:	4b49      	ldr	r3, [pc, #292]	@ (f430 <ioctl_binder@@Base+0x208>)
+    f30c:	9c04      	ldr	r4, [sp, #16]
+    f30e:	4849      	ldr	r0, [pc, #292]	@ (f434 <ioctl_binder@@Base+0x20c>)
+    f310:	58e1      	ldr	r1, [r4, r3]
+    f312:	4478      	add	r0, pc
+    f314:	f7f5 efb8 	blx	5288 <fputs@plt>
+    f318:	e03e      	b.n	f398 <ioctl_binder@@Base+0x170>
+    f31a:	2a07      	cmp	r2, #7
+    f31c:	dd0a      	ble.n	f334 <ioctl_binder@@Base+0x10c>
+    f31e:	4b44      	ldr	r3, [pc, #272]	@ (f430 <ioctl_binder@@Base+0x208>)
+    f320:	9c04      	ldr	r4, [sp, #16]
+    f322:	4845      	ldr	r0, [pc, #276]	@ (f438 <ioctl_binder@@Base+0x210>)
+    f324:	58e1      	ldr	r1, [r4, r3]
+    f326:	4478      	add	r0, pc
+    f328:	f7f5 efae 	blx	5288 <fputs@plt>
+    f32c:	f7f5 eed2 	blx	50d4 <__get_errno_ptr@plt>
+    f330:	234f      	movs	r3, #79	@ 0x4f
+    f332:	e030      	b.n	f396 <ioctl_binder@@Base+0x16e>
+    f334:	f8d3 b024 	ldr.w	fp, [r3, #36]	@ 0x24
+    f338:	eb00 0ac2 	add.w	sl, r0, r2, lsl #3
+    f33c:	f840 b032 	str.w	fp, [r0, r2, lsl #3]
+    f340:	f8d3 b01c 	ldr.w	fp, [r3, #28]
+    f344:	f8ca b004 	str.w	fp, [sl, #4]
+    f348:	f8d3 a01c 	ldr.w	sl, [r3, #28]
+    f34c:	6a9c      	ldr	r4, [r3, #40]	@ 0x28
+    f34e:	625d      	str	r5, [r3, #36]	@ 0x24
+    f350:	4455      	add	r5, sl
+    f352:	f102 0a01 	add.w	sl, r2, #1
+    f356:	f840 403a 	str.w	r4, [r0, sl, lsl #3]
+    f35a:	eb00 0bca 	add.w	fp, r0, sl, lsl #3
+    f35e:	f8d3 a020 	ldr.w	sl, [r3, #32]
+    f362:	3202      	adds	r2, #2
+    f364:	f8cb a004 	str.w	sl, [fp, #4]
+    f368:	629d      	str	r5, [r3, #40]	@ 0x28
+    f36a:	6a1b      	ldr	r3, [r3, #32]
+    f36c:	18ed      	adds	r5, r5, r3
+    f36e:	eb01 038e 	add.w	r3, r1, lr, lsl #2
+    f372:	454b      	cmp	r3, r9
+    f374:	d3b7      	bcc.n	f2e6 <ioctl_binder@@Base+0xbe>
+    f376:	9c03      	ldr	r4, [sp, #12]
+    f378:	e000      	b.n	f37c <ioctl_binder@@Base+0x154>
+    f37a:	2202      	movs	r2, #2
+    f37c:	4660      	mov	r0, ip
+    f37e:	a912      	add	r1, sp, #72	@ 0x48
+    f380:	ab24      	add	r3, sp, #144	@ 0x90
+    f382:	f8cd 8000 	str.w	r8, [sp]
+    f386:	f7f5 edf6 	blx	4f74 <MsgSendv_r@plt>
+    f38a:	4680      	mov	r8, r0
+    f38c:	b138      	cbz	r0, f39e <ioctl_binder@@Base+0x176>
+    f38e:	f7f5 eea2 	blx	50d4 <__get_errno_ptr@plt>
+    f392:	f1c8 0300 	rsb	r3, r8, #0
+    f396:	6003      	str	r3, [r0, #0]
+    f398:	f04f 30ff 	mov.w	r0, #4294967295	@ 0xffffffff
+    f39c:	e030      	b.n	f400 <ioctl_binder@@Base+0x1d8>
+    f39e:	ce0f      	ldmia	r6!, {r0, r1, r2, r3}
+    f3a0:	4625      	mov	r5, r4
+    f3a2:	c50f      	stmia	r5!, {r0, r1, r2, r3}
+    f3a4:	e896 0003 	ldmia.w	r6, {r0, r1}
+    f3a8:	e885 0003 	stmia.w	r5, {r0, r1}
+    f3ac:	4640      	mov	r0, r8
+    f3ae:	60a7      	str	r7, [r4, #8]
+    f3b0:	e026      	b.n	f400 <ioctl_binder@@Base+0x1d8>
+    f3b2:	4660      	mov	r0, ip
+    f3b4:	4622      	mov	r2, r4
+    f3b6:	f7f5 eb96 	blx	4ae4 <ioctl@plt>
+    f3ba:	2800      	cmp	r0, #0
+    f3bc:	db20      	blt.n	f400 <ioctl_binder@@Base+0x1d8>
+    f3be:	4b18      	ldr	r3, [pc, #96]	@ (f420 <ioctl_binder@@Base+0x1f8>)
+    f3c0:	2200      	movs	r2, #0
+    f3c2:	a924      	add	r1, sp, #144	@ 0x90
+    f3c4:	9324      	str	r3, [sp, #144]	@ 0x90
+    f3c6:	f8d4 3100 	ldr.w	r3, [r4, #256]	@ 0x100
+    f3ca:	9325      	str	r3, [sp, #148]	@ 0x94
+    f3cc:	f8d4 3104 	ldr.w	r3, [r4, #260]	@ 0x104
+    f3d0:	9326      	str	r3, [sp, #152]	@ 0x98
+    f3d2:	9227      	str	r2, [sp, #156]	@ 0x9c
+    f3d4:	9228      	str	r2, [sp, #160]	@ 0xa0
+    f3d6:	9229      	str	r2, [sp, #164]	@ 0xa4
+    f3d8:	4613      	mov	r3, r2
+    f3da:	460c      	mov	r4, r1
+    f3dc:	ea4f 0cfc 	mov.w	ip, ip, ror #3
+    f3e0:	ea4f 3c7c 	mov.w	ip, ip, ror #13
+    f3e4:	ea4f 7c7c 	mov.w	ip, ip, ror #29
+    f3e8:	ea4f 4cfc 	mov.w	ip, ip, ror #19
+    f3ec:	ea4a 0a0a 	orr.w	sl, sl, sl
+    f3f0:	461a      	mov	r2, r3
+    f3f2:	9211      	str	r2, [sp, #68]	@ 0x44
+    f3f4:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+    f3f6:	e003      	b.n	f400 <ioctl_binder@@Base+0x1d8>
+    f3f8:	4660      	mov	r0, ip
+    f3fa:	4622      	mov	r2, r4
+    f3fc:	f7f5 eb72 	blx	4ae4 <ioctl@plt>
+    f400:	9905      	ldr	r1, [sp, #20]
+    f402:	9a2b      	ldr	r2, [sp, #172]	@ 0xac
+    f404:	680b      	ldr	r3, [r1, #0]
+    f406:	429a      	cmp	r2, r3
+    f408:	d001      	beq.n	f40e <ioctl_binder@@Base+0x1e6>
+    f40a:	f7f6 e87a 	blx	5500 <__stack_chk_fail@plt>
+    f40e:	b02c      	add	sp, #176	@ 0xb0
+    f410:	e8bd 4ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+    f414:	b003      	add	sp, #12
+    f416:	4770      	bx	lr
+    f418:	6201      	str	r1, [r0, #32]
+    f41a:	c018      	stmia	r0!, {r3, r4}
+    f41c:	620c      	str	r4, [r1, #32]
+    f41e:	c108      	stmia	r1!, {r3}
+    f420:	0002      	movs	r2, r0
+    f422:	4d43      	ldr	r5, [pc, #268]	@ (f530 <ioctl_binder@@Base+0x308>)
