@@ -9,9 +9,18 @@ int main(void){
     void *u = dlopen("libutils.so", 0); write(1, u?"U":"u", 1);
     void *h = u ? dlopen("libbinder.so", 0) : 0; write(1, h?"B":"b", 1);
     void *p = h ? dlsym(h, "_ZN7android12ProcessState4selfEv") : 0; write(1, p?"S":"s", 1);
-    unsigned long r = 0;
-    if (p) r = ((unsigned long (*)(void))p)();
-    write(1, " self=", 6); ph(r); write(1, "\n", 1);
+    /* sp<> returns use the hidden sret pointer (non-trivial copy ctor): the
+     * callee takes r0 = &result. */
+    void *r = 0;
+    if (p) ((void (*)(void *))p)(&r);
+    write(1, " self=", 6); ph((unsigned long)r); write(1, "\n", 1);
+    void *d = h ? dlsym(h, "_ZN7android21defaultServiceManagerEv") : 0;
+    write(1, d?"D":"d", 1);
+    if (d) {
+        void *m = 0;
+        ((void (*)(void *))d)(&m);
+        write(1, " dsm=", 5); ph((unsigned long)m); write(1, "\n", 1);
+    }
     _exit(0);
     return 0;
 }

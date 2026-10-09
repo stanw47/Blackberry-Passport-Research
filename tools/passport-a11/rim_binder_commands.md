@@ -42,10 +42,10 @@ BC_ (libbinder → driver):
 |---|---|---|---|---|
 | `0x80286300` | W(=2) | 0x28 | 0 | **`BC_TRANSACTION`** (32-bit txn data) |
 | `0x80286301` | W | 0x28 | 1 | **`BC_REPLY`** |
-| `0x80046302` | W | 4 | 2 | `BC_INCREFS` |
-| `0x80086308` | W | 8 | 8 | `BC_ACQUIRE` |
-| `0x80086309` | W | 8 | 9 | `BC_RELEASE` |
-| `0x80046310` | W | 4 | 16 | `BC_DECREFS` |
+| `0x80046302` | W | 4 | 2 | `BC_ACQUIRE_RESULT` |
+| `0x80086308` | W | 8 | 8 | `BC_INCREFS_DONE` |
+| `0x80086309` | W | 8 | 9 | `BC_ACQUIRE_DONE` |
+| `0x80046310` | W | 4 | 16 | `BC_DEAD_BINDER_DONE` |
 | `0x630b` | – | 0 | 11 | `BC_REGISTER_LOOPER` (`_IO`, unchanged) |
 | `0x630c` | – | 0 | 12 | `BC_ENTER_LOOPER` (`_IO`, unchanged) |
 
