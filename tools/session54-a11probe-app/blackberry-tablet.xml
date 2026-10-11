@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+
+    <id>sys.a11probe</id>
+    <name>A11 Probe</name>
+    <publisher>local-probe</publisher>
+
+    <packageId>gYABgA11PROBE00000000000-ns</packageId>
+    <authorId>gYABgA11probeauthor000000000</authorId>
+
+    <platformArchitecture>armle-v7</platformArchitecture>
+    <versionNumber>10.3.3</versionNumber>
+    <platformVersion>10.3.0</platformVersion>
+    <buildId>213</buildId>
+
+    <action>access_shared,android_player</action>
+    <action system="true">_sys_use_consumer_push,run_native,permanent,hidden</action>
+
+    <asset type="qnx/elf" entry="true">sbin/a11probe</asset>
+
+</qnx>
