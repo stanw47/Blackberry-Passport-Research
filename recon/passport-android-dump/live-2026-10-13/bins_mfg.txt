@@ -1,0 +1,224 @@
+lstat '/system/bin//ATFWD-daemon' failed: Permission denied
+
+lstat '/system/bin//PktRspTest' failed: Permission denied
+
+lstat '/system/bin//StoreKeybox' failed: Permission denied
+
+lstat '/system/bin//adsprpcd' failed: Permission denied
+
+lstat '/system/bin//audiod' failed: Permission denied
+
+lstat '/system/bin//bb_tokenserviced' failed: Permission denied
+
+lstat '/system/bin//bbauthd' failed: Permission denied
+
+lstat '/system/bin//bkup_bc_update' failed: Permission denied
+
+lstat '/system/bin//bootanimation' failed: Permission denied
+
+lstat '/system/bin//charger_monitor' failed: Permission denied
+
+lstat '/system/bin//clatd' failed: Permission denied
+
+lstat '/system/bin//cnd' failed: Permission denied
+
+lstat '/system/bin//dcmd' failed: Permission denied
+
+lstat '/system/bin//debuggerd' failed: Permission denied
+
+lstat '/system/bin//dhcpcd' failed: Permission denied
+
+lstat '/system/bin//diag_callback_client' failed: Permission denied
+
+lstat '/system/bin//diag_dci_sample' failed: Permission denied
+
+lstat '/system/bin//diag_klog' failed: Permission denied
+
+lstat '/system/bin//diag_mdlog' failed: Permission denied
+
+lstat '/system/bin//diag_proxy' failed: Permission denied
+
+lstat '/system/bin//diag_socket_log' failed: Permission denied
+
+lstat '/system/bin//diag_uart_log' failed: Permission denied
+
+lstat '/system/bin//dnsmasq' failed: Permission denied
+
+lstat '/system/bin//dpmd' failed: Permission denied
+
+lstat '/system/bin//drmdiagapp' failed: Permission denied
+
+lstat '/system/bin//drmserver' failed: Permission denied
+
+lstat '/system/bin//ds' failed: Permission denied
+
+lstat '/system/bin//dumpstate' failed: Permission denied
+
+lstat '/system/bin//dun-server' failed: Permission denied
+
+lstat '/system/bin//garden_app' failed: Permission denied
+
+lstat '/system/bin//gpsone_daemon' failed: Permission denied
+
+lstat '/system/bin//hostapd' failed: Permission denied
+
+lstat '/system/bin//hostapd_cli' failed: Permission denied
+
+lstat '/system/bin//hvdcp' failed: Permission denied
+
+lstat '/system/bin//ims_rtp_daemon' failed: Permission denied
+
+lstat '/system/bin//imscmservice' failed: Permission denied
+
+lstat '/system/bin//imsdatadaemon' failed: Permission denied
+
+lstat '/system/bin//imsqmidaemon' failed: Permission denied
+
+-rwxr-xr-x root     shell        5288 2015-04-06 04:26 fmfactorytest
+
+-rwxr-xr-x root     shell       13532 2015-04-06 04:26 fmfactorytestserver
+
+lstat '/system/bin//install-recovery.sh' failed: Permission denied
+
+lstat '/system/bin//installd' failed: Permission denied
+
+lstat '/system/bin//irsc_util' failed: Permission denied
+
+lstat '/system/bin//isdbtmmtest' failed: Permission denied
+
+lstat '/system/bin//keystore' failed: Permission denied
+
+lstat '/system/bin//ks' failed: Permission denied
+
+lstat '/system/bin//lmkd' failed: Permission denied
+
+lstat '/system/bin//loc_launcher' failed: Permission denied
+
+lstat '/system/bin//location-mq' failed: Permission denied
+
+lstat '/system/bin//logd' failed: Permission denied
+
+lstat '/system/bin//lowi-server' failed: Permission denied
+
+lstat '/system/bin//mdnsd' failed: Permission denied
+
+lstat '/system/bin//mediaserver' failed: Permission denied
+
+lstat '/system/bin//mfg_battery' failed: Permission denied
+
+lstat '/system/bin//mfg_battery_monitor' failed: Permission denied
+
+lstat '/system/bin//mfg_customization' failed: Permission denied
+
+lstat '/system/bin//mfg_dc' failed: Permission denied
+
+lstat '/system/bin//mfg_properties' failed: Permission denied
+
+lstat '/system/bin//mfgradiosrvqc' failed: Permission denied
+
+lstat '/system/bin//mm-pp-daemon' failed: Permission denied
+
+lstat '/system/bin//mm-qcamera-daemon' failed: Permission denied
+
+lstat '/system/bin//mpdecision' failed: Permission denied
+
+lstat '/system/bin//mplogsvc' failed: Permission denied
+
+lstat '/system/bin//mtpd' failed: Permission denied
+
+lstat '/system/bin//ndc' failed: Permission denied
+
+lstat '/system/bin//netd' failed: Permission denied
+
+lstat '/system/bin//netmgrd' failed: Permission denied
+
+lstat '/system/bin//nonhlos_util' failed: Permission denied
+
+lstat '/system/bin//nvramd' failed: Permission denied
+
+lstat '/system/bin//ota_simulator' failed: Permission denied
+
+lstat '/system/bin//perfd' failed: Permission denied
+
+lstat '/system/bin//pppd' failed: Permission denied
+
+lstat '/system/bin//qcom-system-daemon' failed: Permission denied
+
+lstat '/system/bin//qmuxd' failed: Permission denied
+
+lstat '/system/bin//qseecom_sample_client' failed: Permission denied
+
+lstat '/system/bin//qseecom_security_test' failed: Permission denied
+
+lstat '/system/bin//qseecomd' failed: Permission denied
+
+lstat '/system/bin//quipc_igsn' failed: Permission denied
+
+lstat '/system/bin//quipc_main' failed: Permission denied
+
+lstat '/system/bin//racoon' failed: Permission denied
+
+lstat '/system/bin//reset_cause' failed: Permission denied
+
+lstat '/system/bin//rfs_access' failed: Permission denied
+
+lstat '/system/bin//rild' failed: Permission denied
+
+lstat '/system/bin//rmt_storage' failed: Permission denied
+
+lstat '/system/bin//sapd' failed: Permission denied
+
+lstat '/system/bin//sdcard' failed: Permission denied
+
+lstat '/system/bin//secure_ui_sample_client' failed: Permission denied
+
+lstat '/system/bin//servicemanager' failed: Permission denied
+
+lstat '/system/bin//spfmain' failed: Permission denied
+
+lstat '/system/bin//ssr_diag' failed: Permission denied
+
+lstat '/system/bin//ssr_setup' failed: Permission denied
+
+lstat '/system/bin//stp_server' failed: Permission denied
+
+lstat '/system/bin//subsystem_ramdump' failed: Permission denied
+
+lstat '/system/bin//surfaceflinger' failed: Permission denied
+
+lstat '/system/bin//sys_ramdump' failed: Permission denied
+
+lstat '/system/bin//test_diag' failed: Permission denied
+
+lstat '/system/bin//thermal-engine' failed: Permission denied
+
+lstat '/system/bin//time_daemon' failed: Permission denied
+
+lstat '/system/bin//uncrypt' failed: Permission denied
+
+lstat '/system/bin//usb_uicc_client' failed: Permission denied
+
+lstat '/system/bin//usf_epos' failed: Permission denied
+
+lstat '/system/bin//usf_pairing' failed: Permission denied
+
+lstat '/system/bin//usf_sw_calib' failed: Permission denied
+
+lstat '/system/bin//usf_sync_gesture' failed: Permission denied
+
+lstat '/system/bin//usf_tester' failed: Permission denied
+
+lstat '/system/bin//vdc' failed: Permission denied
+
+lstat '/system/bin//vold' failed: Permission denied
+
+lstat '/system/bin//vtnvfsd' failed: Permission denied
+
+lstat '/system/bin//watermark' failed: Permission denied
+
+lstat '/system/bin//wpa_supplicant' failed: Permission denied
+
+lstat '/system/bin//xtwifi-client' failed: Permission denied
+
+lstat '/system/bin//xtwifi-inet-agent' failed: Permission denied
+

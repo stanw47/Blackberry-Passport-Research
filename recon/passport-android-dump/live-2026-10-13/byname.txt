@@ -1,0 +1,4 @@
+/dev/block/by-name/: Permission denied
+
+/dev/block/platform/*/by-name: Permission denied
+

@@ -1,0 +1,34 @@
+drwxr-xr-x root     shell             2015-04-06 04:28 app
+
+drwxr-xr-x root     shell             2015-04-06 04:22 backup_bootchain
+
+drwxr-xr-x root     shell             2015-04-06 04:26 bin
+
+drwxr-xr-x root     shell             2015-04-06 04:16 bootstrap
+
+drwxr-xr-x root     shell             2015-04-06 04:23 etc
+
+drwxr-xr-x root     shell             2015-04-06 04:22 firmware
+
+drwxr-xr-x root     shell             2015-04-06 04:26 lib
+
+drwxr-xr-x root     shell             2015-04-06 04:23 media
+
+drwxr-xr-x root     shell             2015-04-06 04:22 pittpatt
+
+---
+
+-rwxr-xr-x root     shell      235136 2015-04-06 04:23 FixPermissions.exe
+
+-rwxr-xr-x root     shell      669340 2015-04-06 04:23 RIDLClient.exe
+
+lstat '/vendor/bin/slim_ap_daemon' failed: Permission denied
+
+drwxr-xr-x root     shell             2015-04-06 04:28 ims
+
+-rw-r--r-- root     root         7250 2015-04-06 04:22 audio_effects.conf
+
+-rw-r--r-- root     root          169 2015-04-06 04:23 dcmd.conf
+
+-rw-r--r-- root     root        25927 2015-04-06 04:22 square-compat.xml
+

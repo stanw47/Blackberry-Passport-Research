@@ -1,0 +1,50 @@
+lstat '/dev/socket//adbd' failed: Permission denied
+
+lstat '/dev/socket//bbauth' failed: Permission denied
+
+lstat '/dev/socket//cnd' failed: Permission denied
+
+lstat '/dev/socket//dnsproxyd' failed: Permission denied
+
+lstat '/dev/socket//fwmarkd' failed: Permission denied
+
+lstat '/dev/socket//installd' failed: Permission denied
+
+lstat '/dev/socket//lmkd' failed: Permission denied
+
+lstat '/dev/socket//logd' failed: Permission denied
+
+lstat '/dev/socket//logdr' failed: Permission denied
+
+lstat '/dev/socket//logdw' failed: Permission denied
+
+lstat '/dev/socket//mdns' failed: Permission denied
+
+lstat '/dev/socket//mfg' failed: Permission denied
+
+lstat '/dev/socket//netd' failed: Permission denied
+
+lstat '/dev/socket//pps' failed: Permission denied
+
+lstat '/dev/socket//property_service' failed: Permission denied
+
+lstat '/dev/socket//qmux_audio' failed: Permission denied
+
+lstat '/dev/socket//qmux_bluetooth' failed: Permission denied
+
+lstat '/dev/socket//qmux_gps' failed: Permission denied
+
+lstat '/dev/socket//qmux_radio' failed: Permission denied
+
+lstat '/dev/socket//rild' failed: Permission denied
+
+lstat '/dev/socket//rild-debug' failed: Permission denied
+
+lstat '/dev/socket//tokenservice' failed: Permission denied
+
+lstat '/dev/socket//vold' failed: Permission denied
+
+lstat '/dev/socket//wpa_wlan0' failed: Permission denied
+
+lstat '/dev/socket//zygote' failed: Permission denied
+

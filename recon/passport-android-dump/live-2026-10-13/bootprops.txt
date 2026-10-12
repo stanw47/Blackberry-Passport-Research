@@ -1,0 +1,98 @@
+[android.software.verified_boot]: [1]
+
+[dev.bootcomplete]: [1]
+
+[init.svc.bootanim]: [stopped]
+
+[init.svc.qcom-post-boot]: [stopped]
+
+[init.svc.usf-post-boot]: [stopped]
+
+[metrics.bootstage.boot]: [stopped]
+
+[metrics.bootstage.early-boot]: [stopped]
+
+[metrics.bootstage.early-init]: [stopped]
+
+[metrics.bootstage.fs]: [stopped]
+
+[metrics.bootstage.init]: [stopped]
+
+[metrics.bootstage.late-init]: [stopped]
+
+[metrics.bootstage.post-fs-data]: [stopped]
+
+[metrics.bootstage.post-fs]: [stopped]
+
+[partition.system.verified]: [1]
+
+[persist.demo.hdmirotationlock]: [false]
+
+[persist.swoop.bootanim.path]: [/vendor/bootstrap/media/common/]
+
+[ril.qcril_pre_init_lock_held]: [0]
+
+[ro.alarm_boot]: [false]
+
+[ro.boot.baseband]: [msm]
+
+[ro.boot.binfo.backup_bc_ver]: [AAA625]
+
+[ro.boot.binfo.bbss_insecure]: [false]
+
+[ro.boot.binfo.bbss_wp_type]: [power-on]
+
+[ro.boot.binfo.bsis_type]: [bsis_pka]
+
+[ro.boot.binfo.hwid]: [0xf5b242c3]
+
+[ro.boot.binfo.model]: [Unknown]
+
+[ro.boot.binfo.model_num]: [Unknown]
+
+[ro.boot.binfo.name]: [oslorow]
+
+[ro.boot.binfo.primary_bc_ver]: [AAA787]
+
+[ro.boot.binfo.product]: [oslo]
+
+[ro.boot.binfo.rev]: [131076]
+
+[ro.boot.binfo.svnumber]: [0]
+
+[ro.boot.binfo.variant]: [row]
+
+[ro.boot.bootdevice]: [msm_sdcc.1]
+
+[ro.boot.emmc]: [true]
+
+[ro.boot.hardware]: [qcom]
+
+[ro.boot.imagetype]: [sfi]
+
+[ro.boot.selinux.enabled]: [1]
+
+[ro.boot.selinux.enforcing]: [1]
+
+[ro.boot.serialno]: [1160724779]
+
+[ro.boot.verity]: [active]
+
+[ro.bootloader]: [unknown]
+
+[ro.bootmode]: [unknown]
+
+[ro.crypto.fs_crypto_blkdev]: [/dev/block/dm-1]
+
+[ro.enable_boot_charger_mode]: [1]
+
+[ro.frp.pst]: [/dev/block/bootdevice/by-name/frp]
+
+[ro.qnx.lock.cards.hack]: [1]
+
+[ro.runtime.firstboot]: [1791355069816]
+
+[service.bootanim.exit]: [1]
+
+[sys.boot_completed]: [1]
+

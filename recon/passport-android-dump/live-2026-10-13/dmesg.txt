@@ -1,0 +1,2832 @@
+ debug)
+
+<6>[468202.787782] (75972.709442) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468202.793986] (75972.715637) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468202.794013] (75972.715667) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468202.795098] (75972.716735) l3gd20_gyr 12-006a: suspend
+
+<6>[468202.795121] (75972.716766) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468202.795886] (75972.717529) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468202.833465] (75972.755126) PM: suspend of devices complete after 47.172 msecs
+
+<6>[468202.836524] (75972.758178) PM: late suspend of devices complete after 3.043 msecs
+
+<6>[468202.840161] (75972.761810) PM: noirq suspend of devices complete after 3.623 msecs
+
+<4>[468202.840175] (75972.761810) Disabling non-boot CPUs ...
+
+<6>[468202.840430] (75972.762603) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468202.844286] (75972.768157) PM: noirq resume of devices complete after 3.327 msecs
+
+<6>[468202.847774] (75972.771636) PM: early resume of devices complete after 2.316 msecs
+
+<6>[468202.859666] (75972.783538) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468202.860268] (75972.784149) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468202.860287] (75972.784149) l3gd20_gyr 12-006a: resume
+
+<6>[468202.975358] (75972.899230) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468202.976477] (75972.900329) PM: resume of devices complete after 128.687 msecs
+
+<4>[468202.981587] (75972.905456) Restarting tasks ... done.
+
+<6>[468203.006551] (75972.930419) PM: suspend exit 2026-10-12 16:46:58.814049030 UTC
+
+<6>[468203.574931] (75973.498718) PM: suspend entry 2026-10-12 16:46:59.382405336 UTC
+
+<6>[468203.574972] (75973.498779) PM: Syncing filesystems ... done.
+
+<4>[468203.597830] (75973.521636) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468203.636815] (75973.560607) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468203.639456] (75973.563232) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468203.645853] (75973.569641) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468203.652014] (75973.575805) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468203.652040] (75973.575836) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468203.653097] (75973.576873) l3gd20_gyr 12-006a: suspend
+
+<6>[468203.653119] (75973.576904) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468203.653885] (75973.577667) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468203.696870] (75973.620666) PM: suspend of devices complete after 52.487 msecs
+
+<6>[468203.707340] (75973.631134) PM: late suspend of devices complete after 10.438 msecs
+
+<6>[468203.711339] (75973.635131) PM: noirq suspend of devices complete after 3.983 msecs
+
+<4>[468203.711354] (75973.635131) Disabling non-boot CPUs ...
+
+<6>[468203.711616] (75973.635955) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468203.715939] (75973.641967) PM: noirq resume of devices complete after 3.790 msecs
+
+<6>[468203.719727] (75973.645751) PM: early resume of devices complete after 2.568 msecs
+
+<6>[468203.730589] (75973.656616) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468203.731190] (75973.657226) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468203.731209] (75973.657226) l3gd20_gyr 12-006a: resume
+
+<6>[468203.847082] (75973.773101) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468203.848196] (75973.774200) PM: resume of devices complete after 128.452 msecs
+
+<4>[468203.853299] (75973.779327) Restarting tasks ... done.
+
+<6>[468203.878282] (75973.804290) PM: suspend exit 2026-10-12 16:46:59.688026687 UTC
+
+<6>[468204.458070] (75974.384033) PM: suspend entry 2026-10-12 16:47:00.267791500 UTC
+
+<6>[468204.458111] (75974.384063) PM: Syncing filesystems ... done.
+
+<4>[468204.478968] (75974.404907) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468204.517282] (75974.443237) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468204.519925] (75974.445861) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468204.526312] (75974.452270) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468204.532522] (75974.458465) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468204.532550] (75974.458496) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468204.533607] (75974.459564) l3gd20_gyr 12-006a: suspend
+
+<6>[468204.533629] (75974.459564) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468204.534433] (75974.460388) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468204.576958] (75974.502899) PM: suspend of devices complete after 52.113 msecs
+
+<6>[468204.587356] (75974.513305) PM: late suspend of devices complete after 10.365 msecs
+
+<6>[468204.591357] (75974.517303) PM: noirq suspend of devices complete after 3.985 msecs
+
+<4>[468204.591371] (75974.517303) Disabling non-boot CPUs ...
+
+<6>[468204.591636] (75974.518127) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468204.595961] (75974.524139) PM: noirq resume of devices complete after 3.786 msecs
+
+<6>[468204.599752] (75974.527923) PM: early resume of devices complete after 2.565 msecs
+
+<6>[468204.610617] (75974.538787) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468204.611218] (75974.539398) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468204.611237] (75974.539398) l3gd20_gyr 12-006a: resume
+
+<6>[468204.726243] (75974.654388) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468204.727359] (75974.655517) PM: resume of devices complete after 127.590 msecs
+
+<4>[468204.732472] (75974.660644) Restarting tasks ... done.
+
+<6>[468204.757527] (75974.685668) PM: suspend exit 2026-10-12 16:47:00.569508144 UTC
+
+<6>[468205.324665] (75975.252746) PM: suspend entry 2026-10-12 16:47:01.136622468 UTC
+
+<6>[468205.324706] (75975.252807) PM: Syncing filesystems ... done.
+
+<4>[468205.348379] (75975.276458) Freezing user space processes ... (elapsed 0.02 seconds) done.
+
+<4>[468205.378306] (75975.306396) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468205.380976] (75975.309051) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468205.387386] (75975.315460) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468205.393576] (75975.321655) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468205.393604] (75975.321685) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468205.394717] (75975.322814) l3gd20_gyr 12-006a: suspend
+
+<6>[468205.394739] (75975.322814) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468205.395512] (75975.323608) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468205.433508] (75975.361602) PM: suspend of devices complete after 47.609 msecs
+
+<6>[468205.436572] (75975.364654) PM: late suspend of devices complete after 3.049 msecs
+
+<6>[468205.440204] (75975.368286) PM: noirq suspend of devices complete after 3.617 msecs
+
+<4>[468205.440217] (75975.368286) Disabling non-boot CPUs ...
+
+<6>[468205.440473] (75975.369079) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468205.444374] (75975.374664) PM: noirq resume of devices complete after 3.367 msecs
+
+<6>[468205.447875] (75975.378173) PM: early resume of devices complete after 2.319 msecs
+
+<6>[468205.459414] (75975.389709) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468205.460016] (75975.390319) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468205.460035] (75975.390319) l3gd20_gyr 12-006a: resume
+
+<6>[468205.575271] (75975.505554) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468205.576391] (75975.506683) PM: resume of devices complete after 128.500 msecs
+
+<4>[468205.581478] (75975.511749) Restarting tasks ... done.
+
+<6>[468205.606459] (75975.536743) PM: suspend exit 2026-10-12 16:47:01.420658663 UTC
+
+<6>[468206.175614] (75976.105834) PM: suspend entry 2026-10-12 16:47:01.989788879 UTC
+
+<6>[468206.175656] (75976.105865) PM: Syncing filesystems ... done.
+
+<4>[468206.198235] (75976.128448) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468206.237142] (75976.167358) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468206.239786] (75976.170013) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468206.246200] (75976.176422) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468206.252380] (75976.182586) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468206.252408] (75976.182617) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468206.253461] (75976.183685) l3gd20_gyr 12-006a: suspend
+
+<6>[468206.253484] (75976.183685) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468206.254290] (75976.184509) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468206.296953] (75976.227172) PM: suspend of devices complete after 52.202 msecs
+
+<6>[468206.307387] (75976.237579) PM: late suspend of devices complete after 10.399 msecs
+
+<6>[468206.311401] (75976.241607) PM: noirq suspend of devices complete after 3.999 msecs
+
+<4>[468206.311416] (75976.241607) Disabling non-boot CPUs ...
+
+<6>[468206.311681] (75976.242431) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468206.316013] (75976.248474) PM: noirq resume of devices complete after 3.793 msecs
+
+<6>[468206.319800] (75976.252258) PM: early resume of devices complete after 2.569 msecs
+
+<6>[468206.331949] (75976.264404) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468206.332499] (75976.264953) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468206.332518] (75976.264953) l3gd20_gyr 12-006a: resume
+
+<6>[468206.448229] (75976.380676) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468206.449353] (75976.381774) PM: resume of devices complete after 129.536 msecs
+
+<4>[468206.454496] (75976.386932) Restarting tasks ... done.
+
+<6>[468206.479809] (75976.412231) PM: suspend exit 2026-10-12 16:47:02.296249080 UTC
+
+<6>[468207.058568] (75976.990936) PM: suspend entry 2026-10-12 16:47:02.874983105 UTC
+
+<6>[468207.058609] (75976.990966) PM: Syncing filesystems ... done.
+
+<4>[468207.079460] (75977.011810) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468207.118078] (75977.050445) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468207.120726] (75977.053100) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468207.127121] (75977.059478) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468207.133326] (75977.065673) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468207.133354] (75977.065704) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468207.134446] (75977.066802) l3gd20_gyr 12-006a: suspend
+
+<6>[468207.134469] (75977.066833) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468207.135234] (75977.067596) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468207.176985] (75977.109344) PM: suspend of devices complete after 51.317 msecs
+
+<6>[468207.187413] (75977.119781) PM: late suspend of devices complete after 10.394 msecs
+
+<6>[468207.191417] (75977.123779) PM: noirq suspend of devices complete after 3.988 msecs
+
+<4>[468207.191431] (75977.123779) Disabling non-boot CPUs ...
+
+<6>[468207.191696] (75977.124603) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468207.196017] (75977.130615) PM: noirq resume of devices complete after 3.792 msecs
+
+<6>[468207.199813] (75977.134429) PM: early resume of devices complete after 2.572 msecs
+
+<6>[468207.211776] (75977.146392) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468207.212327] (75977.146942) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468207.212346] (75977.146942) l3gd20_gyr 12-006a: resume
+
+<6>[468207.327856] (75977.262451) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468207.328984] (75977.263580) PM: resume of devices complete after 129.154 msecs
+
+<4>[468207.334061] (75977.268646) Restarting tasks ... done.
+
+<6>[468207.359208] (75977.293792) PM: suspend exit 2026-10-12 16:47:03.177901423 UTC
+
+<6>[468207.934879] (75977.869415) PM: suspend entry 2026-10-12 16:47:03.753549057 UTC
+
+<6>[468207.934920] (75977.869445) PM: Syncing filesystems ... done.
+
+<4>[468207.958083] (75977.892608) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468207.994740] (75977.929260) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468207.997390] (75977.931915) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468208.003774] (75977.938293) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468208.010027] (75977.944549) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468208.010056] (75977.944580) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468208.011113] (75977.945617) l3gd20_gyr 12-006a: suspend
+
+<6>[468208.011134] (75977.945648) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468208.011901] (75977.946411) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468208.056998] (75977.991516) PM: suspend of devices complete after 54.718 msecs
+
+<6>[468208.067420] (75978.001922) PM: late suspend of devices complete after 10.387 msecs
+
+<6>[468208.071424] (75978.005950) PM: noirq suspend of devices complete after 3.989 msecs
+
+<4>[468208.071438] (75978.005950) Disabling non-boot CPUs ...
+
+<6>[468208.071701] (75978.006774) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468208.076024] (75978.012786) PM: noirq resume of devices complete after 3.790 msecs
+
+<6>[468208.079812] (75978.016571) PM: early resume of devices complete after 2.566 msecs
+
+<6>[468208.090683] (75978.027435) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468208.091284] (75978.028045) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468208.091303] (75978.028045) l3gd20_gyr 12-006a: resume
+
+<6>[468208.206803] (75978.143554) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468208.207910] (75978.144653) PM: resume of devices complete after 128.082 msecs
+
+<4>[468208.212986] (75978.149719) Restarting tasks ... done.
+
+<6>[468208.238376] (75978.175109) PM: suspend exit 2026-10-12 16:47:04.059309755 UTC
+
+<6>[468208.817276] (75978.753936) PM: suspend entry 2026-10-12 16:47:04.638184735 UTC
+
+<6>[468208.817316] (75978.753997) PM: Syncing filesystems ... done.
+
+<4>[468208.838880] (75978.775543) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468208.877888] (75978.814544) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468208.880529] (75978.817199) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468208.886983] (75978.823638) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468208.893188] (75978.829864) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468208.893216] (75978.829895) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468208.894310] (75978.830963) l3gd20_gyr 12-006a: suspend
+
+<6>[468208.894334] (75978.830993) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468208.895102] (75978.831756) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468208.937023] (75978.873687) PM: suspend of devices complete after 51.504 msecs
+
+<6>[468208.947456] (75978.884124) PM: late suspend of devices complete after 10.399 msecs
+
+<6>[468208.951457] (75978.888122) PM: noirq suspend of devices complete after 3.985 msecs
+
+<4>[468208.951472] (75978.888122) Disabling non-boot CPUs ...
+
+<6>[468208.951737] (75978.888946) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468208.956060] (75978.894958) PM: noirq resume of devices complete after 3.788 msecs
+
+<6>[468208.959852] (75978.898742) PM: early resume of devices complete after 2.570 msecs
+
+<6>[468208.971799] (75978.910705) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468208.972349] (75978.911254) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468208.972368] (75978.911254) l3gd20_gyr 12-006a: resume
+
+<6>[468209.087985] (75979.026855) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468209.089108] (75979.027984) PM: resume of devices complete after 129.240 msecs
+
+<4>[468209.094245] (75979.033111) Restarting tasks ... done.
+
+<6>[468209.119305] (75979.058197) PM: suspend exit 2026-10-12 16:47:04.942476682 UTC
+
+<6>[468209.698579] (75979.637390) PM: suspend entry 2026-10-12 16:47:05.521726490 UTC
+
+<6>[468209.698620] (75979.637451) PM: Syncing filesystems ... done.
+
+<4>[468209.719332] (75979.658142) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468209.757618] (75979.696441) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468209.760262] (75979.699066) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468209.766679] (75979.705474) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468209.772859] (75979.711669) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468209.772887] (75979.711700) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468209.773946] (75979.712768) l3gd20_gyr 12-006a: suspend
+
+<6>[468209.773969] (75979.712768) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468209.774776] (75979.713592) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468209.817563] (75979.756378) PM: suspend of devices complete after 52.359 msecs
+
+<6>[468209.827614] (75979.766418) PM: late suspend of devices complete after 10.016 msecs
+
+<6>[468209.831614] (75979.770416) PM: noirq suspend of devices complete after 3.985 msecs
+
+<4>[468209.831629] (75979.770416) Disabling non-boot CPUs ...
+
+<6>[468209.831894] (75979.771240) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468209.836222] (75979.777252) PM: noirq resume of devices complete after 3.794 msecs
+
+<6>[468209.840011] (75979.781036) PM: early resume of devices complete after 2.566 msecs
+
+<6>[468209.852135] (75979.793182) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468209.852688] (75979.793731) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468209.852706] (75979.793731) l3gd20_gyr 12-006a: resume
+
+<6>[468209.968757] (75979.909790) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468209.969873] (75979.910888) PM: resume of devices complete after 129.845 msecs
+
+<4>[468209.975013] (75979.916046) Restarting tasks ... done.
+
+<6>[468209.999945] (75979.940979) PM: suspend exit 2026-10-12 16:47:05.825351785 UTC
+
+<6>[468210.576547] (75980.517517) PM: suspend entry 2026-10-12 16:47:06.401930207 UTC
+
+<6>[468210.576588] (75980.517547) PM: Syncing filesystems ... done.
+
+<4>[468210.598704] (75980.539672) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468210.637660] (75980.578613) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468210.640300] (75980.581237) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468210.646703] (75980.587646) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468210.652897] (75980.593841) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468210.652925] (75980.593872) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468210.653984] (75980.594940) l3gd20_gyr 12-006a: suspend
+
+<6>[468210.654006] (75980.594970) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468210.654813] (75980.595764) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468210.697019] (75980.637969) PM: suspend of devices complete after 51.781 msecs
+
+<6>[468210.707480] (75980.648437) PM: late suspend of devices complete after 10.426 msecs
+
+<6>[468210.711481] (75980.652435) PM: noirq suspend of devices complete after 3.987 msecs
+
+<4>[468210.711496] (75980.652435) Disabling non-boot CPUs ...
+
+<6>[468210.711760] (75980.653259) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468210.716081] (75980.659271) PM: noirq resume of devices complete after 3.790 msecs
+
+<6>[468210.719868] (75980.663055) PM: early resume of devices complete after 2.566 msecs
+
+<6>[468210.732007] (75980.675201) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468210.732559] (75980.675750) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468210.732577] (75980.675750) l3gd20_gyr 12-006a: resume
+
+<6>[468210.849482] (75980.792663) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468210.850596] (75980.793762) PM: resume of devices complete after 130.711 msecs
+
+<4>[468210.855766] (75980.798919) Restarting tasks ... done.
+
+<6>[468210.880658] (75980.823822) PM: suspend exit 2026-10-12 16:47:06.708303713 UTC
+
+<6>[468211.457334] (75981.400451) PM: suspend entry 2026-10-12 16:47:07.284955888 UTC
+
+<6>[468211.457376] (75981.400482) PM: Syncing filesystems ... done.
+
+<4>[468211.479028] (75981.422119) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468211.517962] (75981.461059) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468211.520595] (75981.463684) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468211.527021] (75981.470123) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468211.533217] (75981.476318) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468211.533245] (75981.476348) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468211.534339] (75981.477447) l3gd20_gyr 12-006a: suspend
+
+<6>[468211.534362] (75981.477447) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468211.535130] (75981.478210) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468211.576980] (75981.520080) PM: suspend of devices complete after 51.415 msecs
+
+<6>[468211.587453] (75981.530548) PM: late suspend of devices complete after 10.438 msecs
+
+<6>[468211.591457] (75981.534545) PM: noirq suspend of devices complete after 3.988 msecs
+
+<4>[468211.591471] (75981.534545) Disabling non-boot CPUs ...
+
+<6>[468211.591736] (75981.535369) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468211.596059] (75981.541381) PM: noirq resume of devices complete after 3.791 msecs
+
+<6>[468211.599855] (75981.545196) PM: early resume of devices complete after 2.570 msecs
+
+<6>[468211.610724] (75981.556060) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468211.611324] (75981.556671) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468211.611344] (75981.556671) l3gd20_gyr 12-006a: resume
+
+<6>[468211.725884] (75981.671203) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468211.726994] (75981.672302) PM: resume of devices complete after 127.122 msecs
+
+<4>[468211.732085] (75981.677398) Restarting tasks ... done.
+
+<6>[468211.757194] (75981.702514) PM: suspend exit 2026-10-12 16:47:07.587086160 UTC
+
+<6>[468212.326701] (75982.271972) PM: suspend entry 2026-10-12 16:47:08.156569146 UTC
+
+<6>[468212.326743] (75982.272003) PM: Syncing filesystems ... done.
+
+<4>[468212.348388] (75982.293640) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468212.386785] (75982.332031) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468212.389432] (75982.334686) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468212.395854] (75982.341094) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468212.402041] (75982.347290) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468212.402069] (75982.347320) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468212.403126] (75982.348388) l3gd20_gyr 12-006a: suspend
+
+<6>[468212.403149] (75982.348388) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468212.403914] (75982.349151) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468212.447026] (75982.392272) PM: suspend of devices complete after 52.620 msecs
+
+<6>[468212.457475] (75982.402709) PM: late suspend of devices complete after 10.415 msecs
+
+<6>[468212.461482] (75982.406738) PM: noirq suspend of devices complete after 3.991 msecs
+
+<4>[468212.461495] (75982.406738) Disabling non-boot CPUs ...
+
+<6>[468212.461760] (75982.407562) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468212.466077] (75982.413574) PM: noirq resume of devices complete after 3.785 msecs
+
+<6>[468212.469876] (75982.417358) PM: early resume of devices complete after 2.572 msecs
+
+<6>[468212.480743] (75982.428222) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468212.481344] (75982.428833) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468212.481364] (75982.428833) l3gd20_gyr 12-006a: resume
+
+<6>[468212.596828] (75982.544311) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468212.597940] (75982.545410) PM: resume of devices complete after 128.048 msecs
+
+<4>[468212.603038] (75982.550506) Restarting tasks ... done.
+
+<6>[468212.628030] (75982.575500) PM: suspend exit 2026-10-12 16:47:08.460165012 UTC
+
+<6>[468213.194909] (75983.142303) PM: suspend entry 2026-10-12 16:47:09.027020340 UTC
+
+<6>[468213.194951] (75983.142364) PM: Syncing filesystems ... done.
+
+<4>[468213.218001] (75983.165405) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468213.256940] (75983.204345) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468213.259582] (75983.206970) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468213.265980] (75983.213378) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468213.272183] (75983.219573) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468213.272211] (75983.219604) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468213.273267] (75983.220672) l3gd20_gyr 12-006a: suspend
+
+<6>[468213.273289] (75983.220672) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468213.274054] (75983.221466) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468213.317103] (75983.264495) PM: suspend of devices complete after 52.595 msecs
+
+<6>[468213.327508] (75983.274902) PM: late suspend of devices complete after 10.370 msecs
+
+<6>[468213.331523] (75983.278900) PM: noirq suspend of devices complete after 3.999 msecs
+
+<4>[468213.331537] (75983.278930) Disabling non-boot CPUs ...
+
+<6>[468213.331800] (75983.279754) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468213.336120] (75983.285766) PM: noirq resume of devices complete after 3.788 msecs
+
+<6>[468213.339923] (75983.289550) PM: early resume of devices complete after 2.576 msecs
+
+<6>[468213.352056] (75983.301696) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468213.352607] (75983.302246) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468213.352626] (75983.302246) l3gd20_gyr 12-006a: resume
+
+<6>[468213.468527] (75983.418151) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468213.469653] (75983.419281) PM: resume of devices complete after 129.714 msecs
+
+<4>[468213.474795] (75983.424407) Restarting tasks ... done.
+
+<6>[468213.499916] (75983.449523) PM: suspend exit 2026-10-12 16:47:09.334292771 UTC
+
+<6>[468214.079284] (75984.028839) PM: suspend entry 2026-10-12 16:47:09.913636642 UTC
+
+<6>[468214.079324] (75984.028869) PM: Syncing filesystems ... done.
+
+<4>[468214.099646] (75984.049194) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468214.137941] (75984.087493) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468214.140584] (75984.090118) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468214.146986] (75984.096527) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468214.153206] (75984.102752) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468214.153234] (75984.102783) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468214.154330] (75984.103881) l3gd20_gyr 12-006a: suspend
+
+<6>[468214.154353] (75984.103912) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468214.155117] (75984.104675) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468214.197124] (75984.146667) PM: suspend of devices complete after 51.615 msecs
+
+<6>[468214.207531] (75984.157073) PM: late suspend of devices complete after 10.372 msecs
+
+<6>[468214.211540] (75984.161071) PM: noirq suspend of devices complete after 3.993 msecs
+
+<4>[468214.211555] (75984.161102) Disabling non-boot CPUs ...
+
+<6>[468214.211820] (75984.161926) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468214.216139] (75984.167907) PM: noirq resume of devices complete after 3.789 msecs
+
+<6>[468214.219926] (75984.171722) PM: early resume of devices complete after 2.565 msecs
+
+<6>[468214.232077] (75984.183868) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468214.232628] (75984.184417) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468214.232647] (75984.184417) l3gd20_gyr 12-006a: resume
+
+<6>[468214.348443] (75984.300201) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468214.349565] (75984.301330) PM: resume of devices complete after 129.622 msecs
+
+<4>[468214.354719] (75984.306488) Restarting tasks ... done.
+
+<6>[468214.379836] (75984.331604) PM: suspend exit 2026-10-12 16:47:10.216456884 UTC
+
+<6>[468214.957160] (75984.908874) PM: suspend entry 2026-10-12 16:47:10.793755963 UTC
+
+<6>[468214.957201] (75984.908905) PM: Syncing filesystems ... done.
+
+<4>[468214.978896] (75984.930603) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468215.017867] (75984.969573) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468215.020508] (75984.972198) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468215.026897] (75984.978607) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468215.033061] (75984.984771) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468215.033089] (75984.984771) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468215.034142] (75984.985839) l3gd20_gyr 12-006a: suspend
+
+<6>[468215.034165] (75984.985870) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468215.034970] (75984.986663) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468215.077044] (75985.028747) PM: suspend of devices complete after 51.616 msecs
+
+<6>[468215.087517] (75985.039215) PM: late suspend of devices complete after 10.439 msecs
+
+<6>[468215.091525] (75985.043212) PM: noirq suspend of devices complete after 3.991 msecs
+
+<4>[468215.091539] (75985.043243) Disabling non-boot CPUs ...
+
+<6>[468215.091804] (75985.044036) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468215.096127] (75985.050048) PM: noirq resume of devices complete after 3.787 msecs
+
+<6>[468215.099917] (75985.053833) PM: early resume of devices complete after 2.571 msecs
+
+<6>[468215.110773] (75985.064697) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468215.111374] (75985.065307) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468215.111394] (75985.065307) l3gd20_gyr 12-006a: resume
+
+<6>[468215.226930] (75985.180847) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468215.228046] (75985.181945) PM: resume of devices complete after 128.112 msecs
+
+<4>[468215.233147] (75985.187042) Restarting tasks ... done.
+
+<6>[468215.258266] (75985.212158) PM: suspend exit 2026-10-12 16:47:11.097122509 UTC
+
+<6>[468215.826080] (75985.779937) PM: suspend entry 2026-10-12 16:47:11.664912143 UTC
+
+<6>[468215.826120] (75985.779968) PM: Syncing filesystems ... done.
+
+<4>[468215.848380] (75985.802215) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468215.887358] (75985.841186) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468215.889999] (75985.843841) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468215.896407] (75985.850250) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468215.902595] (75985.856445) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468215.902623] (75985.856475) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468215.903678] (75985.857513) l3gd20_gyr 12-006a: suspend
+
+<6>[468215.903700] (75985.857543) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468215.904504] (75985.858337) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468215.947161] (75985.901000) PM: suspend of devices complete after 52.232 msecs
+
+<6>[468215.957566] (75985.911407) PM: late suspend of devices complete after 10.371 msecs
+
+<6>[468215.961566] (75985.915405) PM: noirq suspend of devices complete after 3.984 msecs
+
+<4>[468215.961580] (75985.915405) Disabling non-boot CPUs ...
+
+<6>[468215.961844] (75985.916229) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468215.966167] (75985.922241) PM: noirq resume of devices complete after 3.790 msecs
+
+<6>[468215.969961] (75985.926025) PM: early resume of devices complete after 2.567 msecs
+
+<6>[468215.981939] (75985.938018) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468215.982491] (75985.938568) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468215.982510] (75985.938598) l3gd20_gyr 12-006a: resume
+
+<6>[468216.098098] (75986.054168) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468216.099222] (75986.055297) PM: resume of devices complete after 129.244 msecs
+
+<4>[468216.104459] (75986.060516) Restarting tasks ... done.
+
+<6>[468216.129370] (75986.085418) PM: suspend exit 2026-10-12 16:47:11.970471049 UTC
+
+<6>[468216.707414] (75986.663421) PM: suspend entry 2026-10-12 16:47:12.548491411 UTC
+
+<6>[468216.707456] (75986.663452) PM: Syncing filesystems ... done.
+
+<4>[468216.729068] (75986.685058) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468216.768032] (75986.724029) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468216.770668] (75986.726654) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468216.777080] (75986.733062) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468216.783284] (75986.739288) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468216.783313] (75986.739288) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468216.784406] (75986.740386) l3gd20_gyr 12-006a: suspend
+
+<6>[468216.784428] (75986.740417) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468216.785196] (75986.741180) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468216.828104] (75986.784088) PM: suspend of devices complete after 52.477 msecs
+
+<6>[468216.837832] (75986.793823) PM: late suspend of devices complete after 9.693 msecs
+
+<6>[468216.841841] (75986.797821) PM: noirq suspend of devices complete after 3.993 msecs
+
+<4>[468216.841856] (75986.797851) Disabling non-boot CPUs ...
+
+<6>[468216.842119] (75986.798645) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468216.846442] (75986.804656) PM: noirq resume of devices complete after 3.790 msecs
+
+<6>[468216.850242] (75986.808471) PM: early resume of devices complete after 2.576 msecs
+
+<6>[468216.862419] (75986.820648) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468216.862970] (75986.821197) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468216.862989] (75986.821197) l3gd20_gyr 12-006a: resume
+
+<6>[468216.978596] (75986.936798) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468216.979718] (75986.937927) PM: resume of devices complete after 129.460 msecs
+
+<4>[468216.984873] (75986.943084) Restarting tasks ... done.
+
+<6>[468217.010126] (75986.968322) PM: suspend exit 2026-10-12 16:47:12.853461100 UTC
+
+<6>[468217.587413] (75987.545562) PM: suspend entry 2026-10-12 16:47:13.430724004 UTC
+
+<6>[468217.587455] (75987.545593) PM: Syncing filesystems ... done.
+
+<4>[468217.609112] (75987.567260) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468217.648048] (75987.606170) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468217.650696] (75987.608825) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468217.657095] (75987.615234) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468217.663290] (75987.621429) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468217.663319] (75987.621459) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468217.664415] (75987.622558) l3gd20_gyr 12-006a: suspend
+
+<6>[468217.664439] (75987.622558) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468217.665204] (75987.623321) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468217.707153] (75987.665283) PM: suspend of devices complete after 51.507 msecs
+
+<6>[468217.717583] (75987.675720) PM: late suspend of devices complete after 10.397 msecs
+
+<6>[468217.721591] (75987.679718) PM: noirq suspend of devices complete after 3.992 msecs
+
+<4>[468217.721606] (75987.679718) Disabling non-boot CPUs ...
+
+<6>[468217.721868] (75987.680541) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468217.726199] (75987.686553) PM: noirq resume of devices complete after 3.789 msecs
+
+<6>[468217.729989] (75987.690338) PM: early resume of devices complete after 2.565 msecs
+
+<6>[468217.742127] (75987.702484) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468217.742679] (75987.703033) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468217.742697] (75987.703033) l3gd20_gyr 12-006a: resume
+
+<6>[468217.858258] (75987.818603) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468217.859381] (75987.819702) PM: resume of devices complete after 129.375 msecs
+
+<4>[468217.864513] (75987.824859) Restarting tasks ... done.
+
+<6>[468217.889891] (75987.850219) PM: suspend exit 2026-10-12 16:47:13.735453391 UTC
+
+<6>[468218.466749] (75988.427032) PM: suspend entry 2026-10-12 16:47:14.312286549 UTC
+
+<6>[468218.466789] (75988.427062) PM: Syncing filesystems ... done.
+
+<4>[468218.488781] (75988.449035) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468218.527665] (75988.487915) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468218.530311] (75988.490570) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468218.536704] (75988.496978) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468218.542867] (75988.503143) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468218.542895] (75988.503143) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468218.543950] (75988.504211) l3gd20_gyr 12-006a: suspend
+
+<6>[468218.543973] (75988.504241) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468218.544775] (75988.505035) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468218.587105] (75988.547363) PM: suspend of devices complete after 51.868 msecs
+
+<6>[468218.597580] (75988.557830) PM: late suspend of devices complete after 10.441 msecs
+
+<6>[468218.601581] (75988.561828) PM: noirq suspend of devices complete after 3.984 msecs
+
+<4>[468218.601596] (75988.561859) Disabling non-boot CPUs ...
+
+<6>[468218.601864] (75988.562652) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468218.606184] (75988.568664) PM: noirq resume of devices complete after 3.785 msecs
+
+<6>[468218.609972] (75988.572448) PM: early resume of devices complete after 2.566 msecs
+
+<6>[468218.620823] (75988.583312) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468218.621424] (75988.583923) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468218.621443] (75988.583923) l3gd20_gyr 12-006a: resume
+
+<6>[468218.736025] (75988.698486) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468218.737103] (75988.699584) PM: resume of devices complete after 127.115 msecs
+
+<4>[468218.742117] (75988.704589) Restarting tasks ... done.
+
+<6>[468218.767431] (75988.729888) PM: suspend exit 2026-10-12 16:47:14.615226255 UTC
+
+<6>[468219.337627] (75989.300048) PM: suspend entry 2026-10-12 16:47:15.185397888 UTC
+
+<6>[468219.337667] (75989.300079) PM: Syncing filesystems ... done.
+
+<4>[468219.358963] (75989.321380) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468219.397358] (75989.359771) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468219.400001] (75989.362396) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468219.406396] (75989.368804) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468219.412618] (75989.375030) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468219.412645] (75989.375061) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468219.413700] (75989.376098) l3gd20_gyr 12-006a: suspend
+
+<6>[468219.413721] (75989.376129) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468219.414526] (75989.376922) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468219.457152] (75989.419555) PM: suspend of devices complete after 52.220 msecs
+
+<6>[468219.467603] (75989.429992) PM: late suspend of devices complete after 10.417 msecs
+
+<6>[468219.471621] (75989.434020) PM: noirq suspend of devices complete after 4.002 msecs
+
+<4>[468219.471635] (75989.434020) Disabling non-boot CPUs ...
+
+<6>[468219.471899] (75989.434844) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468219.476217] (75989.440856) PM: noirq resume of devices complete after 3.786 msecs
+
+<6>[468219.480005] (75989.444641) PM: early resume of devices complete after 2.569 msecs
+
+<6>[468219.491965] (75989.456604) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468219.492515] (75989.457153) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468219.492534] (75989.457153) l3gd20_gyr 12-006a: resume
+
+<6>[468219.608198] (75989.572814) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468219.609319] (75989.573944) PM: resume of devices complete after 129.297 msecs
+
+<4>[468219.614450] (75989.579071) Restarting tasks ... done.
+
+<6>[468219.639427] (75989.604034) PM: suspend exit 2026-10-12 16:47:15.489455316 UTC
+
+<6>[468220.218567] (75990.183105) PM: suspend entry 2026-10-12 16:47:16.068571249 UTC
+
+<6>[468220.218608] (75990.183166) PM: Syncing filesystems ... done.
+
+<4>[468220.239428] (75990.203979) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468220.277749] (75990.242279) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468220.280397] (75990.244934) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468220.286795] (75990.251342) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468220.292994] (75990.257537) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468220.293022] (75990.257568) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468220.294078] (75990.258605) l3gd20_gyr 12-006a: suspend
+
+<6>[468220.294100] (75990.258636) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468220.294905] (75990.259460) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468220.337232] (75990.301757) PM: suspend of devices complete after 51.903 msecs
+
+<6>[468220.347629] (75990.312164) PM: late suspend of devices complete after 10.363 msecs
+
+<6>[468220.351631] (75990.316162) PM: noirq suspend of devices complete after 3.985 msecs
+
+<4>[468220.351645] (75990.316192) Disabling non-boot CPUs ...
+
+<6>[468220.351909] (75990.316986) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468220.356230] (75990.322998) PM: noirq resume of devices complete after 3.788 msecs
+
+<6>[468220.360028] (75990.326782) PM: early resume of devices complete after 2.571 msecs
+
+<6>[468220.370884] (75990.337646) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468220.371486] (75990.338256) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468220.371505] (75990.338256) l3gd20_gyr 12-006a: resume
+
+<6>[468220.487272] (75990.454010) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468220.488384] (75990.455139) PM: resume of devices complete after 128.340 msecs
+
+<4>[468220.493463] (75990.460205) Restarting tasks ... done.
+
+<6>[468220.518423] (75990.485168) PM: suspend exit 2026-10-12 16:47:16.370682139 UTC
+
+<6>[468221.096677] (75991.063354) PM: suspend entry 2026-10-12 16:47:16.948911910 UTC
+
+<6>[468221.096717] (75991.063415) PM: Syncing filesystems ... done.
+
+<4>[468221.118813] (75991.085510) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468221.157793] (75991.124481) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468221.160437] (75991.127105) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468221.166834] (75991.133514) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468221.173049] (75991.139739) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468221.173077] (75991.139739) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468221.174132] (75991.140808) l3gd20_gyr 12-006a: suspend
+
+<6>[468221.174154] (75991.140838) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468221.174958] (75991.141632) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468221.217231] (75991.183898) PM: suspend of devices complete after 51.867 msecs
+
+<6>[468221.227658] (75991.194335) PM: late suspend of devices complete after 10.393 msecs
+
+<6>[468221.231671] (75991.198333) PM: noirq suspend of devices complete after 3.997 msecs
+
+<4>[468221.231685] (75991.198364) Disabling non-boot CPUs ...
+
+<6>[468221.231949] (75991.199157) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468221.236276] (75991.205169) PM: noirq resume of devices complete after 3.790 msecs
+
+<6>[468221.240073] (75991.208984) PM: early resume of devices complete after 2.569 msecs
+
+<6>[468221.251973] (75991.220886) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468221.252525] (75991.221435) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468221.252543] (75991.221435) l3gd20_gyr 12-006a: resume
+
+<6>[468221.368098] (75991.337005) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468221.369214] (75991.338104) PM: resume of devices complete after 129.124 msecs
+
+<4>[468221.374288] (75991.343170) Restarting tasks ... done.
+
+<6>[468221.400968] (75991.369842) PM: suspend exit 2026-10-12 16:47:17.255462554 UTC
+
+<6>[468222.228599] (75992.197387) PM: suspend entry 2026-10-12 16:47:18.083069681 UTC
+
+<6>[468222.228639] (75992.197448) PM: Syncing filesystems ... done.
+
+<4>[468222.249449] (75992.218261) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468222.287768] (75992.256561) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468222.290409] (75992.259216) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468222.296808] (75992.265594) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468222.303029] (75992.271820) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468222.303057] (75992.271850) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468222.304109] (75992.272888) l3gd20_gyr 12-006a: suspend
+
+<6>[468222.304131] (75992.272918) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468222.304938] (75992.273742) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468222.347254] (75992.316040) PM: suspend of devices complete after 51.916 msecs
+
+<6>[468222.357647] (75992.326446) PM: late suspend of devices complete after 10.358 msecs
+
+<6>[468222.361656] (75992.330444) PM: noirq suspend of devices complete after 3.993 msecs
+
+<4>[468222.361671] (75992.330444) Disabling non-boot CPUs ...
+
+<6>[468222.361934] (75992.331268) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468222.366254] (75992.337280) PM: noirq resume of devices complete after 3.787 msecs
+
+<6>[468222.370051] (75992.341064) PM: early resume of devices complete after 2.567 msecs
+
+<6>[468222.382208] (75992.353240) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468222.382761] (75992.353790) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468222.382780] (75992.353790) l3gd20_gyr 12-006a: resume
+
+<6>[468222.499655] (75992.470672) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468222.500771] (75992.471771) PM: resume of devices complete after 130.704 msecs
+
+<4>[468222.505923] (75992.476928) Restarting tasks ... done.
+
+<6>[468222.530995] (75992.502014) PM: suspend exit 2026-10-12 16:47:18.387728544 UTC
+
+<6>[468223.106609] (75993.077545) PM: suspend entry 2026-10-12 16:47:18.963319260 UTC
+
+<6>[468223.106650] (75993.077606) PM: Syncing filesystems ... done.
+
+<4>[468223.128791] (75993.099731) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468223.167705] (75993.138641) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468223.170345] (75993.141296) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468223.176745] (75993.147674) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468223.182930] (75993.153869) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468223.182958] (75993.153900) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468223.184015] (75993.154937) l3gd20_gyr 12-006a: suspend
+
+<6>[468223.184037] (75993.154968) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468223.184844] (75993.155792) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468223.227145] (75993.198089) PM: suspend of devices complete after 51.872 msecs
+
+<6>[468223.237631] (75993.208557) PM: late suspend of devices complete after 10.452 msecs
+
+<6>[468223.241629] (75993.212554) PM: noirq suspend of devices complete after 3.984 msecs
+
+<4>[468223.241644] (75993.212585) Disabling non-boot CPUs ...
+
+<6>[468223.241908] (75993.213378) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468223.246227] (75993.219390) PM: noirq resume of devices complete after 3.789 msecs
+
+<6>[468223.250013] (75993.223175) PM: early resume of devices complete after 2.567 msecs
+
+<6>[468223.260876] (75993.234039) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468223.261476] (75993.234649) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468223.261495] (75993.234649) l3gd20_gyr 12-006a: resume
+
+<6>[468223.377297] (75993.350463) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468223.378409] (75993.351562) PM: resume of devices complete after 128.380 msecs
+
+<4>[468223.383502] (75993.356658) Restarting tasks ... done.
+
+<6>[468223.408473] (75993.381622) PM: suspend exit 2026-10-12 16:47:19.267442032 UTC
+
+<6>[468223.987647] (75993.960723) PM: suspend entry 2026-10-12 16:47:19.846591765 UTC
+
+<6>[468223.987688] (75993.960784) PM: Syncing filesystems ... done.
+
+<4>[468224.009164] (75993.982238) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468224.048086] (75994.021179) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468224.050724] (75994.023803) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468224.057155] (75994.030242) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468224.063337] (75994.036407) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468224.063364] (75994.036437) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468224.064457] (75994.037536) l3gd20_gyr 12-006a: suspend
+
+<6>[468224.064479] (75994.037567) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468224.065245] (75994.038330) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468224.107282] (75994.080352) PM: suspend of devices complete after 51.586 msecs
+
+<6>[468224.117682] (75994.090759) PM: late suspend of devices complete after 10.366 msecs
+
+<6>[468224.121677] (75994.094757) PM: noirq suspend of devices complete after 3.979 msecs
+
+<4>[468224.121691] (75994.094757) Disabling non-boot CPUs ...
+
+<6>[468224.121955] (75994.095581) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468224.126274] (75994.101593) PM: noirq resume of devices complete after 3.787 msecs
+
+<6>[468224.130067] (75994.105377) PM: early resume of devices complete after 2.566 msecs
+
+<6>[468224.140934] (75994.116241) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468224.141535] (75994.116851) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468224.141555] (75994.116851) l3gd20_gyr 12-006a: resume
+
+<6>[468224.256994] (75994.232299) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468224.258107] (75994.233398) PM: resume of devices complete after 128.023 msecs
+
+<4>[468224.263190] (75994.238494) Restarting tasks ... done.
+
+<6>[468224.288443] (75994.263732) PM: suspend exit 2026-10-12 16:47:20.149645259 UTC
+
+<6>[468224.865109] (75994.840332) PM: suspend entry 2026-10-12 16:47:20.726287758 UTC
+
+<6>[468224.865150] (75994.840393) PM: Syncing filesystems ... done.
+
+<4>[468224.888298] (75994.863525) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468224.927200] (75994.902435) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468224.929836] (75994.905059) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468224.936267] (75994.911499) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468224.942477] (75994.917694) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468224.942505] (75994.917724) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468224.943564] (75994.918792) l3gd20_gyr 12-006a: suspend
+
+<6>[468224.943586] (75994.918792) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468224.944357] (75994.919586) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468224.987317] (75994.962524) PM: suspend of devices complete after 52.502 msecs
+
+<6>[468224.997717] (75994.972930) PM: late suspend of devices complete after 10.365 msecs
+
+<6>[468225.001721] (75994.976928) PM: noirq suspend of devices complete after 3.989 msecs
+
+<4>[468225.001735] (75994.976959) Disabling non-boot CPUs ...
+
+<6>[468225.001997] (75994.977752) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468225.006317] (75994.983764) PM: noirq resume of devices complete after 3.789 msecs
+
+<6>[468225.010107] (75994.987548) PM: early resume of devices complete after 2.570 msecs
+
+<6>[468225.021986] (75994.999450) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468225.022536] (75995.000000) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468225.022555] (75995.000000) l3gd20_gyr 12-006a: resume
+
+<6>[468225.138011] (75995.115447) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468225.139130] (75995.116577) PM: resume of devices complete after 129.005 msecs
+
+<4>[468225.144194] (75995.121643) Restarting tasks ... done.
+
+<6>[468225.169340] (75995.146789) PM: suspend exit 2026-10-12 16:47:21.032784529 UTC
+
+<6>[468225.747921] (75995.725311) PM: suspend entry 2026-10-12 16:47:21.611342106 UTC
+
+<6>[468225.747963] (75995.725341) PM: Syncing filesystems ... done.
+
+<4>[468225.769219] (75995.746582) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468225.807517] (75995.784881) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468225.810158] (75995.787536) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468225.816564] (75995.793945) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468225.822775] (75995.800140) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468225.822804] (75995.800170) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468225.823858] (75995.801208) l3gd20_gyr 12-006a: suspend
+
+<6>[468225.823880] (75995.801239) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468225.824686] (75995.802062) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468225.867307] (75995.844665) PM: suspend of devices complete after 52.208 msecs
+
+<6>[468225.877721] (75995.855072) PM: late suspend of devices complete after 10.380 msecs
+
+<6>[468225.881728] (75995.859100) PM: noirq suspend of devices complete after 3.992 msecs
+
+<4>[468225.881743] (75995.859100) Disabling non-boot CPUs ...
+
+<6>[468225.882006] (75995.859924) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468225.886328] (75995.865905) PM: noirq resume of devices complete after 3.787 msecs
+
+<6>[468225.890124] (75995.869720) PM: early resume of devices complete after 2.568 msecs
+
+<6>[468225.902264] (75995.881866) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468225.902816] (75995.882415) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468225.902834] (75995.882415) l3gd20_gyr 12-006a: resume
+
+<6>[468226.019592] (75995.999176) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468226.020703] (75996.000274) PM: resume of devices complete after 130.562 msecs
+
+<4>[468226.025835] (75996.005401) Restarting tasks ... done.
+
+<6>[468226.050955] (75996.030517) PM: suspend exit 2026-10-12 16:47:21.916632445 UTC
+
+<6>[468226.627106] (75996.606628) PM: suspend entry 2026-10-12 16:47:22.492757891 UTC
+
+<6>[468226.627147] (75996.606658) PM: Syncing filesystems ... done.
+
+<4>[468226.649034] (75996.628540) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468226.688004] (75996.667510) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468226.690653] (75996.670166) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468226.697057] (75996.676574) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468226.703262] (75996.682769) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468226.703290] (75996.682800) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468226.704346] (75996.683837) l3gd20_gyr 12-006a: suspend
+
+<6>[468226.704368] (75996.683868) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468226.705171] (75996.684661) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468226.747344] (75996.726837) PM: suspend of devices complete after 51.753 msecs
+
+<6>[468226.757744] (75996.737243) PM: late suspend of devices complete after 10.367 msecs
+
+<6>[468226.761748] (75996.741241) PM: noirq suspend of devices complete after 3.989 msecs
+
+<4>[468226.761763] (75996.741271) Disabling non-boot CPUs ...
+
+<6>[468226.762027] (75996.742065) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468226.766349] (75996.748077) PM: noirq resume of devices complete after 3.789 msecs
+
+<6>[468226.770139] (75996.751861) PM: early resume of devices complete after 2.568 msecs
+
+<6>[468226.782388] (75996.764129) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468226.782938] (75996.764678) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468226.782957] (75996.764678) l3gd20_gyr 12-006a: resume
+
+<6>[468226.900638] (75996.882354) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468226.903425] (75996.885131) PM: resume of devices complete after 133.260 msecs
+
+<4>[468226.915944] (75996.897674) Restarting tasks ... done.
+
+<6>[468226.941114] (75996.922821) PM: suspend exit 2026-10-12 16:47:22.809025985 UTC
+
+<6>[468227.515041] (75997.496704) PM: suspend entry 2026-10-12 16:47:23.382928278 UTC
+
+<6>[468227.515082] (75997.496734) PM: Syncing filesystems ... done.
+
+<4>[468227.537831] (75997.519470) Freezing user space processes ... (elapsed 0.02 seconds) done.
+
+<4>[468227.567803] (75997.549438) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468227.570471] (75997.552124) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468227.576881] (75997.558532) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468227.583108] (75997.564758) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468227.583136] (75997.564788) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468227.584194] (75997.565826) l3gd20_gyr 12-006a: suspend
+
+<6>[468227.584216] (75997.565856) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468227.585006] (75997.566650) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468227.623891] (75997.605529) PM: suspend of devices complete after 48.492 msecs
+
+<6>[468227.627277] (75997.608917) PM: late suspend of devices complete after 3.370 msecs
+
+<6>[468227.631276] (75997.612915) PM: noirq suspend of devices complete after 3.984 msecs
+
+<4>[468227.631290] (75997.612915) Disabling non-boot CPUs ...
+
+<6>[468227.631556] (75997.613739) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468227.635880] (75997.619750) PM: noirq resume of devices complete after 3.791 msecs
+
+<6>[468227.639682] (75997.623565) PM: early resume of devices complete after 2.575 msecs
+
+<6>[468227.650551] (75997.634429) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468227.651152] (75997.635040) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468227.651171] (75997.635040) l3gd20_gyr 12-006a: resume
+
+<6>[468227.766340] (75997.750213) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468227.767452] (75997.751312) PM: resume of devices complete after 127.753 msecs
+
+<4>[468227.772544] (75997.756408) Restarting tasks ... done.
+
+<6>[468227.797590] (75997.781463) PM: suspend exit 2026-10-12 16:47:23.667741349 UTC
+
+<6>[468228.366559] (75998.350372) PM: suspend entry 2026-10-12 16:47:24.236686589 UTC
+
+<6>[468228.366599] (75998.350402) PM: Syncing filesystems ... done.
+
+<4>[468228.388840] (75998.372650) Freezing user space processes ... (elapsed 0.03 seconds) done.
+
+<4>[468228.427798] (75998.411590) Freezing remaining freezable tasks ... (elapsed 0.00 seconds) done.
+
+<4>[468228.430444] (75998.414245) Suspending console(s) (use no_console_suspend to debug)
+
+<6>[468228.436836] (75998.420623) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468228.442982] (75998.426788) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468228.443010] (75998.426788) mdss_fb_blank_sub: mdss_fb_blank_sub(off)
+
+<6>[468228.444066] (75998.427856) l3gd20_gyr 12-006a: suspend
+
+<6>[468228.444088] (75998.427886) lsm303d 12-001e: suspend: accel: 0, mag: 0
+
+<6>[468228.444889] (75998.428680) Bluetooth: bluesleep_suspend: bluesleep suspending...
+
+<6>[468228.487239] (75998.471038) PM: suspend of devices complete after 51.873 msecs
+
+<6>[468228.497723] (75998.481506) PM: late suspend of devices complete after 10.450 msecs
+
+<6>[468228.501730] (75998.485504) PM: noirq suspend of devices complete after 3.991 msecs
+
+<4>[468228.501744] (75998.485534) Disabling non-boot CPUs ...
+
+<6>[468228.502010] (75998.486328) CPU0: msm_cpu_pm_enter_sleep mode:3
+
+<6>[468228.506330] (75998.492340) PM: noirq resume of devices complete after 3.788 msecs
+
+<6>[468228.510123] (75998.496154) PM: early resume of devices complete after 2.568 msecs
+
+<6>[468228.520999] (75998.507019) Bluetooth: bluesleep_resume: bluesleep resuming...
+
+<6>[468228.521600] (75998.507629) lsm303d 12-001e: resume: accel: 0, mag: 0
+
+<6>[468228.521619] (75998.507629) l3gd20_gyr 12-006a: resume
+
+<6>[468228.637530] (75998.623535) hdmi_tx_hpd_on: HDMI HW version = 0x30000001
+
+<6>[468228.638651] (75998.624664) PM: resume of devices complete after 128.511 msecs
+
+<4>[468228.643746] (75998.629760) Restarting tasks ... done.
+
+<6>[468228.668729] (75998.654724) PM: suspend exit 2026-10-12 16:47:24.541113846 UTC
+
+<6>[468228.786867] (75998.772857) mdss_fb_blank_sub: mdss_fb_blank_sub(on)
+
+<6>[468228.811358] (75998.797332) CHG:qpnp_chg_usb_usbin_valid_irq_handler: usbin-valid triggered clear chg_failed_flag: 1 host_mode: 0
+
+<4>[468228.867299] (75998.853271) dhd_set_suspend: Remove extra suspend setting 
+
+<6>[468228.878514] (75998.864501) mdss_dsi_panel_on_panorama: ctrl=f601c810 ndx=0
+
+<6>[468228.904633] (75998.890625) healthd: usb: Unknown power supply type.
+
+<6>[468228.944407] (75998.930389) msm-dwc3 msm_dwc3: DWC3 exited from low power mode
+
+<4>[468228.947021] (75998.932983) healthd: battery l=54 v=3753 t=30.2 h=2 st=3 c=21 chg=
+
+<6>[468228.961243] (75998.947204) synaptics_dsx_i2c 2-0067: synaptics_rmi4_sensor_wake: Waking sensor
+
+<6>[468228.979673] (75998.965637) healthd: usb: Unknown power supply type.
+
+<4>[468228.986283] (75998.972259) healthd: battery l=54 v=3743 t=30.3 h=2 st=3 c=21 chg=
+
+<5>[468228.998943] (75998.984924) mdss_dsi_panel_on_panorama: Start dsi program sequence
+
+<5>[468229.005177] (75998.991149) mdss_apply_pcc: set PCC successfully.
+
+<5>[468229.005194] (75998.991149) mdss_apply_gamut_map: gamut map does not require updating.
+
+<6>[468229.094934] (75999.080902) dwc3 f9200000.dwc3: Avail curr from USB = 500
+
+<6>[468229.096811] (75999.082763) android_work: android_work: did not send uevent (0 0    (nil))
+
+<6>[468229.102772] (75999.088714) dwc3 f9200000.dwc3: Avail curr from USB = 2
+
+<6>[468229.102796] (75999.088745) android_work: android_work: did not send uevent (0 0    (nil))
+
+<4>[468229.179706] (75999.165649) healthd: battery l=54 v=3718 t=30.3 h=2 st=3 c=437 chg=
+
+<6>[468229.212191] (75999.198150) dwc3 f9200000.dwc3: Avail curr from USB = 0
+
+<4>[468229.259129] (75999.245086) healthd: battery l=54 v=3708 t=30.3 h=2 st=3 c=461 chg=
+
+<6>[468229.262430] (75999.248382) android_work: android_work: did not send uevent (0 0    (nil))
+
+<6>[468229.284669] (75999.270599) mdss_fb_set_backlight: already 0
+
+<6>[468229.298401] (75999.284332) android_work: android_work: sent uevent USB_STATE=CONNECTED
+
+<6>[468229.317762] (75999.303710) 1st non-0 lvl 5882
+
+<6>[468229.339997] (75999.325927) android_usb gadget: high-speed config #1: fe8050c8.android_usb
+
+<6>[468229.340371] (75999.326293) dwc3 f9200000.dwc3: Avail curr from USB = 500
+
+<6>[468229.371119] (75999.357055) synaptics_dsx_i2c 9-0020: synaptics_rmi4_sensor_wake: Waking sensor
+
+<6>[468229.395709] (75999.381652) android_work: android_work: sent uevent USB_STATE=CONFIGURED
+
+<3>[468229.400995] (75999.386932) mdss_dsi_isr: ndx=0 isr=3300203
+
+<3>[468229.401026] (75999.386962) mdss_dsi_ack_err_status: status=1000200
+
+<4>[468229.430482] (75999.416412) healthd: battery l=54 v=3730 t=30.3 h=2 st=3 c=319 chg=u
+
+<4>[468229.521231] (75999.507141) healthd: battery l=54 v=3723 t=30.1 h=2 st=3 c=317 chg=u
+
+<4>[468229.602286] (75999.588195) healthd: battery l=54 v=3733 t=30.1 h=2 st=3 c=274 chg=u
+
+<4>[468229.668435] (75999.654327) healthd: battery l=54 v=3735 t=30.2 h=2 st=3 c=327 chg=u
+
+<7>[468229.679867] (75999.665771) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.679878] (75999.665771) pgd = de918000
+
+<1>[468229.679986] (75999.665893) [00000014] *pgd=00000000
+
+<4>[468229.680202] (75999.666107) 
+
+<4>[468229.680217] (75999.666107) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.680230] (75999.666137) CPU: 1    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.680261] (75999.666168) PC is at 0x8f544db4
+
+<4>[468229.680273] (75999.666168) LR is at 0x8fac4db1
+
+<4>[468229.680281] (75999.666168) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.680287] (75999.666198) sp : 7db04660  ip : 0000d4d4  fp : 340d3120
+
+<4>[468229.680299] (75999.666198) r10: 340d3120  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.680310] (75999.666198) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 00000033
+
+<4>[468229.680319] (75999.666229) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.680328] (75999.666229) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.680339] (75999.666229) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.680419] (75999.666320) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.680435] (75999.666320) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.680451] (75999.666351) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.680473] (75999.666381) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.680487] (75999.666381) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.680495] (75999.666381) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.680505] (75999.666412) 1fc0: 00000033 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 340d3120 340d3120
+
+<4>[468229.680514] (75999.666412) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<7>[468229.682577] (75999.668487) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.682589] (75999.668487) pgd = de918000
+
+<1>[468229.682760] (75999.668670) [00000014] *pgd=00000000
+
+<4>[468229.682921] (75999.668823) 
+
+<4>[468229.682930] (75999.668823) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.682942] (75999.668823) CPU: 1    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.682957] (75999.668853) PC is at 0x8f544db4
+
+<4>[468229.682965] (75999.668853) LR is at 0x8fac4db1
+
+<4>[468229.682976] (75999.668884) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.682986] (75999.668884) sp : 7db04660  ip : 0000d4d4  fp : 340d33e0
+
+<4>[468229.682995] (75999.668884) r10: 340d33e0  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.683005] (75999.668914) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 0000003f
+
+<4>[468229.683015] (75999.668914) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.683024] (75999.668914) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.683035] (75999.668945) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.683071] (75999.668975) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.683087] (75999.668975) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.683102] (75999.669006) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.683117] (75999.669006) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.683127] (75999.669036) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.683136] (75999.669036) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.683148] (75999.669036) 1fc0: 0000003f 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 340d33e0 340d33e0
+
+<4>[468229.683161] (75999.669067) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<7>[468229.684171] (75999.670074) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.684186] (75999.670074) pgd = de918000
+
+<1>[468229.684351] (75999.670257) [00000014] *pgd=00000000
+
+<4>[468229.710112] (75999.696014) healthd: battery l=54 v=3728 t=30.1 h=2 st=3 c=340 chg=u
+
+<4>[468229.711669] (75999.697570) 
+
+<4>[468229.711688] (75999.697570) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.711707] (75999.697601) CPU: 1    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.711749] (75999.697631) PC is at 0x8f544db4
+
+<4>[468229.711762] (75999.697662) LR is at 0x8fac4db1
+
+<4>[468229.711770] (75999.697662) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.711776] (75999.697662) sp : 7db04660  ip : 0000d4d4  fp : 340d36a0
+
+<4>[468229.711787] (75999.697692) r10: 340d36a0  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.711802] (75999.697692) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 0000000c
+
+<4>[468229.711814] (75999.697723) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.711827] (75999.697723) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.711837] (75999.697723) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.711939] (75999.697845) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.711953] (75999.697845) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.711981] (75999.697875) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.712009] (75999.697906) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.712020] (75999.697906) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.712037] (75999.697937) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.712052] (75999.697937) 1fc0: 0000000c 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 340d36a0 340d36a0
+
+<4>[468229.712062] (75999.697967) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<7>[468229.739369] (75999.725280) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.739408] (75999.725311) pgd = de918000
+
+<1>[468229.739629] (75999.725524) [00000014] *pgd=00000000
+
+<4>[468229.739916] (75999.725799) 
+
+<4>[468229.739934] (75999.725830) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.739952] (75999.725830) CPU: 1    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.739979] (75999.725860) PC is at 0x8f544db4
+
+<4>[468229.739987] (75999.725891) LR is at 0x8fac4db1
+
+<4>[468229.740002] (75999.725891) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.740017] (75999.725921) sp : 7db04660  ip : 0000d4d4  fp : 340d3960
+
+<4>[468229.740027] (75999.725921) r10: 340d3960  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.740042] (75999.725952) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 00000029
+
+<4>[468229.740058] (75999.725952) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.740079] (75999.725982) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.740097] (75999.725982) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.740227] (75999.726135) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.740252] (75999.726135) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.740267] (75999.726165) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.740302] (75999.726196) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.740319] (75999.726226) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.740337] (75999.726226) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.740347] (75999.726226) 1fc0: 00000029 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 340d3960 340d3960
+
+<4>[468229.740357] (75999.726257) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<7>[468229.755517] (75999.741424) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.755541] (75999.741424) pgd = de918000
+
+<1>[468229.755742] (75999.741638) [00000014] *pgd=00000000
+
+<4>[468229.756003] (75999.741912) 
+
+<4>[468229.756022] (75999.741912) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.756044] (75999.741943) CPU: 2    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.756078] (75999.741973) PC is at 0x8f544db4
+
+<4>[468229.756092] (75999.741973) LR is at 0x8fac4db1
+
+<4>[468229.756107] (75999.742004) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.756117] (75999.742004) sp : 7db04660  ip : 0000d4d4  fp : 340d3cb0
+
+<4>[468229.756127] (75999.742004) r10: 340d3cb0  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.756138] (75999.742034) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 00000023
+
+<4>[468229.756154] (75999.742034) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.756178] (75999.742065) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.756192] (75999.742065) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.756297] (75999.742187) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.756327] (75999.742218) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.756352] (75999.742248) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.756378] (75999.742279) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.756400] (75999.742279) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.756414] (75999.742309) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.756427] (75999.742309) 1fc0: 00000023 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 340d3cb0 340d3cb0
+
+<4>[468229.756443] (75999.742340) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<7>[468229.760012] (75999.745910) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.760034] (75999.745910) pgd = de918000
+
+<1>[468229.760149] (75999.746032) [00000014] *pgd=00000000
+
+<4>[468229.760301] (75999.746185) 
+
+<4>[468229.760317] (75999.746215) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.760326] (75999.746215) CPU: 2    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.760346] (75999.746246) PC is at 0x8f544db4
+
+<4>[468229.760358] (75999.746246) LR is at 0x8fac4db1
+
+<4>[468229.760368] (75999.746276) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.760382] (75999.746276) sp : 7db04660  ip : 0000d4d4  fp : 3413f070
+
+<4>[468229.760390] (75999.746276) r10: 3413f070  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.760399] (75999.746276) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 00000006
+
+<4>[468229.760409] (75999.746307) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.760423] (75999.746307) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.760432] (75999.746307) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.760479] (75999.746368) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.760507] (75999.746398) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.760523] (75999.746429) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.760543] (75999.746429) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.760555] (75999.746429) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.760572] (75999.746459) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.760582] (75999.746459) 1fc0: 00000006 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 3413f070 3413f070
+
+<4>[468229.760592] (75999.746490) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<7>[468229.762337] (75999.748229) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.762366] (75999.748260) pgd = de918000
+
+<1>[468229.762569] (75999.748474) [00000014] *pgd=00000000
+
+<4>[468229.762824] (75999.748718) 
+
+<4>[468229.762835] (75999.748718) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.762852] (75999.748748) CPU: 2    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.762888] (75999.748779) PC is at 0x8f544db4
+
+<4>[468229.762902] (75999.748779) LR is at 0x8fac4db1
+
+<4>[468229.762916] (75999.748809) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.762932] (75999.748809) sp : 7db04660  ip : 0000d4d4  fp : 3413f330
+
+<4>[468229.762947] (75999.748840) r10: 3413f330  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.762957] (75999.748840) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 0000003b
+
+<4>[468229.762972] (75999.748870) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.762988] (75999.748870) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.763006] (75999.748901) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.763077] (75999.748962) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.763096] (75999.748992) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.763129] (75999.749023) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.763151] (75999.749053) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.763160] (75999.749053) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.763168] (75999.749053) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.763187] (75999.749084) 1fc0: 0000003b 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 3413f330 3413f330
+
+<4>[468229.763197] (75999.749084) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<7>[468229.769357] (75999.755249) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468229.769372] (75999.755249) pgd = de918000
+
+<1>[468229.769490] (75999.755371) [00000014] *pgd=00000000
+
+<4>[468229.769592] (75999.755493) 
+
+<4>[468229.769599] (75999.755493) Pid: 6396, comm:      Blocking Thread
+
+<4>[468229.769607] (75999.755493) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468229.769628] (75999.755523) PC is at 0x8f544db4
+
+<4>[468229.769638] (75999.755523) LR is at 0x8fac4db1
+
+<4>[468229.769649] (75999.755523) pc : [<8f544db4>]    lr : [<8fac4db1>]    psr: 400f0030
+
+<4>[468229.769654] (75999.755554) sp : 7db04660  ip : 0000d4d4  fp : 3413f5f0
+
+<4>[468229.769661] (75999.755554) r10: 3413f5f0  r9 : 8a861400  r8 : 6f8ea3a0
+
+<4>[468229.769668] (75999.755554) r7 : 6f8ea3a0  r6 : 00000000  r5 : 7314ab30  r4 : 00000010
+
+<4>[468229.769675] (75999.755554) r3 : 33fc7afc  r2 : 32e7e800  r1 : 7314ab30  r0 : 00000000
+
+<4>[468229.769683] (75999.755584) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468229.769692] (75999.755584) Control: 10c5787d  Table: 1e91806a  DAC: 00000015
+
+<4>[468229.769726] (75999.755615) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468229.769740] (75999.755615) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468229.769753] (75999.755645) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468229.769766] (75999.755645) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468229.769774] (75999.755645) Exception stack(0xe8be1fb0 to 0xe8be1ff8)
+
+<4>[468229.769782] (75999.755676) 1fa0:                                     00000000 7314ab30 32e7e800 33fc7afc
+
+<4>[468229.769791] (75999.755676) 1fc0: 00000010 7314ab30 00000000 6f8ea3a0 6f8ea3a0 8a861400 3413f5f0 3413f5f0
+
+<4>[468229.769799] (75999.755676) 1fe0: 0000d4d4 7db04660 8fac4db1 8f544db4 400f0030 ffffffff
+
+<6>[468230.252983] (76000.238830) mtp_open
+
+<4>[468230.818239] (76000.804016) healthd: battery l=54 v=3743 t=30.1 h=2 st=2 c=256 chg=u
+
+<4>[468230.908371] (76000.894134) healthd: battery l=54 v=3742 t=30.1 h=2 st=2 c=278 chg=u
+
+<4>[468230.968277] (76000.954040) healthd: battery l=54 v=3725 t=30.2 h=2 st=2 c=304 chg=u
+
+<4>[468231.020762] (76001.006530) healthd: battery l=54 v=3729 t=30.1 h=2 st=2 c=368 chg=u
+
+<6>[468234.004664] (76003.990112) synaptics_dsx_i2c 2-0067: INT=2 TOUCH=2 STAT=0 RST=0 ERR=0
+
+<7>[468252.551662] (76022.535125) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468252.551675] (76022.535125) pgd = ec7f8000
+
+<1>[468252.551772] (76022.535217) [00000014] *pgd=00000000
+
+<4>[468252.551958] (76022.535430) 
+
+<4>[468252.551966] (76022.535430) Pid: 6509, comm:      Blocking Thread
+
+<4>[468252.551977] (76022.535430) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.552006] (76022.535461) PC is at 0x8db194ec
+
+<4>[468252.552016] (76022.535461) LR is at 0x8dbc245f
+
+<4>[468252.552027] (76022.535491) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468252.552035] (76022.535491) sp : 8063c670  ip : 00009e90  fp : 34500190
+
+<4>[468252.552043] (76022.535491) r10: 33296090  r9 : 9dc4a000  r8 : 34500190
+
+<4>[468252.552052] (76022.535522) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 00000007
+
+<4>[468252.552063] (76022.535522) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468252.552073] (76022.535522) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.552084] (76022.535552) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.552137] (76022.535583) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.552152] (76022.535614) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.552168] (76022.535614) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.552184] (76022.535644) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.552195] (76022.535644) Exception stack(0xe6c5ffb0 to 0xe6c5fff8)
+
+<4>[468252.552206] (76022.535675) ffa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468252.552217] (76022.535675) ffc0: 00000007 73278820 6f8ea3a0 00000000 34500190 9dc4a000 33296090 34500190
+
+<4>[468252.552229] (76022.535675) ffe0: 00009e90 8063c670 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468252.569497] (76022.552947) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468252.569510] (76022.552978) pgd = ec7f8000
+
+<1>[468252.569593] (76022.553039) [00000014] *pgd=00000000
+
+<4>[468252.569738] (76022.553192) 
+
+<4>[468252.569746] (76022.553192) Pid: 6507, comm:      Blocking Thread
+
+<4>[468252.569758] (76022.553222) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.569773] (76022.553222) PC is at 0x8db194ec
+
+<4>[468252.569782] (76022.553222) LR is at 0x8dbc245f
+
+<4>[468252.569793] (76022.553253) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468252.569798] (76022.553253) sp : 80743630  ip : 00009e90  fp : 34511070
+
+<4>[468252.569808] (76022.553253) r10: 33296090  r9 : 9dc46000  r8 : 34511070
+
+<4>[468252.569818] (76022.553283) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 00000055
+
+<4>[468252.569828] (76022.553283) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468252.569839] (76022.553283) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.569849] (76022.553314) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.569887] (76022.553344) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.569903] (76022.553344) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.569918] (76022.553375) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.569935] (76022.553375) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.569945] (76022.553405) Exception stack(0xf1d8bfb0 to 0xf1d8bff8)
+
+<4>[468252.569956] (76022.553405) bfa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468252.569968] (76022.553436) bfc0: 00000055 73278820 6f8ea3a0 00000000 34511070 9dc46000 33296090 34511070
+
+<4>[468252.569979] (76022.553436) bfe0: 00009e90 80743630 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468252.576426] (76022.559875) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468252.576447] (76022.559906) pgd = ec7f8000
+
+<1>[468252.576547] (76022.559997) [00000014] *pgd=00000000
+
+<4>[468252.576657] (76022.560119) 
+
+<4>[468252.576665] (76022.560119) Pid: 6507, comm:      Blocking Thread
+
+<4>[468252.576673] (76022.560119) CPU: 3    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.576686] (76022.560150) PC is at 0x8db194ec
+
+<4>[468252.576695] (76022.560150) LR is at 0x8dbc245f
+
+<4>[468252.576705] (76022.560150) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468252.576711] (76022.560150) sp : 80743630  ip : 00009e90  fp : 345113c0
+
+<4>[468252.576720] (76022.560180) r10: 33296090  r9 : 9dc46000  r8 : 345113c0
+
+<4>[468252.576728] (76022.560180) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 0000001e
+
+<4>[468252.576738] (76022.560180) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468252.576748] (76022.560211) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.576759] (76022.560211) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.576792] (76022.560241) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.576808] (76022.560272) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.576824] (76022.560272) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.576844] (76022.560302) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.576856] (76022.560302) Exception stack(0xf1d8bfb0 to 0xf1d8bff8)
+
+<4>[468252.576866] (76022.560333) bfa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468252.576877] (76022.560333) bfc0: 0000001e 73278820 6f8ea3a0 00000000 345113c0 9dc46000 33296090 345113c0
+
+<4>[468252.576885] (76022.560333) bfe0: 00009e90 80743630 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468252.589857] (76022.573303) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468252.589878] (76022.573333) pgd = ec7f8000
+
+<1>[468252.590059] (76022.573516) [00000014] *pgd=00000000
+
+<4>[468252.590196] (76022.573638) 
+
+<4>[468252.590222] (76022.573669) Pid: 6569, comm:      Blocking Thread
+
+<4>[468252.590257] (76022.573699) CPU: 3    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.590297] (76022.573760) PC is at 0x8db194ec
+
+<4>[468252.590317] (76022.573760) LR is at 0x8dbc245f
+
+<4>[468252.590332] (76022.573791) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468252.590346] (76022.573791) sp : 7e7a9630  ip : 00009e90  fp : 34502520
+
+<4>[468252.590367] (76022.573822) r10: 33296090  r9 : 80065c00  r8 : 34502520
+
+<4>[468252.590388] (76022.573852) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 0000005b
+
+<4>[468252.590421] (76022.573883) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468252.590448] (76022.573913) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.590462] (76022.573913) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.590557] (76022.574005) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.590581] (76022.574035) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.590601] (76022.574066) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.590619] (76022.574066) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.590629] (76022.574096) Exception stack(0xe7885fb0 to 0xe7885ff8)
+
+<4>[468252.590642] (76022.574096) 5fa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468252.590653] (76022.574096) 5fc0: 0000005b 73278820 6f8ea3a0 00000000 34502520 80065c00 33296090 34502520
+
+<4>[468252.590667] (76022.574127) 5fe0: 00009e90 7e7a9630 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468252.601178] (76022.584625) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468252.601196] (76022.584655) pgd = ec7f8000
+
+<1>[468252.601301] (76022.584747) [00000014] *pgd=00000000
+
+<4>[468252.601491] (76022.584930) 
+
+<4>[468252.601500] (76022.584960) Pid: 6509, comm:      Blocking Thread
+
+<4>[468252.601511] (76022.584960) CPU: 3    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.601542] (76022.584991) PC is at 0x8db194ec
+
+<4>[468252.601557] (76022.585021) LR is at 0x8dbc245f
+
+<4>[468252.601569] (76022.585021) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468252.601577] (76022.585021) sp : 8063c670  ip : 00009e90  fp : 34500550
+
+<4>[468252.601587] (76022.585052) r10: 33296090  r9 : 9dc4a000  r8 : 34500550
+
+<4>[468252.601598] (76022.585052) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 00000023
+
+<4>[468252.601609] (76022.585052) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468252.601632] (76022.585083) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.601652] (76022.585113) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.601827] (76022.585296) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.601877] (76022.585327) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.601897] (76022.585357) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.601936] (76022.585388) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.601952] (76022.585418) Exception stack(0xe6c5ffb0 to 0xe6c5fff8)
+
+<4>[468252.601970] (76022.585418) ffa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468252.601982] (76022.585449) ffc0: 00000023 73278820 6f8ea3a0 00000000 34500550 9dc4a000 33296090 34500550
+
+<4>[468252.601997] (76022.585449) ffe0: 00009e90 8063c670 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468252.629343] (76022.612792) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468252.629364] (76022.612823) pgd = ec7f8000
+
+<1>[468252.629492] (76022.612945) [00000014] *pgd=00000000
+
+<4>[468252.629897] (76022.613342) 
+
+<4>[468252.629906] (76022.613342) Pid: 6569, comm:      Blocking Thread
+
+<4>[468252.629915] (76022.613372) CPU: 3    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.629930] (76022.613372) PC is at 0x8db194ec
+
+<4>[468252.629939] (76022.613372) LR is at 0x8dbc245f
+
+<4>[468252.629948] (76022.613403) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468252.629954] (76022.613403) sp : 7e7a9630  ip : 00009e90  fp : 34502870
+
+<4>[468252.629964] (76022.613403) r10: 33296090  r9 : 80065c00  r8 : 34502870
+
+<4>[468252.629973] (76022.613433) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 00000034
+
+<4>[468252.629981] (76022.613433) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468252.629992] (76022.613433) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.630003] (76022.613464) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.630042] (76022.613494) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.630058] (76022.613494) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.630074] (76022.613525) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.630092] (76022.613555) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.630103] (76022.613555) Exception stack(0xe7885fb0 to 0xe7885ff8)
+
+<4>[468252.630114] (76022.613555) 5fa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468252.630126] (76022.613586) 5fc0: 00000034 73278820 6f8ea3a0 00000000 34502870 80065c00 33296090 34502870
+
+<4>[468252.630142] (76022.613586) 5fe0: 00009e90 7e7a9630 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468252.688826] (76022.672271) BG Thread #1: unhandled page fault (11) at 0x00000000, code 0x005
+
+<1>[468252.688843] (76022.672302) pgd = ec7f8000
+
+<1>[468252.688960] (76022.672393) [00000000] *pgd=00000000
+
+<4>[468252.689253] (76022.672698) 
+
+<4>[468252.689268] (76022.672698) Pid: 15584, comm:         BG Thread #1
+
+<4>[468252.689284] (76022.672729) CPU: 3    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.689300] (76022.672729) PC is at 0x8bfc238c
+
+<4>[468252.689311] (76022.672760) LR is at 0x716732dd
+
+<4>[468252.689321] (76022.672760) pc : [<8bfc238c>]    lr : [<716732dd>]    psr: 400b0030
+
+<4>[468252.689327] (76022.672760) sp : 9e22f790  ip : 00001538  fp : 33698950
+
+<4>[468252.689337] (76022.672790) r10: 33869780  r9 : a39f7400  r8 : 33217fc0
+
+<4>[468252.689346] (76022.672790) r7 : 33a46550  r6 : 00000000  r5 : 72fc5e90  r4 : 00000054
+
+<4>[468252.689356] (76022.672790) r3 : 33661000  r2 : 32d05400  r1 : 00000000  r0 : 6f22fe20
+
+<4>[468252.689367] (76022.672821) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.689378] (76022.672821) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.689456] (76022.672912) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.689473] (76022.672912) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.689489] (76022.672943) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.689505] (76022.672943) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.689516] (76022.672973) Exception stack(0xe5367fb0 to 0xe5367ff8)
+
+<4>[468252.689526] (76022.672973) 7fa0:                                     6f22fe20 00000000 32d05400 33661000
+
+<4>[468252.689539] (76022.672973) 7fc0: 00000054 72fc5e90 00000000 33a46550 33217fc0 a39f7400 33869780 33698950
+
+<4>[468252.689551] (76022.673004) 7fe0: 00001538 9e22f790 716732dd 8bfc238c 400b0030 ffffffff
+
+<7>[468252.706157] (76022.689605) BG Thread #3: unhandled page fault (11) at 0x00000000, code 0x005
+
+<1>[468252.706171] (76022.689605) pgd = ec7f8000
+
+<1>[468252.706352] (76022.689788) [00000000] *pgd=00000000
+
+<4>[468252.706484] (76022.689910) 
+
+<4>[468252.706492] (76022.689941) Pid: 15592, comm:         BG Thread #3
+
+<4>[468252.706507] (76022.689941) CPU: 3    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.706524] (76022.689971) PC is at 0x8bfc238c
+
+<4>[468252.706533] (76022.689971) LR is at 0x716732dd
+
+<4>[468252.706541] (76022.689971) pc : [<8bfc238c>]    lr : [<716732dd>]    psr: 400b0030
+
+<4>[468252.706546] (76022.690002) sp : 833fc790  ip : 00001538  fp : 33698950
+
+<4>[468252.706554] (76022.690002) r10: 33869780  r9 : 9dc43800  r8 : 33217fc0
+
+<4>[468252.706562] (76022.690002) r7 : 33a46550  r6 : 00000000  r5 : 72fc5e90  r4 : 0000004a
+
+<4>[468252.706569] (76022.690002) r3 : 33661000  r2 : 32d05400  r1 : 00000000  r0 : 6f22fe20
+
+<4>[468252.706587] (76022.690032) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.706602] (76022.690032) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.706747] (76022.690185) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.706792] (76022.690246) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.706822] (76022.690277) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.706866] (76022.690307) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.706888] (76022.690338) Exception stack(0xd386dfb0 to 0xd386dff8)
+
+<4>[468252.706902] (76022.690338) dfa0:                                     6f22fe20 00000000 32d05400 33661000
+
+<4>[468252.706917] (76022.690368) dfc0: 0000004a 72fc5e90 00000000 33a46550 33217fc0 9dc43800 33869780 33698950
+
+<4>[468252.706927] (76022.690368) dfe0: 00001538 833fc790 716732dd 8bfc238c 400b0030 ffffffff
+
+<7>[468252.714696] (76022.698150) BG Thread #1: unhandled page fault (11) at 0x00000000, code 0x005
+
+<1>[468252.714716] (76022.698150) pgd = ec7f8000
+
+<1>[468252.714997] (76022.698455) [00000000] *pgd=00000000
+
+<4>[468252.715351] (76022.698791) 
+
+<4>[468252.715363] (76022.698791) Pid: 15584, comm:         BG Thread #1
+
+<4>[468252.715372] (76022.698822) CPU: 1    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468252.715389] (76022.698822) PC is at 0x8bfc238c
+
+<4>[468252.715396] (76022.698822) LR is at 0x716732dd
+
+<4>[468252.715405] (76022.698852) pc : [<8bfc238c>]    lr : [<716732dd>]    psr: 40070030
+
+<4>[468252.715411] (76022.698852) sp : 9e22f790  ip : 00001538  fp : 33698950
+
+<4>[468252.715420] (76022.698852) r10: 33869780  r9 : a39f7400  r8 : 33217fc0
+
+<4>[468252.715428] (76022.698852) r7 : 33a46550  r6 : 00000000  r5 : 72fc5e90  r4 : 00000011
+
+<4>[468252.715435] (76022.698883) r3 : 33661000  r2 : 32d05400  r1 : 00000000  r0 : 6f22fe20
+
+<4>[468252.715444] (76022.698883) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468252.715453] (76022.698883) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468252.715504] (76022.698944) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468252.715518] (76022.698944) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468252.715534] (76022.698974) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468252.715559] (76022.699005) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468252.715570] (76022.699005) Exception stack(0xe5367fb0 to 0xe5367ff8)
+
+<4>[468252.715583] (76022.699035) 7fa0:                                     6f22fe20 00000000 32d05400 33661000
+
+<4>[468252.715593] (76022.699035) 7fc0: 00000011 72fc5e90 00000000 33a46550 33217fc0 a39f7400 33869780 33698950
+
+<4>[468252.715606] (76022.699035) 7fe0: 00001538 9e22f790 716732dd 8bfc238c 40070030 ffffffff
+
+<7>[468253.052787] (76023.036193) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468253.052810] (76023.036224) pgd = ec7f8000
+
+<1>[468253.053055] (76023.036468) [00000014] *pgd=00000000
+
+<4>[468253.053200] (76023.036590) 
+
+<4>[468253.053207] (76023.036621) Pid: 6508, comm:      Blocking Thread
+
+<4>[468253.053215] (76023.036621) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468253.053273] (76023.036682) PC is at 0x8db194ec
+
+<4>[468253.053313] (76023.036712) LR is at 0x8dbc245f
+
+<4>[468253.053321] (76023.036712) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468253.053327] (76023.036743) sp : 82098730  ip : 00009e90  fp : 33dbf690
+
+<4>[468253.053335] (76023.036743) r10: 33296090  r9 : 83512c00  r8 : 33dbf690
+
+<4>[468253.053343] (76023.036743) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 0000003f
+
+<4>[468253.053351] (76023.036743) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468253.053359] (76023.036773) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468253.053367] (76023.036773) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468253.053414] (76023.036804) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468253.053427] (76023.036834) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468253.053440] (76023.036834) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468253.053454] (76023.036865) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468253.053462] (76023.036865) Exception stack(0xe74b9fb0 to 0xe74b9ff8)
+
+<4>[468253.053471] (76023.036865) 9fa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468253.053479] (76023.036895) 9fc0: 0000003f 73278820 6f8ea3a0 00000000 33dbf690 83512c00 33296090 33dbf690
+
+<4>[468253.053488] (76023.036895) 9fe0: 00009e90 82098730 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468253.055947] (76023.039367) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468253.055987] (76023.039398) pgd = ec7f8000
+
+<1>[468253.056104] (76023.039520) [00000014] *pgd=00000000
+
+<4>[468253.056301] (76023.039703) 
+
+<4>[468253.056323] (76023.039733) Pid: 6508, comm:      Blocking Thread
+
+<4>[468253.056333] (76023.039733) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468253.056346] (76023.039764) PC is at 0x8db194ec
+
+<4>[468253.056353] (76023.039764) LR is at 0x8dbc245f
+
+<4>[468253.056361] (76023.039764) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468253.056366] (76023.039764) sp : 82098730  ip : 00009e90  fp : 33dc1110
+
+<4>[468253.056373] (76023.039764) r10: 33296090  r9 : 83512c00  r8 : 33dc1110
+
+<4>[468253.056380] (76023.039794) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 00000050
+
+<4>[468253.056389] (76023.039794) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468253.056397] (76023.039794) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468253.056404] (76023.039794) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468253.056429] (76023.039825) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468253.056448] (76023.039855) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468253.056462] (76023.039855) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468253.056492] (76023.039916) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468253.056509] (76023.039916) Exception stack(0xe74b9fb0 to 0xe74b9ff8)
+
+<4>[468253.056522] (76023.039916) 9fa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468253.056536] (76023.039947) 9fc0: 00000050 73278820 6f8ea3a0 00000000 33dc1110 83512c00 33296090 33dc1110
+
+<4>[468253.056545] (76023.039947) 9fe0: 00009e90 82098730 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468253.059262] (76023.042663) BG Thread #3: unhandled page fault (11) at 0x00000000, code 0x005
+
+<1>[468253.059278] (76023.042694) pgd = ec7f8000
+
+<1>[468253.059361] (76023.042755) [00000000] *pgd=00000000
+
+<4>[468253.059551] (76023.042968) 
+
+<4>[468253.059559] (76023.042968) Pid: 15592, comm:         BG Thread #3
+
+<4>[468253.059569] (76023.042968) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468253.059579] (76023.042968) PC is at 0x8bfc238c
+
+<4>[468253.059586] (76023.042999) LR is at 0x716732dd
+
+<4>[468253.059593] (76023.042999) pc : [<8bfc238c>]    lr : [<716732dd>]    psr: 400b0030
+
+<4>[468253.059598] (76023.042999) sp : 833fc790  ip : 00001538  fp : 33698950
+
+<4>[468253.059605] (76023.042999) r10: 33869780  r9 : 9dc43800  r8 : 33217fc0
+
+<4>[468253.059613] (76023.043029) r7 : 33a46550  r6 : 00000000  r5 : 72fc5e90  r4 : 00000045
+
+<4>[468253.059620] (76023.043029) r3 : 33661000  r2 : 32d05400  r1 : 00000000  r0 : 6f22fe20
+
+<4>[468253.059628] (76023.043029) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468253.059636] (76023.043029) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468253.059664] (76023.043060) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468253.059677] (76023.043090) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468253.059689] (76023.043090) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468253.059701] (76023.043090) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468253.059710] (76023.043121) Exception stack(0xd386dfb0 to 0xd386dff8)
+
+<4>[468253.059718] (76023.043121) dfa0:                                     6f22fe20 00000000 32d05400 33661000
+
+<4>[468253.059727] (76023.043121) dfc0: 00000045 72fc5e90 00000000 33a46550 33217fc0 9dc43800 33869780 33698950
+
+<4>[468253.059736] (76023.043151) dfe0: 00001538 833fc790 716732dd 8bfc238c 400b0030 ffffffff
+
+<7>[468253.073406] (76023.056793) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468253.073423] (76023.056823) pgd = ec7f8000
+
+<1>[468253.073515] (76023.056915) [00000014] *pgd=00000000
+
+<4>[468253.073712] (76023.057098) 
+
+<4>[468253.073719] (76023.057128) Pid: 6508, comm:      Blocking Thread
+
+<4>[468253.073728] (76023.057128) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468253.073749] (76023.057159) PC is at 0x8db194ec
+
+<4>[468253.073758] (76023.057159) LR is at 0x8dbc245f
+
+<4>[468253.073766] (76023.057159) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468253.073771] (76023.057159) sp : 82098730  ip : 00009e90  fp : 33e19b40
+
+<4>[468253.073779] (76023.057189) r10: 33296090  r9 : 83512c00  r8 : 33e19b40
+
+<4>[468253.073786] (76023.057189) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 00000008
+
+<4>[468253.073795] (76023.057189) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468253.073804] (76023.057220) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468253.073817] (76023.057220) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468253.073894] (76023.057281) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468253.073908] (76023.057312) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468253.073920] (76023.057312) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468253.073933] (76023.057342) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468253.073942] (76023.057342) Exception stack(0xe74b9fb0 to 0xe74b9ff8)
+
+<4>[468253.073951] (76023.057342) 9fa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468253.073960] (76023.057373) 9fc0: 00000008 73278820 6f8ea3a0 00000000 33e19b40 83512c00 33296090 33e19b40
+
+<4>[468253.073968] (76023.057373) 9fe0: 00009e90 82098730 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468253.077408] (76023.060821) Blocking Thread: unhandled page fault (11) at 0x00000014, code 0x005
+
+<1>[468253.077427] (76023.060821) pgd = ec7f8000
+
+<1>[468253.077640] (76023.061035) [00000014] *pgd=00000000
+
+<4>[468253.077997] (76023.061401) 
+
+<4>[468253.078012] (76023.061431) Pid: 6508, comm:      Blocking Thread
+
+<4>[468253.078031] (76023.061431) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468253.078048] (76023.061462) PC is at 0x8db194ec
+
+<4>[468253.078058] (76023.061462) LR is at 0x8dbc245f
+
+<4>[468253.078065] (76023.061462) pc : [<8db194ec>]    lr : [<8dbc245f>]    psr: 400f0030
+
+<4>[468253.078072] (76023.061462) sp : 82098730  ip : 00009e90  fp : 33e19e60
+
+<4>[468253.078083] (76023.061492) r10: 33296090  r9 : 83512c00  r8 : 33e19e60
+
+<4>[468253.078092] (76023.061492) r7 : 00000000  r6 : 6f8ea3a0  r5 : 73278820  r4 : 00000036
+
+<4>[468253.078104] (76023.061492) r3 : 00000000  r2 : 33017400  r1 : 73278820  r0 : 00000000
+
+<4>[468253.078118] (76023.061523) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468253.078127] (76023.061523) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468253.078211] (76023.061614) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468253.078241] (76023.061645) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468253.078261] (76023.061676) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468253.078274] (76023.061676) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468253.078283] (76023.061676) Exception stack(0xe74b9fb0 to 0xe74b9ff8)
+
+<4>[468253.078306] (76023.061706) 9fa0:                                     00000000 73278820 33017400 00000000
+
+<4>[468253.078332] (76023.061737) 9fc0: 00000036 73278820 6f8ea3a0 00000000 33e19e60 83512c00 33296090 33e19e60
+
+<4>[468253.078352] (76023.061767) 9fe0: 00009e90 82098730 8dbc245f 8db194ec 400f0030 ffffffff
+
+<7>[468253.085416] (76023.068817) BG Thread #1: unhandled page fault (11) at 0x00000000, code 0x005
+
+<1>[468253.085433] (76023.068847) pgd = ec7f8000
+
+<1>[468253.085762] (76023.069152) [00000000] *pgd=00000000
+
+<4>[468253.085987] (76023.069396) 
+
+<4>[468253.085995] (76023.069396) Pid: 15584, comm:         BG Thread #1
+
+<4>[468253.086005] (76023.069396) CPU: 0    Tainted: G        W     (3.4.0-grsec-g0ea3e38 #1)
+
+<4>[468253.086042] (76023.069427) PC is at 0x8bfc238c
+
+<4>[468253.086051] (76023.069458) LR is at 0x716732dd
+
+<4>[468253.086060] (76023.069458) pc : [<8bfc238c>]    lr : [<716732dd>]    psr: 40070030
+
+<4>[468253.086066] (76023.069458) sp : 9e22f790  ip : 00001538  fp : 33698950
+
+<4>[468253.086074] (76023.069488) r10: 33869780  r9 : a39f7400  r8 : 33217fc0
+
+<4>[468253.086083] (76023.069488) r7 : 33a46550  r6 : 00000000  r5 : 72fc5e90  r4 : 0000000a
+
+<4>[468253.086091] (76023.069488) r3 : 33661000  r2 : 32d05400  r1 : 00000000  r0 : 6f22fe20
+
+<4>[468253.086102] (76023.069488) Flags: nZcv  IRQs on  FIQs on  Mode USER_32  ISA Thumb  Segment user
+
+<4>[468253.086112] (76023.069519) Control: 10c5787d  Table: 2c7f806a  DAC: 00000015
+
+<4>[468253.086179] (76023.069580) [<c010cb00>] (unwind_backtrace+0x0/0xf4) from [<c0112ec8>] (__do_user_fault+0x140/0x144)
+
+<4>[468253.086197] (76023.069610) [<c0112ec8>] (__do_user_fault+0x140/0x144) from [<c01130b8>] (do_page_fault+0x1ec/0x390)
+
+<4>[468253.086211] (76023.069610) [<c01130b8>] (do_page_fault+0x1ec/0x390) from [<c01002f0>] (do_DataAbort+0x58/0x21c)
+
+<4>[468253.086249] (76023.069641) [<c01002f0>] (do_DataAbort+0x58/0x21c) from [<c01061f4>] (__dabt_usr+0x34/0x40)
+
+<4>[468253.086269] (76023.069671) Exception stack(0xe5367fb0 to 0xe5367ff8)
+
+<4>[468253.088428] (76023.071838) 7fa0:                                     6f22fe20 00000000 32d05400 33661000
+
+<4>[468253.088457] (76023.071868) 7fc0: 0000000a 72fc5e90 00000000 33a46550 33217fc0 a39f7400 33869780 33698950
+
+<4>[468253.088470] (76023.071868) 7fe0: 00001538 9e22f790 716732dd 8bfc238c 40070030 ffffffff
+
+<4>[468263.728020] (76033.710296) IRQ40 no longer affine to CPU3
+
+<6>[468313.994738] (76083.971649) synaptics_dsx_i2c 2-0067: synaptics_lockup_poll: Image metric unchanged 1 (9931)
+
+<36>[468375.641462] (76145.611785) type=1400 audit(1791823791.504:206): avc: denied { search } for pid=7286 comm="ls" name="block" dev="tmpfs" ino=9821 scontext=u:r:shell:s0 tcontext=u:object_r:block_device:s0 tclass=dir
+
+<36>[468375.909932] (76145.880218) type=1400 audit(1791823791.774:207): avc: denied { getattr } for pid=7292 comm="df" name="/" dev="securityfs" ino=1 scontext=u:r:shell:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem
+
+<36>[468375.917032] (76145.887329) type=1400 audit(1791823791.784:208): avc: denied { getattr } for pid=7292 comm="df" name="/" dev="fuse" ino=2919796928 scontext=u:r:shell:s0 tcontext=u:object_r:vtnvfs_blog_file:s0 tclass=filesystem
+
+<36>[468375.917876] (76145.888183) type=1400 audit(1791823791.784:209): avc: denied { getattr } for pid=7292 comm="df" name="/" dev="fuse" ino=2802499776 scontext=u:r:shell:s0 tcontext=u:object_r:vtnvfs_boardid_file:s0 tclass=filesystem
+
+<36>[468375.918431] (76145.888732) type=1400 audit(1791823791.784:210): avc: denied { getattr } for pid=7292 comm="df" name="/" dev="fuse" ino=2802501568 scontext=u:r:shell:s0 tcontext=u:object_r:vtnvfs_nvuser_file:s0 tclass=filesystem
+
+<36>[468375.918808] (76145.889099) type=1400 audit(1791823791.784:211): avc: denied { getattr } for pid=7292 comm="df" name="/" dev="fuse" ino=2802502464 scontext=u:r:shell:s0 tcontext=u:object_r:vtnvfs_perm_file:s0 tclass=filesystem
+
+<36>[468375.919466] (76145.889770) type=1400 audit(1791823791.784:212): avc: denied { getattr } for pid=7292 comm="df" name="/" dev="fuse" ino=2802503360 scontext=u:r:shell:s0 tcontext=u:object_r:vtnvfs_prdid_file:s0 tclass=filesystem
+
+<36>[468376.205451] (76146.175720) type=1400 audit(1791823792.074:213): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/adbd" dev="tmpfs" ino=10502 scontext=u:r:shell:s0 tcontext=u:object_r:adbd_socket:s0 tclass=sock_file
+
+<36>[468376.205570] (76146.175842) type=1400 audit(1791823792.074:214): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/bbauth" dev="tmpfs" ino=8453 scontext=u:r:shell:s0 tcontext=u:object_r:bbauth_socket:s0 tclass=sock_file
+
+<36>[468376.205748] (76146.176025) type=1400 audit(1791823792.074:215): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/cnd" dev="tmpfs" ino=8507 scontext=u:r:shell:s0 tcontext=u:object_r:cnd_socket:s0 tclass=sock_file
+
+<36>[468376.206036] (76146.176300) type=1400 audit(1791823792.074:216): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/dnsproxyd" dev="tmpfs" ino=117108 scontext=u:r:shell:s0 tcontext=u:object_r:dnsproxyd_socket:s0 tclass=sock_file
+
+<36>[468376.206113] (76146.176391) type=1400 audit(1791823792.074:217): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/fwmarkd" dev="tmpfs" ino=117104 scontext=u:r:shell:s0 tcontext=u:object_r:fwmarkd_socket:s0 tclass=sock_file
+
+<36>[468376.206191] (76146.176452) type=1400 audit(1791823792.074:218): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/installd" dev="tmpfs" ino=8464 scontext=u:r:shell:s0 tcontext=u:object_r:installd_socket:s0 tclass=sock_file
+
+<36>[468376.206300] (76146.176574) type=1400 audit(1791823792.074:219): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/lmkd" dev="tmpfs" ino=7318 scontext=u:r:shell:s0 tcontext=u:object_r:lmkd_socket:s0 tclass=sock_file
+
+<4>[468376.207965] (76146.178222) audit: audit_lost=46 audit_rate_limit=20 audit_backlog_limit=64
+
+<3>[468376.207980] (76146.178253) audit: rate limit exceeded
+
+<36>[468376.209961] (76146.180236) type=1400 audit(1791823792.074:220): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/logd" dev="tmpfs" ino=7308 scontext=u:r:shell:s0 tcontext=u:object_r:logd_socket:s0 tclass=sock_file
+
+<36>[468376.210087] (76146.180358) type=1400 audit(1791823792.074:221): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/logdr" dev="tmpfs" ino=7306 scontext=u:r:shell:s0 tcontext=u:object_r:logdr_socket:s0 tclass=sock_file
+
+<36>[468376.210167] (76146.180450) type=1400 audit(1791823792.074:222): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/logdw" dev="tmpfs" ino=7304 scontext=u:r:shell:s0 tcontext=u:object_r:logdw_socket:s0 tclass=sock_file
+
+<36>[468376.210249] (76146.180511) type=1400 audit(1791823792.074:223): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/mdns" dev="tmpfs" ino=117106 scontext=u:r:shell:s0 tcontext=u:object_r:mdns_socket:s0 tclass=sock_file
+
+<36>[468376.210331] (76146.180603) type=1400 audit(1791823792.074:224): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/mfg" dev="tmpfs" ino=8222 scontext=u:r:shell:s0 tcontext=u:object_r:stp_server_socket:s0 tclass=dir
+
+<36>[468376.210410] (76146.180664) type=1400 audit(1791823792.074:225): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/netd" dev="tmpfs" ino=117110 scontext=u:r:shell:s0 tcontext=u:object_r:netd_socket:s0 tclass=sock_file
+
+<36>[468376.210488] (76146.180755) type=1400 audit(1791823792.074:226): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/pps" dev="tmpfs" ino=7011 scontext=u:r:shell:s0 tcontext=u:object_r:pps_socket:s0 tclass=sock_file
+
+<36>[468376.210569] (76146.180847) type=1400 audit(1791823792.074:227): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/property_service" dev="tmpfs" ino=7284 scontext=u:r:shell:s0 tcontext=u:object_r:property_socket:s0 tclass=sock_file
+
+<36>[468376.210673] (76146.180938) type=1400 audit(1791823792.074:228): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/qmux_audio" dev="tmpfs" ino=10191 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468376.210754] (76146.181030) type=1400 audit(1791823792.074:229): avc: denied { getattr } for pid=7297 comm="ls" path="/dev/socket/qmux_bluetooth" dev="tmpfs" ino=10192 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<4>[468416.079101] (76186.045104) healthd: battery l=54 v=3905 t=30.5 h=2 st=2 c=-342 chg=u
+
+<4>[468416.106494] (76186.072509) healthd: battery l=54 v=3894 t=30.7 h=2 st=2 c=-342 chg=u
+
+<4>[468456.051701] (76226.013458) healthd: battery l=55 v=3909 t=30.7 h=2 st=2 c=-335 chg=u
+
+<4>[468456.112159] (76226.073913) healthd: battery l=55 v=3890 t=31.0 h=2 st=2 c=-274 chg=u
+
+<36>[468507.264273] (76277.220550) type=1400 audit(1791823923.124:238): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/adbd" dev="tmpfs" ino=10502 scontext=u:r:shell:s0 tcontext=u:object_r:adbd_socket:s0 tclass=sock_file
+
+<36>[468507.264867] (76277.221160) type=1400 audit(1791823923.134:239): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/bbauth" dev="tmpfs" ino=8453 scontext=u:r:shell:s0 tcontext=u:object_r:bbauth_socket:s0 tclass=sock_file
+
+<36>[468507.265108] (76277.221405) type=1400 audit(1791823923.134:240): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/cnd" dev="tmpfs" ino=8507 scontext=u:r:shell:s0 tcontext=u:object_r:cnd_socket:s0 tclass=sock_file
+
+<36>[468507.265554] (76277.221832) type=1400 audit(1791823923.134:241): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/dnsproxyd" dev="tmpfs" ino=117108 scontext=u:r:shell:s0 tcontext=u:object_r:dnsproxyd_socket:s0 tclass=sock_file
+
+<36>[468507.265967] (76277.222259) type=1400 audit(1791823923.134:242): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/fwmarkd" dev="tmpfs" ino=117104 scontext=u:r:shell:s0 tcontext=u:object_r:fwmarkd_socket:s0 tclass=sock_file
+
+<36>[468507.266362] (76277.222656) type=1400 audit(1791823923.134:243): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/installd" dev="tmpfs" ino=8464 scontext=u:r:shell:s0 tcontext=u:object_r:installd_socket:s0 tclass=sock_file
+
+<36>[468507.266771] (76277.223052) type=1400 audit(1791823923.134:244): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/lmkd" dev="tmpfs" ino=7318 scontext=u:r:shell:s0 tcontext=u:object_r:lmkd_socket:s0 tclass=sock_file
+
+<36>[468507.267175] (76277.223480) type=1400 audit(1791823923.134:245): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/logd" dev="tmpfs" ino=7308 scontext=u:r:shell:s0 tcontext=u:object_r:logd_socket:s0 tclass=sock_file
+
+<36>[468507.267581] (76277.223876) type=1400 audit(1791823923.134:246): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/logdr" dev="tmpfs" ino=7306 scontext=u:r:shell:s0 tcontext=u:object_r:logdr_socket:s0 tclass=sock_file
+
+<36>[468507.267988] (76277.224273) type=1400 audit(1791823923.134:247): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/logdw" dev="tmpfs" ino=7304 scontext=u:r:shell:s0 tcontext=u:object_r:logdw_socket:s0 tclass=sock_file
+
+<36>[468507.268388] (76277.224670) type=1400 audit(1791823923.134:248): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/mdns" dev="tmpfs" ino=117106 scontext=u:r:shell:s0 tcontext=u:object_r:mdns_socket:s0 tclass=sock_file
+
+<36>[468507.268789] (76277.225067) type=1400 audit(1791823923.134:249): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/mfg" dev="tmpfs" ino=8222 scontext=u:r:shell:s0 tcontext=u:object_r:stp_server_socket:s0 tclass=dir
+
+<36>[468507.269175] (76277.225463) type=1400 audit(1791823923.134:250): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/netd" dev="tmpfs" ino=117110 scontext=u:r:shell:s0 tcontext=u:object_r:netd_socket:s0 tclass=sock_file
+
+<36>[468507.269577] (76277.225860) type=1400 audit(1791823923.134:251): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/pps" dev="tmpfs" ino=7011 scontext=u:r:shell:s0 tcontext=u:object_r:pps_socket:s0 tclass=sock_file
+
+<36>[468507.269803] (76277.226104) type=1400 audit(1791823923.134:252): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/property_service" dev="tmpfs" ino=7284 scontext=u:r:shell:s0 tcontext=u:object_r:property_socket:s0 tclass=sock_file
+
+<36>[468507.270157] (76277.226440) type=1400 audit(1791823923.134:253): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/qmux_audio" dev="tmpfs" ino=10191 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468507.270555] (76277.226837) type=1400 audit(1791823923.134:254): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/qmux_bluetooth" dev="tmpfs" ino=10192 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468507.270950] (76277.227233) type=1400 audit(1791823923.134:255): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/qmux_gps" dev="tmpfs" ino=10193 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468507.271343] (76277.227630) type=1400 audit(1791823923.134:256): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/qmux_radio" dev="tmpfs" ino=10190 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468507.271742] (76277.228027) type=1400 audit(1791823923.134:257): avc: denied { getattr } for pid=7443 comm="ls" path="/dev/socket/rild" dev="tmpfs" ino=7689 scontext=u:r:shell:s0 tcontext=u:object_r:rild_socket:s0 tclass=sock_file
+
+<4>[468507.272104] (76277.228393) audit: audit_lost=54 audit_rate_limit=20 audit_backlog_limit=64
+
+<3>[468507.272113] (76277.228393) audit: rate limit exceeded
+
+<36>[468633.961466] (76403.904235) type=1400 audit(1791824049.824:272): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/adbd" dev="tmpfs" ino=10502 scontext=u:r:shell:s0 tcontext=u:object_r:adbd_socket:s0 tclass=sock_file
+
+<36>[468633.969464] (76403.912231) type=1400 audit(1791824049.834:273): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/bbauth" dev="tmpfs" ino=8453 scontext=u:r:shell:s0 tcontext=u:object_r:bbauth_socket:s0 tclass=sock_file
+
+<36>[468633.969692] (76403.912475) type=1400 audit(1791824049.834:274): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/cnd" dev="tmpfs" ino=8507 scontext=u:r:shell:s0 tcontext=u:object_r:cnd_socket:s0 tclass=sock_file
+
+<36>[468633.969911] (76403.912689) type=1400 audit(1791824049.834:275): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/dnsproxyd" dev="tmpfs" ino=117108 scontext=u:r:shell:s0 tcontext=u:object_r:dnsproxyd_socket:s0 tclass=sock_file
+
+<36>[468633.970339] (76403.913116) type=1400 audit(1791824049.834:276): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/fwmarkd" dev="tmpfs" ino=117104 scontext=u:r:shell:s0 tcontext=u:object_r:fwmarkd_socket:s0 tclass=sock_file
+
+<36>[468633.970544] (76403.913330) type=1400 audit(1791824049.834:277): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/installd" dev="tmpfs" ino=8464 scontext=u:r:shell:s0 tcontext=u:object_r:installd_socket:s0 tclass=sock_file
+
+<36>[468633.970741] (76403.913513) type=1400 audit(1791824049.834:278): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/lmkd" dev="tmpfs" ino=7318 scontext=u:r:shell:s0 tcontext=u:object_r:lmkd_socket:s0 tclass=sock_file
+
+<36>[468633.971144] (76403.913909) type=1400 audit(1791824049.834:279): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/logd" dev="tmpfs" ino=7308 scontext=u:r:shell:s0 tcontext=u:object_r:logd_socket:s0 tclass=sock_file
+
+<36>[468633.971335] (76403.914123) type=1400 audit(1791824049.834:280): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/logdr" dev="tmpfs" ino=7306 scontext=u:r:shell:s0 tcontext=u:object_r:logdr_socket:s0 tclass=sock_file
+
+<36>[468633.971571] (76403.914337) type=1400 audit(1791824049.834:281): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/logdw" dev="tmpfs" ino=7304 scontext=u:r:shell:s0 tcontext=u:object_r:logdw_socket:s0 tclass=sock_file
+
+<36>[468633.971932] (76403.914703) type=1400 audit(1791824049.834:282): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/mdns" dev="tmpfs" ino=117106 scontext=u:r:shell:s0 tcontext=u:object_r:mdns_socket:s0 tclass=sock_file
+
+<36>[468633.972139] (76403.914916) type=1400 audit(1791824049.834:283): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/mfg" dev="tmpfs" ino=8222 scontext=u:r:shell:s0 tcontext=u:object_r:stp_server_socket:s0 tclass=dir
+
+<36>[468633.972530] (76403.915313) type=1400 audit(1791824049.834:284): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/netd" dev="tmpfs" ino=117110 scontext=u:r:shell:s0 tcontext=u:object_r:netd_socket:s0 tclass=sock_file
+
+<36>[468633.972730] (76403.915496) type=1400 audit(1791824049.834:285): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/pps" dev="tmpfs" ino=7011 scontext=u:r:shell:s0 tcontext=u:object_r:pps_socket:s0 tclass=sock_file
+
+<36>[468633.973136] (76403.915924) type=1400 audit(1791824049.834:286): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/property_service" dev="tmpfs" ino=7284 scontext=u:r:shell:s0 tcontext=u:object_r:property_socket:s0 tclass=sock_file
+
+<36>[468633.973335] (76403.916107) type=1400 audit(1791824049.834:287): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/qmux_audio" dev="tmpfs" ino=10191 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468633.973730] (76403.916503) type=1400 audit(1791824049.834:288): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/qmux_bluetooth" dev="tmpfs" ino=10192 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468633.973956] (76403.916748) type=1400 audit(1791824049.834:289): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/qmux_gps" dev="tmpfs" ino=10193 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468633.974308] (76403.917083) type=1400 audit(1791824049.834:290): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/qmux_radio" dev="tmpfs" ino=10190 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468633.975417] (76403.918182) type=1400 audit(1791824049.834:291): avc: denied { getattr } for pid=7554 comm="ls" path="/dev/socket/rild" dev="tmpfs" ino=7689 scontext=u:r:shell:s0 tcontext=u:object_r:rild_socket:s0 tclass=sock_file
+
+<4>[468633.975933] (76403.918701) audit: audit_lost=68 audit_rate_limit=20 audit_backlog_limit=64
+
+<3>[468633.975942] (76403.918731) audit: rate limit exceeded
+
+<4>[468756.035969] (76525.965728) healthd: battery l=55 v=3908 t=31.4 h=2 st=2 c=-314 chg=u
+
+<4>[468756.078317] (76526.008056) healthd: battery l=55 v=3902 t=31.5 h=2 st=2 c=-218 chg=u
+
+<36>[468770.556679] (76540.484893) type=1400 audit(1791824186.424:407): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/adbd" dev="tmpfs" ino=10502 scontext=u:r:shell:s0 tcontext=u:object_r:adbd_socket:s0 tclass=sock_file
+
+<36>[468770.557234] (76540.485443) type=1400 audit(1791824186.424:408): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/bbauth" dev="tmpfs" ino=8453 scontext=u:r:shell:s0 tcontext=u:object_r:bbauth_socket:s0 tclass=sock_file
+
+<36>[468770.557463] (76540.485687) type=1400 audit(1791824186.424:409): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/cnd" dev="tmpfs" ino=8507 scontext=u:r:shell:s0 tcontext=u:object_r:cnd_socket:s0 tclass=sock_file
+
+<36>[468770.557657] (76540.485870) type=1400 audit(1791824186.424:410): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/dnsproxyd" dev="tmpfs" ino=117108 scontext=u:r:shell:s0 tcontext=u:object_r:dnsproxyd_socket:s0 tclass=sock_file
+
+<36>[468770.558084] (76540.486297) type=1400 audit(1791824186.424:411): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/fwmarkd" dev="tmpfs" ino=117104 scontext=u:r:shell:s0 tcontext=u:object_r:fwmarkd_socket:s0 tclass=sock_file
+
+<36>[468770.558291] (76540.486511) type=1400 audit(1791824186.424:412): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/installd" dev="tmpfs" ino=8464 scontext=u:r:shell:s0 tcontext=u:object_r:installd_socket:s0 tclass=sock_file
+
+<36>[468770.558691] (76540.486907) type=1400 audit(1791824186.424:413): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/lmkd" dev="tmpfs" ino=7318 scontext=u:r:shell:s0 tcontext=u:object_r:lmkd_socket:s0 tclass=sock_file
+
+<36>[468770.559095] (76540.487304) type=1400 audit(1791824186.424:414): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/logd" dev="tmpfs" ino=7308 scontext=u:r:shell:s0 tcontext=u:object_r:logd_socket:s0 tclass=sock_file
+
+<36>[468770.559327] (76540.487548) type=1400 audit(1791824186.424:415): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/logdr" dev="tmpfs" ino=7306 scontext=u:r:shell:s0 tcontext=u:object_r:logdr_socket:s0 tclass=sock_file
+
+<36>[468770.559682] (76540.487884) type=1400 audit(1791824186.424:416): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/logdw" dev="tmpfs" ino=7304 scontext=u:r:shell:s0 tcontext=u:object_r:logdw_socket:s0 tclass=sock_file
+
+<36>[468770.560091] (76540.488311) type=1400 audit(1791824186.424:417): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/mdns" dev="tmpfs" ino=117106 scontext=u:r:shell:s0 tcontext=u:object_r:mdns_socket:s0 tclass=sock_file
+
+<36>[468770.560498] (76540.488708) type=1400 audit(1791824186.424:418): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/mfg" dev="tmpfs" ino=8222 scontext=u:r:shell:s0 tcontext=u:object_r:stp_server_socket:s0 tclass=dir
+
+<36>[468770.560911] (76540.489105) type=1400 audit(1791824186.424:419): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/netd" dev="tmpfs" ino=117110 scontext=u:r:shell:s0 tcontext=u:object_r:netd_socket:s0 tclass=sock_file
+
+<36>[468770.561317] (76540.489532) type=1400 audit(1791824186.424:420): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/pps" dev="tmpfs" ino=7011 scontext=u:r:shell:s0 tcontext=u:object_r:pps_socket:s0 tclass=sock_file
+
+<36>[468770.561722] (76540.489929) type=1400 audit(1791824186.424:421): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/property_service" dev="tmpfs" ino=7284 scontext=u:r:shell:s0 tcontext=u:object_r:property_socket:s0 tclass=sock_file
+
+<36>[468770.562125] (76540.490325) type=1400 audit(1791824186.424:422): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/qmux_audio" dev="tmpfs" ino=10191 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468770.562553] (76540.490753) type=1400 audit(1791824186.424:423): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/qmux_bluetooth" dev="tmpfs" ino=10192 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468770.562943] (76540.491149) type=1400 audit(1791824186.424:424): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/qmux_gps" dev="tmpfs" ino=10193 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468770.563130] (76540.491333) type=1400 audit(1791824186.424:425): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/qmux_radio" dev="tmpfs" ino=10190 scontext=u:r:shell:s0 tcontext=u:object_r:qmuxd_socket:s0 tclass=dir
+
+<36>[468770.563520] (76540.491729) type=1400 audit(1791824186.424:426): avc: denied { getattr } for pid=7710 comm="ls" path="/dev/socket/rild" dev="tmpfs" ino=7689 scontext=u:r:shell:s0 tcontext=u:object_r:rild_socket:s0 tclass=sock_file
+
+<4>[468770.563664] (76540.491882) audit: audit_lost=183 audit_rate_limit=20 audit_backlog_limit=64
+
+<3>[468770.563674] (76540.491882) audit: rate limit exceeded
+

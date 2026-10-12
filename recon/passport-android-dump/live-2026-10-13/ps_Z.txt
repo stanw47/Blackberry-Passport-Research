@@ -1,0 +1,534 @@
+LABEL                          USER     PID   PPID  NAME
+
+u:r:init:s0                    root      1     0     /init
+
+u:r:kernel:s0                  root      2     0     kthreadd
+
+u:r:kernel:s0                  root      3     2     ksoftirqd/0
+
+u:r:kernel:s0                  root      6     2     kworker/u:0
+
+u:r:kernel:s0                  root      7     2     kworker/u:0H
+
+u:r:kernel:s0                  root      8     2     migration/0
+
+u:r:kernel:s0                  root      9     2     watchdog/0
+
+u:r:kernel:s0                  root      25    2     khelper
+
+u:r:kernel:s0                  root      26    2     netns
+
+u:r:kernel:s0                  root      32    2     modem_notifier
+
+u:r:kernel:s0                  root      33    2     smd_channel_clo
+
+u:r:kernel:s0                  root      34    2     smsm_cb_wq
+
+u:r:kernel:s0                  root      36    2     rpm-smd
+
+u:r:kernel:s0                  root      37    2     kworker/u:1H
+
+u:r:kernel:s0                  root      38    2     mpm
+
+u:r:kernel:s0                  root      40    2     sync_supers
+
+u:r:kernel:s0                  root      41    2     bdi-default
+
+u:r:kernel:s0                  root      42    2     kblockd
+
+u:r:kernel:s0                  root      43    2     system
+
+u:r:kernel:s0                  root      44    2     khubd
+
+u:r:kernel:s0                  root      45    2     irq/99-msm_iomm
+
+u:r:kernel:s0                  root      46    2     irq/105-msm_iom
+
+u:r:kernel:s0                  root      47    2     irq/77-msm_iomm
+
+u:r:kernel:s0                  root      48    2     irq/70-msm_iomm
+
+u:r:kernel:s0                  root      49    2     irq/94-msm_iomm
+
+u:r:kernel:s0                  root      50    2     irq/102-msm_iom
+
+u:r:kernel:s0                  root      51    2     irq/102-msm_iom
+
+u:r:kernel:s0                  root      52    2     irq/102-msm_iom
+
+u:r:kernel:s0                  root      53    2     irq/79-msm_iomm
+
+u:r:kernel:s0                  root      54    2     irq/78-msm_iomm
+
+u:r:kernel:s0                  root      55    2     irq/78-msm_iomm
+
+u:r:kernel:s0                  root      56    2     irq/74-msm_iomm
+
+u:r:kernel:s0                  root      57    2     irq/75-msm_iomm
+
+u:r:kernel:s0                  root      58    2     irq/75-msm_iomm
+
+u:r:kernel:s0                  root      59    2     irq/75-msm_iomm
+
+u:r:kernel:s0                  root      60    2     irq/75-msm_iomm
+
+u:r:kernel:s0                  root      61    2     irq/273-msm_iom
+
+u:r:kernel:s0                  root      62    2     irq/273-msm_iom
+
+u:r:kernel:s0                  root      63    2     irq/273-msm_iom
+
+u:r:kernel:s0                  root      64    2     irq/97-msm_iomm
+
+u:r:kernel:s0                  root      65    2     irq/97-msm_iomm
+
+u:r:kernel:s0                  root      66    2     irq/97-msm_iomm
+
+u:r:kernel:s0                  root      67    2     devfreq_wq
+
+u:r:kernel:s0                  root      68    2     l2cap
+
+u:r:kernel:s0                  root      69    2     a2mp
+
+u:r:kernel:s0                  root      70    2     cfg80211
+
+u:r:kernel:s0                  root      71    2     background_work
+
+u:r:kernel:s0                  root      72    2     dsx_exp_workque
+
+u:r:kernel:s0                  root      74    2     fwu_workqueue
+
+u:r:kernel:s0                  root      75    2     f54_status_work
+
+u:r:kernel:s0                  root      76    2     background_work
+
+u:r:kernel:s0                  root      77    2     dsx_exp_workque
+
+u:r:kernel:s0                  root      78    2     irq/481-adsp
+
+u:r:kernel:s0                  root      79    2     irq/417-mba
+
+u:r:kernel:s0                  root      80    2     irq/545-wcnss
+
+u:r:kernel:s0                  root      81    2     qmi
+
+u:r:kernel:s0                  root      82    2     nmea
+
+u:r:kernel:s0                  root      83    2     msm_ipc_router
+
+u:r:kernel:s0                  root      84    2     apr_driver
+
+u:r:kernel:s0                  root      88    2     kswapd0
+
+u:r:kernel:s0                  root      89    2     fsnotify_mark
+
+u:r:kernel:s0                  root      90    2     crypto
+
+u:r:kernel:s0                  root      104   2     ad_calc_wq
+
+u:r:kernel:s0                  root      105   2     mdss_dsi_event
+
+u:r:kernel:s0                  root      106   2     k_hsuart
+
+u:r:kernel:s0                  root      107   2     diag_real_time_
+
+u:r:kernel:s0                  root      108   2     diag_modem_data
+
+u:r:kernel:s0                  root      109   2     diag_lpass_data
+
+u:r:kernel:s0                  root      110   2     diag_wcnss_data
+
+u:r:kernel:s0                  root      111   2     diag_wq
+
+u:r:kernel:s0                  root      112   2     diag_usb_wq
+
+u:r:kernel:s0                  root      113   2     diag_cntl_wq
+
+u:r:kernel:s0                  root      114   2     diag_dci_wq
+
+u:r:kernel:s0                  root      115   2     kgsl-3d0
+
+u:r:kernel:s0                  root      116   2     kgsl_devfreq_wq
+
+u:r:kernel:s0                  root      117   2     spi7
+
+u:r:kernel:s0                  root      120   2     usbnet
+
+u:r:kernel:s0                  root      121   2     k_rmnet_mux_wor
+
+u:r:kernel:s0                  root      122   2     f_mtp
+
+u:r:kernel:s0                  root      123   2     file-storage
+
+u:r:kernel:s0                  root      124   2     uether
+
+u:r:kernel:s0                  root      126   2     kpsmoused
+
+u:r:kernel:s0                  root      127   2     msm_vidc_worker
+
+u:r:kernel:s0                  root      128   2     pm_workerq_venu
+
+u:r:kernel:s0                  root      129   2     msm_vidc_worker
+
+u:r:kernel:s0                  root      131   2     msm_cpp_workque
+
+u:r:kernel:s0                  root      135   2     fwu_workqueue
+
+u:r:kernel:s0                  root      136   2     f54_status_work
+
+u:r:kernel:s0                  root      137   2     dm_bufio_cache
+
+u:r:kernel:s0                  root      138   2     dbs_sync/0
+
+u:r:kernel:s0                  root      139   2     dbs_sync/1
+
+u:r:kernel:s0                  root      140   2     dbs_sync/2
+
+u:r:kernel:s0                  root      141   2     dbs_sync/3
+
+u:r:kernel:s0                  root      142   2     cfinteractive
+
+u:r:kernel:s0                  root      143   2     irq/170-msm_sdc
+
+u:r:kernel:s0                  root      144   2     irq/253-msm_sdc
+
+u:r:kernel:s0                  root      146   2     binder
+
+u:r:kernel:s0                  root      147   2     usb_bam_wq
+
+u:r:kernel:s0                  root      148   2     bam_dmux_rx
+
+u:r:kernel:s0                  root      149   2     bam_dmux_tx
+
+u:r:kernel:s0                  root      150   2     rq_stats
+
+u:r:kernel:s0                  root      151   2     deferwq
+
+u:r:kernel:s0                  root      153   2     sb-1
+
+u:r:kernel:s0                  root      154   2     irq/195-ngd_sli
+
+u:r:kernel:s0                  root      155   2     ngd_rx_thread1
+
+u:r:kernel:s0                  root      156   2     ngd_notify_sl1
+
+u:r:kernel:s0                  root      158   2     mmcqd/1
+
+u:r:kernel:s0                  root      159   2     mmcqd/1rpmb
+
+u:r:kernel:s0                  root      160   2     irq/299-bsi-bat
+
+u:r:kernel:s0                  root      166   2     hdmi_tx_workq
+
+u:r:kernel:s0                  root      167   2     anx7808_work
+
+u:r:kernel:s0                  root      169   2     wl_event_handle
+
+u:r:kernel:s0                  root      170   2     dhd_watchdog_th
+
+u:r:kernel:s0                  root      171   2     dhd_dpc
+
+u:r:kernel:s0                  root      172   2     dhd_rxf
+
+u:r:kernel:s0                  root      173   2     dhd_sysioc
+
+u:r:kernel:s0                  root      174   2     irq/642-anx7808
+
+u:r:kernel:s0                  root      175   2     lsm303d_workque
+
+u:r:kernel:s0                  root      184   2     lsm303d_wq1
+
+u:r:kernel:s0                  root      185   2     lsm303d_wq2
+
+u:r:kernel:s0                  root      186   2     l3gd20_gyr_work
+
+u:r:kernel:s0                  root      187   2     l3gd20_gyr_irq2
+
+u:r:kernel:s0                  root      188   2     msm_thermal:hot
+
+u:r:kernel:s0                  root      189   2     msm_thermal:fre
+
+u:r:kernel:s0                  root      190   2     msm_thermal:the
+
+u:r:kernel:s0                  root      191   2     boost_sync/0
+
+u:r:kernel:s0                  root      192   2     boost_sync/1
+
+u:r:kernel:s0                  root      193   2     boost_sync/2
+
+u:r:kernel:s0                  root      194   2     boost_sync/3
+
+u:r:ueventd:s0                 root      195   1     /sbin/ueventd
+
+u:r:kernel:s0                  root      204   2     kdmflush
+
+u:r:kernel:s0                  root      205   2     kverityd
+
+u:r:kernel:s0                  root      208   2     jbd2/dm-0-8
+
+u:r:kernel:s0                  root      209   2     ext4-dio-unwrit
+
+u:r:kernel:s0                  root      211   2     jbd2/mmcblk0p43
+
+u:r:kernel:s0                  root      212   2     ext4-dio-unwrit
+
+u:r:kernel:s0                  root      213   2     jbd2/mmcblk0p32
+
+u:r:kernel:s0                  root      214   2     ext4-dio-unwrit
+
+u:r:kernel:s0                  root      226   2     IPCRTR
+
+u:r:kernel:s0                  root      227   2     ipc_rtr_q6_ipcr
+
+u:r:logd:s0                    logd      228   1     /system/bin/logd
+
+u:r:healthd:s0                 root      229   1     /sbin/healthd
+
+u:r:lmkd:s0                    root      230   1     /system/bin/lmkd
+
+u:r:servicemanager:s0          system    231   1     /system/bin/servicemanager
+
+u:r:vold:s0                    root      232   1     /system/bin/vold
+
+u:r:surfaceflinger:s0          system    233   1     /system/bin/surfaceflinger
+
+u:r:subsystem_ramdump:s0       root      234   1     /system/bin/subsystem_ramdump
+
+u:r:tee:s0                     system    236   1     /system/bin/qseecomd
+
+u:r:vtnvfsd:s0                 nvram     237   1     /system/bin/vtnvfsd
+
+u:r:vtnvfsd:s0                 nvram     238   1     /system/bin/vtnvfsd
+
+u:r:spfmain:s0                 root      239   1     /system/bin/spfmain
+
+u:r:mfgradio:s0                mfg_radio 243   1     /system/bin/mfgradiosrvqc
+
+u:r:stp_server:s0              mfg_stp   244   1     /system/bin/stp_server
+
+u:r:mfg_battery:s0             mfg_stp   245   1     /system/bin/mfg_battery
+
+u:r:mfg_customization:s0       mfg_stp   246   1     /system/bin/mfg_customization
+
+u:r:mfg_dc:s0                  mfg_stp   247   1     /system/bin/mfg_dc
+
+u:r:mfg_properties:s0          mfg_stp   248   1     /system/bin/mfg_properties
+
+u:r:shell:s0                   shell     249   1     /system/bin/sh
+
+u:r:rmt_storage:s0             nobody    251   1     /system/bin/rmt_storage
+
+u:r:kernel:s0                  root      255   2     kauditd
+
+u:r:rfs_access:s0              system    256   1     /system/bin/rfs_access
+
+u:r:mm-pp-daemon:s0            system    257   1     /system/bin/mm-pp-daemon
+
+u:r:kernel:s0                  root      259   2     msm_slim_qmi_cl
+
+u:r:kernel:s0                  root      260   2     msm_qmi_rtx_q
+
+u:r:kernel:s0                  root      280   2     irq/288-wcd9xxx
+
+u:r:tee:s0                     system    284   236   /system/bin/qseecomd
+
+u:r:kernel:s0                  root      305   2     mdss_fb0
+
+u:r:kernel:s0                  root      339   2     IPCRTR
+
+u:r:kernel:s0                  root      340   2     ipc_rtr_smd_ipc
+
+u:r:kernel:s0                  root      347   2     kdmflush
+
+u:r:kernel:s0                  root      351   2     kcryptd_io
+
+u:r:kernel:s0                  root      352   2     kcryptd
+
+u:r:kernel:s0                  root      358   2     jbd2/dm-1-8
+
+u:r:kernel:s0                  root      359   2     ext4-dio-unwrit
+
+u:r:adbd:s0                    shell     360   1     /sbin/adbd
+
+u:r:bbauth:s0                  bbauth    361   1     /system/bin/bbauthd
+
+u:r:debuggerd:s0               root      370   1     /system/bin/debuggerd
+
+u:r:rild:s0                    radio     371   1     /system/bin/rild
+
+u:r:drmserver:s0               drm       372   1     /system/bin/drmserver
+
+u:r:installd:s0                install   374   1     /system/bin/installd
+
+u:r:keystore:s0                keystore  376   1     /system/bin/keystore
+
+u:r:qcomsysd:s0                root      377   1     /system/bin/qcom-system-daemon
+
+u:r:adsprpcd:s0                media     381   1     /system/bin/adsprpcd
+
+u:r:diagnostics:s0             ddt       382   1     app_process
+
+u:r:token_service:s0           token_service 383   1     /system/bin/bb_tokenserviced
+
+u:r:cnd:s0                     system    387   1     /system/bin/cnd
+
+u:r:location:s0                gps       389   1     /system/bin/loc_launcher
+
+u:r:sdcardd:s0                 media_rw  392   1     /system/bin/sdcard
+
+u:r:mm-qcamerad:s0             camera    393   1     /system/bin/mm-qcamera-daemon
+
+u:r:time_daemon:s0             system    394   1     /system/bin/time_daemon
+
+u:r:audiod:s0                  system    395   1     /system/bin/audiod
+
+u:r:reset_cause:s0             reset_cause 396   1     /system/bin/reset_cause
+
+u:r:mplogsvc:s0                mplog     397   1     /system/bin/mplogsvc
+
+u:r:location:s0                gps       411   389   /system/bin/location-mq
+
+u:r:location:s0                gps       413   389   /system/bin/lowi-server
+
+u:r:location:s0                gps       414   389   /system/bin/xtwifi-inet-agent
+
+u:r:location:s0                gps       416   389   /system/vendor/bin/slim_ap_daemon
+
+u:r:qmuxd:s0                   radio     450   1     /system/bin/qmuxd
+
+u:r:netmgrd:s0                 radio     464   1     /system/bin/netmgrd
+
+u:r:charger_monitor:s0         system    525   1     /system/bin/charger_monitor
+
+u:r:watermark:s0               system    995   1     /system/bin/watermark
+
+u:r:kernel:s0                  root      1973  2     irq/33-cpubw_hw
+
+u:r:mpdecision:s0              root      2049  1     /system/bin/mpdecision
+
+u:r:untrusted_app:s0           u0_a10    2866  24263 com.google.process.gapps
+
+u:r:kernel:s0                  root      4092  2     kworker/0:0
+
+u:r:kernel:s0                  root      4768  2     kworker/0:4
+
+u:r:untrusted_app:s0           u0_a10    5264  24263 com.google.android.gms.persistent
+
+u:r:untrusted_app:s0           u0_a37    5560  24263 com.google.android.apps.messaging
+
+u:r:kernel:s0                  root      5776  2     flush-0:19
+
+u:r:kernel:s0                  root      6350  2     irq/641-msm_sdc
+
+u:r:diag_proxy:s0              radio     6356  1     /system/bin/diag_proxy
+
+u:r:untrusted_app:s0           u0_a8     6378  24263 android.process.media
+
+u:r:untrusted_app:s0           u0_a41    6407  24263 com.android.chrome
+
+u:r:untrusted_app:s0           u0_a75    6431  24263 com.google.android.apps.plus
+
+u:r:untrusted_app:s0           u0_a10    6521  24263 com.google.android.gms
+
+u:r:untrusted_app:s0           u0_a95    6577  24263 com.google.android.apps.youtube.music
+
+u:r:untrusted_app:s0           u0_a10    6695  24263 com.google.android.gms.ui
+
+u:r:untrusted_app:s0           u0_a10    6718  24263 com.google.android.gms.feedback
+
+u:r:untrusted_app:s0           u0_a5     6742  24263 android.process.acore
+
+u:r:untrusted_app:s0           u0_a63    6804  24263 com.google.android.apps.maps
+
+u:r:untrusted_app:s0           u0_a25    7043  24263 com.google.android.googlequicksearchbox
+
+u:r:kernel:s0                  root      7538  2     kworker/u:1
+
+u:r:kernel:s0                  root      7560  2     kworker/u:3
+
+u:r:kernel:s0                  root      7694  2     kworker/0:1
+
+u:r:kernel:s0                  root      7695  2     kworker/0:3
+
+u:r:shell:s0                   shell     7706  360   ps
+
+u:r:dhcp:s0                    dhcp      8063  1     /system/bin/dhcpcd
+
+u:r:location_app:s0            system    9614  24263 com.qualcomm.services.location
+
+u:r:system_app:s0              system    10088 24263 com.android.settings
+
+u:r:kernel:s0                  root      11887 2     kworker/0:0H
+
+u:r:untrusted_app:s0           u0_a65    11985 24263 com.google.android.apps.genie.geniewidget
+
+u:r:untrusted_app:s0           u0_a25    15507 24263 com.google.android.googlequicksearchbox:search
+
+u:r:kernel:s0                  root      17940 2     kworker/0:2H
+
+u:r:kernel:s0                  root      18684 2     kworker/u:2
+
+u:r:untrusted_app:s0           u0_a43    18793 24263 com.android.deskclock
+
+u:r:kernel:s0                  root      21215 2     flush-254:1
+
+u:r:untrusted_app:s0           u0_a10    21953 24263 com.google.android.gms.unstable
+
+u:r:zygote:s0                  root      24263 1     zygote
+
+u:r:mediaserver:s0             media     24264 1     /system/bin/mediaserver
+
+u:r:netd:s0                    root      24271 1     /system/bin/netd
+
+u:r:system_server:s0           system    24520 24263 system_server
+
+u:r:wpa:s0                     wifi      24665 1     /system/bin/wpa_supplicant
+
+u:r:platform_app:s0            u0_a23    24705 24263 com.android.systemui
+
+u:r:kernel:s0                  root      24842 2     kworker/u:8
+
+u:r:untrusted_app:s0           u0_a2     24977 24263 com.blackberry.blackberrylauncher
+
+u:r:untrusted_app:s0           u0_a25    25007 24263 com.google.android.googlequicksearchbox:interactor
+
+u:r:untrusted_app:s0           u0_a34    25037 24263 com.blackberry.inputmethod.latin
+
+u:r:system_app:s0              system    25182 24263 com.quicinc.cne.CNEService
+
+u:r:nfc:s0                     nfc       25201 24263 com.android.nfc
+
+u:r:system_app:s0              system    25223 24263 com.android.server.telecom
+
+u:r:radio:s0                   radio     25233 24263 com.android.phone
+
+u:r:location_app:s0            system    25331 24263 com.qualcomm.location.XT
+
+u:r:untrusted_app:s0           u0_a82    25384 24263 com.android.smspush
+
+u:r:untrusted_app:s0           u0_a89    25800 24263 com.blackberry.infrastructure
+
+u:r:untrusted_app:s0           u0_a37    26541 24263 com.google.android.apps.messaging:rcs
+
+u:r:java_swoop:s0              java_swoop 26738 24263 com.blackberry.deviceconfig
+
+u:r:untrusted_app:s0           u0_a91    26871 24263 com.blackberry.hub
+
+u:r:radio:s0                   radio     27214 24263 com.vendor.cellular.atcmdsocketproxy
+
+u:r:system_app:s0              system    27251 24263 com.qualcomm.cabl
+
+u:r:system_app:s0              system    27315 24263 com.qualcomm.svi
+
+u:r:untrusted_app:s0           u0_a84    27337 24263 com.google.android.youtube
+
+u:r:system_app:s0              system    27479 24263 com.qualcomm.telephony
+
+u:r:radio:s0                   radio     27524 24263 com.qualcomm.qcrilmsgtunnel
+
+u:r:platform_app:s0            u0_a92    27576 24263 com.blackberry.sar
+
+u:r:kernel:s0                  root      31946 2     kworker/0:2
+
+u:r:kernel:s0                  root      32177 2     kworker/u:4
+

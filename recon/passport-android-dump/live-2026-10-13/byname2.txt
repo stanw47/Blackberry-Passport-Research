@@ -1,0 +1,4 @@
+/dev/block/platform/msm_sdcc.1/by-name: Permission denied
+
+/dev/block/bootdevice/by-name: Permission denied
+

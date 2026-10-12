@@ -64,3 +64,7 @@ recon/passport-android-dump/vendor/firmware/
 # but KEEP the small boot-chain package + extracted parts + certs:
 !recon/passport-android-dump/vendor/backup_bootchain/
 !recon/passport-android-dump/vendor/backup_bootchain/**
+
+# --- Live probe artifacts (session55, 2026-10-13) — small curated, keep ---
+!recon/passport-android-dump/live-2026-10-13/*.exe
+!recon/passport-android-dump/live-2026-10-13/*.zip
