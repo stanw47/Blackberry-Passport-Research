@@ -417,3 +417,50 @@ root payload / RAM-loader remain the only readers. No write was performed.
 
 New scratch: `Temp/opencode/ann.py` (base+range annotated disasm),
 `bc_insecure.pkg` / `bc_secure.pkg`, `pkdcmp.py`, `pkdscan.py`.
+
+### 6g. (2b) Android-side staging + `bcota` content — read-only
+
+**`bkup_bc_update` is the Android-side updater.** From the boot ramdisk
+(`Temp/opencode/ramdisk/init.oem.rc`):
+
+```
+service bkup_bc_update /system/bin/bkup_bc_update
+   seclabel u:r:bkup_bc_update:s0
+   class core          user root      group nvram mfg_stp      oneshot
+```
+
+It runs on every boot as root in its own SELinux domain
+(`bkup_bc_update_exec`, per ramdisk `file_contexts`). The binary itself is
+`lstat`-denied to `shell` (can't pull/execute).
+
+**`bcota` is currently staged with the INACTIVE insecure image.** The session61
+v6 partition read of `bcota` (`Temp/…/legacy_p_bcota.bin`, 2 MiB = truncated from
+the 4 MiB partition) is **byte-identical to the first 2 MiB of
+`bc_insecure.pkg` (AAA624)** (100.00% match; vs 96.24% for the secure pkg). It
+carries the full pkg header + embedded `bbss` image (`BBSS started`, `Version:
+%s`, `bbss_insecure`, `bsi_update bbss_insecure failed`, `HWI data is invalid!`,
+`BCB indicates update is available`, `Backup boot key combo active`,
+`bootcontrolblock`, `update-bootchain`). Caveat: the **2026-10-07** full `bcota`
+dump (`legacy_bcota_full`, 4 MiB) is all-zero, so the image was staged on the
+partition **after** that date — most plausibly by one of our own earlier
+attempts (the local `legacy_unlock.sh` writes the *secure* pkg, so the staged
+image was written by a different/modified path). The generated `bbss` image
+inside both pkgs also stamps a payload checksum at file `0x0C` (AAA624
+`0x4016EAD8`, AAA625 `0xF6503DD9`).
+
+**State read-out (live, no writes):** `backup_bc_ver=AAA625` (unchanged) ⇒ the
+staged AAA624 has **not** been committed to the backup boot area. `bcota` has no
+companion `misc`/`bcb` partition (per the 43-name `by-name` list), so the trigger
+is the **reboot reason** `oem-0x81` (the value `unlock.sh` passes via
+`setprop sys.powerctl reboot,oem-0x81`) plus whatever BCB BBSS/LK consumes.
+
+**Read limits hit (all SELinux, domain `shell`):** `/proc/partitions` empty,
+`by-name/*` `ls -l` EACCES (single-node too), `/sys/reset_region/*` EACCES,
+`/proc/last_kmsg` & `/sys/fs/pstore` absent, `ro.boot.bootreason` not exported.
+Red herring resolved: `/system/bin/bcc` = **Android RenderScript BCC**, not
+boot-chain. `/system_signature` (256 B, world-readable) pulled — the
+system/dm-verity signature.
+
+⇒ A **live** `bcota`/BCB re-read (to confirm the staged image is still present
+*now*) needs the VOLD-domain root payload (microSD dance) or the RAM loader; the
+shell domain cannot see it.
