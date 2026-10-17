@@ -84,3 +84,7 @@ recon/passport-android-dump/vendor/firmware/
 
 # --- build.prop captures (session69) - keep ---
 !recon/build-props/**
+
+# --- local-only, non-public research intel (do NOT publish) ---
+notes/private/
+*.private.md
