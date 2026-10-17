@@ -78,3 +78,6 @@ recon/passport-android-dump/vendor/firmware/
 !tools/**/*.bin
 !tools/**/*.img
 !tools/**/*.mbn
+
+# --- BBTool BootROM backup tool (session68) - keep ---
+!tools/session68-bbtool/**
