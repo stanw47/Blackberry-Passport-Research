@@ -1,0 +1,7 @@
+echo S7START
+dd if=/dev/block/platform/msm_sdcc.1/by-name/system of=/storage/emulated/legacy/it.bin bs=4096 skip=99 count=4 2>&1
+ls -l /storage/emulated/legacy/it.bin
+echo ITEMID
+dd if=/dev/block/platform/msm_sdcc.1/by-name/system of=/storage/emulated/legacy/sbonly.bin bs=4096 skip=0 count=2 2>&1
+ls -l /storage/emulated/legacy/sbonly.bin
+echo DONE7

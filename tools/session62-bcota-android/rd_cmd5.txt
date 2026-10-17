@@ -1,0 +1,23 @@
+echo S5START
+id
+cat /proc/self/attr/current
+echo SIZES
+cat /sys/block/dm-0/size
+cat /sys/block/dm-1/size
+ls -l /dev/block/platform/msm_sdcc.1/by-name/system
+ls -l /dev/block/platform/msm_sdcc.1/by-name/userdata
+echo LSBIN
+ls -l /system/bin/bkup_bc_update
+ls -l /system/bin/vtnvfsd
+echo READFILETRY
+dd if=/system/bin/bkup_bc_update of=/storage/emulated/legacy/bkup_try.bin 2>&1
+ls -l /storage/emulated/legacy/bkup_try.bin
+echo SYSFIRST
+dd if=/dev/block/platform/msm_sdcc.1/by-name/system of=/storage/emulated/legacy/sys_first.bin bs=4096 count=4 2>&1
+ls -l /storage/emulated/legacy/sys_first.bin
+echo BYNAME
+cat /proc/partitions
+echo NVRAM
+ls -l /nvram
+ls -l /nvram/perm
+echo DONE5

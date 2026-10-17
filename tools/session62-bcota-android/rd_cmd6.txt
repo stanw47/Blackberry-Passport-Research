@@ -1,0 +1,12 @@
+echo S6START
+echo EXECTEST
+/data/local/tmp/extcsd_read 2>&1
+echo "rc=$?"
+echo EXECBC
+/data/local/tmp/bcota_read 2>&1 >/dev/null
+echo "rc2=$?"
+echo LSDATA
+ls -l /data/local/tmp/ 2>&1
+echo EXECPERM
+cat /proc/sys/kernel/randomize_va_space 2>&1
+echo DONE6

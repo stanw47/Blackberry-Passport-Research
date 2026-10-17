@@ -73,3 +73,8 @@ recon/passport-android-dump/vendor/firmware/
 !recon/passport-android-dump/partition-dumps/
 !recon/passport-android-dump/partition-dumps/*.img
 !recon/passport-android-dump/partition-dumps/*.bin
+
+# --- Live research-session dumps + binaries under tools/ (keep raw; never re-downloadable) ---
+!tools/**/*.bin
+!tools/**/*.img
+!tools/**/*.mbn

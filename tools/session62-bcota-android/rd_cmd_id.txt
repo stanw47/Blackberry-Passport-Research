@@ -1,0 +1,1 @@
+id; uname -a; getprop ro.build.display.id

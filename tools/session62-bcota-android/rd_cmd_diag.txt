@@ -1,0 +1,11 @@
+echo "== id =="; id
+echo "== attr =="; cat /proc/self/attr/current
+echo "== nvram tree =="; ls -la /nvram 2>&1
+echo "== perm dir =="; ls -la /nvram/perm 2>&1
+echo "== bcb read =="; dd if=/nvram/perm/bootcontrolblock of=/data/local/tmp/bcb_live.bin bs=1 count=1088 2>&1; echo "rc=$?"
+echo "== bcb size =="; ls -l /nvram/perm/bootcontrolblock 2>&1
+echo "== proc mounts nvram =="; grep nvram /proc/mounts 2>&1
+echo "== try write bcb =="; dd if=/dev/zero of=/nvram/perm/bootcontrolblock bs=1 count=0 2>&1; echo "rc=$?"
+echo "== selinux =="; cat /sys/fs/selinux/enforce 2>&1
+echo "== by-name perm =="; ls -l /dev/block/bootdevice/by-name/perm 2>&1
+echo "DONE_DIAG"

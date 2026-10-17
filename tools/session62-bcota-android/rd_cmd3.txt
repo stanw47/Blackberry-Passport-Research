@@ -1,0 +1,13 @@
+echo WHICH_BKUP
+ls -la /system/bin/bkup_bc_update
+echo COPY_BKUP
+cp /system/bin/bkup_bc_update /storage/emulated/legacy/bkup_bc_update
+ls -la /storage/emulated/legacy/bkup_bc_update
+echo RELATED_BIN
+ls -la /system/bin/ | grep -iE "bkup|_bc|boot|bbs|verity|oem"
+echo INIT_OEM
+cat /init.oem.rc
+echo INIT_DIR
+ls -la /system/etc/init/
+echo PROPS_BC
+getprop | grep -iE "bc|boot|bbs|verity|switchboot|oem"

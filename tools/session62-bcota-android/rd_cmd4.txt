@@ -1,0 +1,17 @@
+echo PERMTEST
+dd if=/dev/block/platform/msm_sdcc.1/by-name/perm bs=512 count=16 of=/storage/emulated/legacy/perm_head.bin 2>&1
+ls -la /storage/emulated/legacy/perm_head.bin
+echo MST1
+dd if=/dev/block/platform/msm_sdcc.1/by-name/modemst1 bs=512 count=16 of=/storage/emulated/legacy/modemst1_head.bin 2>&1
+ls -la /storage/emulated/legacy/modemst1_head.bin
+echo MISC
+dd if=/dev/block/platform/msm_sdcc.1/by-name/misc bs=512 count=4 of=/storage/emulated/legacy/misc_head.bin 2>&1
+echo BOOT
+dd if=/dev/block/platform/msm_sdcc.1/by-name/boot bs=512 count=4 of=/storage/emulated/legacy/boot_head.bin 2>&1
+ls -la /storage/emulated/legacy/boot_head.bin
+echo NVPERM
+ls -la /nvram/perm 2>&1
+echo BCOTA
+dd if=/dev/block/platform/msm_sdcc.1/by-name/bcota bs=512 count=4 of=/storage/emulated/legacy/bcota_head.bin 2>&1
+ls -la /storage/emulated/legacy/bcota_head.bin
+echo DONEPROBE
