@@ -191,3 +191,44 @@ read, and BBSS reads the **boot-partition GPT**.
   the only path that reaches the boot area without desoldering.
 - Confirm the **user-area `sbl1`/`aboot`** purpose (separate copy written by the
   backup-bootchain/OTA mechanism, vs. a real boot source under a different BPE).
+
+--------------------------------------------------------------------------------
+## 5. Device LK (`partition-dumps/aboot.img`, 4 MiB) — HLOS trust store / auth
+
+The production LK **does** verify the HLOS; the gate-free engineering LK does not.
+Evidence (strings clustered at file `0xb0000-0xb9000`):
+
+- **Named per-product key ids:**
+  `AUTHBOOT-{keianrow,oslorow,wolverineemea,wolverinena,wolverinesprint,wolverinevzw}`,
+  `DBGSIG-*`, `DDT-*`, `NVSIG-*`, `STP-*`. `AUTHBOOT-oslorow` is the production
+  HLOS-verification key for *this* device.
+- **Cert chain:** `BB Root CA (secure)` / `BB Attestation CA (secure)` (several
+  copies), X.509 DER + `SHA256`/`SHA1`/`RSA` (Security Builder), consistent with a
+  UEFI-style signed image / hash-table verification.
+- **HLOS verify path:** `/perm/hlos_signature.tkn`, `/nvuser/hlos_unsigned.tkn`,
+  `/nvuser/dbg_console.tkn`, `/nvuser/pathtrust_mode.tkn`, `/nvuser/selinux_mode.tkn`,
+  `/nvuser/perf_config.tkn`; messages `Signature not found!`,
+  `Boot image verification failed (production key)`,
+  `Attempting HLOS image verification with \"%s\" key`,
+  `Key name in debug token does not match with boot signature`,
+  `Debug token hlos_unsigned is active. Skipping image verification.` and crucially
+  **`HLOS Image verification failed on insecure build`** → on an **insecure build the
+  LK tolerates HLOS-verify failure** (does not hard-reboot).
+- **Debug tokens:** `/perm`, `nvuser` token parser, `Token PIN %08X does not match
+  this device PIN:%08X`, `Token not for this device, bad procid` → tokens are
+  device-bound; no servers, so not a route.
+- **Blacklist / anti-rollback:** `blacklist`, `blacklist_certificate`,
+  `Bootchain fuse validation disabled in blocklist`, `Validating SBL against blacklist`,
+  `OS does not pass blacklist check`, `sbl_anti_rollback_ver`, RPMB + NV
+  (`Failed to write blacklist meta to RPMB`).
+- **Boot-area partitions named in the LK:** `phyboot0`, `phyboot0hwi`, `phyboot1hwi`
+  alongside `oemspare, modemst1/2, gsign, mct_b, nvram, calwork_b, dmi_b,
+  calback_b, bkup_ddr, prdidsig, boardidsig, rcause, ares, crypto, metadata, bcota`
+  (matches the user-area GPT; confirms the `oem switchboot` / backup-bootchain targets).
+- The **engineering LK** (`F:\imggen\aboot.mbn`) contains **none** of
+  `AUTHBOOT`/`BB * CA`/`HLOS`/`token`/`blacklist` → it boots *any* HLOS. This is
+  precisely why it is the unlock component — but it must first be *loaded by the SBL*,
+  which requires the insecure SBL/anchor (§2/§3). **Caveat:** the device's own
+  `backup_bootchain_insecure.pkg` `abootr` (`b5039e53…`) is *not* this LK — it still
+  carries `AUTHBOOT`×12 + secure CAs (BlackBerry's "insecure" backup chain ≠ the
+  engineering chain).
