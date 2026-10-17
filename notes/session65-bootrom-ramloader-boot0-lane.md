@@ -10,6 +10,16 @@ Sources: `F:\Passport-Android\README-FIRST.txt`, `AUTOLOADER_GUIDE.md`,
 `boot0-step\loaders\loader_8D002C0A-00.bin`, `F:\tools\ramloadercommands.txt`,
 `F:\SHOP-HANDOFF\*`.
 
+> **SCOPE CORRECTION (2026-10-18).** This lane is the **BB10-Passport → Android
+> ("balika") conversion** tool. It is **not** the route to put LineageOS 18.1 on
+> an already-Android prototype (oslo). Its *mechanism* (a BootROM raw write to the
+> hardware boot0 MMC partition) is a generic no-desolder **boot-area write
+> vehicle**, but its *payload* (`new_boot0.img`, a **wolverine** boot chain) and
+> its *loader* (Passport model `0x2C0A`) are wrong for oslo, and the oslo goal is
+> a **custom recovery + ROM**, not a BB10→Android EVM swap. Treat §1 only as "the
+> raw boot0-write machinery exists and how it works" — the oslo→LOS route is a
+> separate question (see §3, rewritten).
+
 --------------------------------------------------------------------------------
 ## 0. TL;DR
 
@@ -77,29 +87,40 @@ Ghidra pass + on-device confirmation. `boot0_flash.py` is the working vehicle
 today.
 
 --------------------------------------------------------------------------------
-## 3. Where this leaves the oslo prototype
+## 3. The oslo → LineageOS 18.1 problem (this lane is NOT the answer by itself)
 
-Session64 established: the boot chain the device runs is the **boot-area** chain
-(BBSS → SBL → LK), and the SBL/LK are authenticated — so the gate-free
-engineering LK only boots under the **insecure** chain, which lives in boot0.
-This lane is exactly how boot0 is written without desoldering.
+oslo is an **Android prototype** (LMY47D AAA787), not a BB10 unit, so the balika
+conversion does not apply. What the device actually needs:
 
-Remaining oslo-specific unknowns (next):
-1. **oslo boot0 image.** `new_boot0.img` is a *wolverine* (Passport) chain
-   (`hwi product="wolverine"`; loader model `0x2C0A`). For oslo we must build the
-   boot-area chain from the `F:\imggen` kit (`boot_gpt_insecure.bin` + `hwi` for
-   oslo + `stage1/2/3` + `bbss` + `sbl1r` + `tzr/rpmr/sdir` + `abootr`) — i.e.
-   what `tools/conversion/make_conversion_set.py` produces as `boot_insecure.img`.
-2. **oslo RAM-loader.** The shipped loader is Passport-tuned. Need an oslo
-   RAM-loader (or confirm the Passport loader's `IDtoADDR`/preflash family works
-   for oslo). The PASSport loader uses `IDtoADDR(0x2C0A)`.
-3. **`0x2019` (NV bits 42/43) on oslo** — present? (Believed part of the
-   prototype's power-on freedom.) Must be confirmed read-only before any write.
-4. **BootROM reachability on oslo**: prototype boots Android (stock OS), so the
-   listener-first power-cycle ritual should reach PID `0x0001`. Confirm with the
-   **read-only `preflight`** first (handshake + MCT print, no writes).
-5. Keep `2-RECOVER-BB10-root_v2.exe` as the only recovery path; never abort a
-   handshake.
+- **A custom recovery / ROM won't boot while locked.** Session63 proved the LK
+  authenticates the HLOS (`boot.img`/`recovery.img`) with the production key
+  (`AUTHBOOT-oslorow`) and dm-verity covers `/system`. So a LOS recovery/boot.img
+  flash is rejected at boot.
+- **Session64 added:** the LK is itself authenticated by the SBL (loaded from the
+  boot area). The gate-free engineering LK has *no* HLOS gate — but it can only be
+  *loaded* under the insecure chain (boot0). So a boot-area write is required
+  **iff** the engineering LK is the chosen route.
+- **The real fork is how the LK stops verifying the HLOS:**
+  1. **`is_unlocked` state** — the LK skips HLOS verification when unlocked
+     (session62). If a fastboot / OEM / factory unlock can set it, a custom
+     recovery flashes and **boots with no boot-area write at all**. Highest
+     priority, and purely read-only to investigate.
+  2. **Insecure chain + engineering LK** via a boot-area write — needs an **oslo**
+     boot chain and an **oslo** RAM-loader, neither of which the balika kit
+     supplies (`new_boot0.img` is wolverine; the loader is `0x2C0A`). This is the
+     *fallback*, not the first move.
+
+Unknowns to resolve before any device write (all read-only):
+1. **LK unlock path** — is there a `fastboot oem unlock` / `flashing unlock`, an
+   `is_unlocked` NV/BCB flag, or a factory unlock? (session62's open thread.)
+2. **Which area the LK boots from** — the device has both a user-area `aboot`
+   (4 MiB, `block_device`, vold-writable) and a boot-area `abootr`. Resolve the
+   §64.3 ambiguity: if the running LK is the **user-area `aboot`**, an OS-only LK
+   swap is conceivable (still subject to SBL auth).
+3. **oslo boot chain + loader** (only if (1) fails): build a
+   `boot_insecure.img`-style payload from the `F:\imggen` kit and obtain an oslo
+   RAM-loader.
+4. Never abort a BootROM handshake (full device security wipe).
 
 --------------------------------------------------------------------------------
 ## 4. Recovery / failure modes
