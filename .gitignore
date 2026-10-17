@@ -68,3 +68,8 @@ recon/passport-android-dump/vendor/firmware/
 # --- Live probe artifacts (session55, 2026-10-13) — small curated, keep ---
 !recon/passport-android-dump/live-2026-10-13/*.exe
 !recon/passport-android-dump/live-2026-10-13/*.zip
+
+# --- oslo raw partition dumps (session61, 2026-10-17) — full eMMC dump set, keep ---
+!recon/passport-android-dump/partition-dumps/
+!recon/passport-android-dump/partition-dumps/*.img
+!recon/passport-android-dump/partition-dumps/*.bin

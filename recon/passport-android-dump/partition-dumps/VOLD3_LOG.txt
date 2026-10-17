@@ -1,0 +1,656 @@
+=== vold daemon3 start
+ctx=u:r:vold:s0
+READ /proc/cmdline: androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 androidboot.imagetype=sfi build_number=AAA787 trace_event=sched:sched_switch,irq:irq_handler_entry androidboot.emmc=true androidboot.serialno=1160724779 androidboot.baseband=msm mdss_mdp.panel=1:dsi:0bbry,mdss_dsi_panorama_1440p_cmd androidboot.hardware=qcom androidboot.binfo.hwid=0xf5b242c3 androidboot.binfo.rev=131076 androidboot.binfo.name=oslorow androidboot.binfo.product=oslo androidboot.binfo.variant=row androidboot.binfo.model=Unknown androidboot.binfo.model_num=Unknown androidboot.binfo.svnumber=0 androidboot.binfo.bsis_type=bsis_pka androidboot.binfo.bbss_insecure=false androidboot.binfo.bbss_wp_type=power-on androidboot.binfo.backup_bc_ver=AAA625 androidboot.binfo.primary_bc_ver=AAA787 loglevel=2
+
+mkdir rc=0xffffffef
+outbase=/storage/emulated/legacy/rootdump/
+LS /dev/block/platform/msm_sdcc.1/by-name
+  userdata
+  cache
+  system
+  modem
+  recoverysig
+  recovery
+  bootsig
+  boot
+  oemspare
+  oem
+  ares
+  crypto
+  persist
+  spare
+  rcause
+  bcota
+  frp
+  metadata
+  ssd
+  fsg
+  boardidsig
+  boardid
+  prdidsig
+  prdid
+  bkup_ddr
+  ddr
+  nvuser
+  perm
+  blog
+  modemst2
+  modemst1
+  fsc
+  sdi
+  tz
+  rpm
+  sbl1
+  aboot
+  calback_b
+  dmi_b
+  calwork_b
+  nvram
+  pad
+  mct_b
+  gsign
+LS /sys/pathtrust
+  open err=0xfffffffe
+BN userdata size=0xffffffb5
+ rc=0xfffffffe
+BN cache size=0x40000000
+BN system size=0xffffffb5
+ rc=0xfffffffe
+BN modem size=0x04800000
+BN recoverysig size=0x00001000
+BN recovery size=0x01fff000
+BN bootsig size=0x00001000
+BN boot size=0x01fff000
+BN oemspare size=0x04000000
+BN oem size=0x04000000
+BN ares size=0x00001000
+BN crypto size=0x01fff000
+BN persist size=0x02000000
+BN spare size=0x00c00000
+BN rcause size=0x01000000
+BN bcota size=0x00400000
+BN frp size=0xffffffff
+ rc=0xffffffff
+BN metadata size=0x00100000
+BN ssd size=0xffffffff
+ rc=0xffffffff
+BN fsg size=0xffffffff
+ rc=0xffffffff
+BN boardidsig size=0x00001000
+BN boardid size=0xffffffff
+ rc=0xffffffff
+BN prdidsig size=0x00001000
+BN prdid size=0xffffffff
+ rc=0xffffffff
+BN bkup_ddr size=0x00008000
+BN ddr size=0x00008000
+BN nvuser size=0xffffffff
+ rc=0xffffffff
+BN perm size=0xffffffff
+ rc=0xffffffff
+BN blog size=0xffffffff
+ rc=0xffffffff
+BN modemst2 size=0xffffffff
+ rc=0xffffffff
+BN modemst1 size=0xffffffff
+ rc=0xffffffff
+BN fsc size=0xffffffff
+ rc=0xffffffff
+BN sdi size=0x00080000
+BN tz size=0x00080000
+BN rpm size=0x00080000
+BN sbl1 size=0x00100000
+BN aboot size=0x00400000
+BN calback_b size=0xffffffff
+ rc=0xffffffff
+BN dmi_b size=0x02000000
+BN calwork_b size=0x01c00000
+BN nvram size=0xffffffff
+ rc=0xffffffff
+BN pad size=0x0000a000
+BN mct_b size=0xffffffff
+ rc=0xffffffff
+BN gsign size=0x00000c00
+BN count=0x0000001c
+RAW raw_p1 size=0x00000c00
+ rc=0x00000000
+RAW raw_p2 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p3 size=0x0000a000
+ rc=0x00000000
+RAW raw_p4 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p5 size=0x01c00000
+ rc=0x00000000
+RAW raw_p6 size=0x02000000
+ rc=0x00000000
+RAW raw_p7 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p8 size=0x00400000
+ rc=0x00000000
+RAW raw_p9 size=0x00100000
+ rc=0x00000000
+RAW raw_p10 size=0x00080000
+ rc=0x00000000
+RAW raw_p11 size=0x00080000
+ rc=0x00000000
+RAW raw_p12 size=0x00080000
+ rc=0x00000000
+RAW raw_p13 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p14 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p15 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p16 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p17 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p18 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p19 size=0x00008000
+ rc=0x00000000
+RAW raw_p20 size=0x00008000
+ rc=0x00000000
+RAW raw_p21 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p22 size=0x00001000
+ rc=0x00000000
+RAW raw_p23 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p24 size=0x00001000
+ rc=0x00000000
+RAW raw_p25 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p26 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p27 size=0x00100000
+ rc=0x00000000
+RAW raw_p28 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p29 size=0x00400000
+ rc=0x00000000
+RAW raw_p30 size=0x01000000
+ rc=0x00000000
+RAW raw_p31 size=0x00c00000
+ rc=0x00000000
+RAW raw_p32 size=0x02000000
+ rc=0x00000000
+RAW raw_p33 size=0x01fff000
+ rc=0x00000000
+RAW raw_p34 size=0x00001000
+ rc=0x00000000
+RAW raw_p35 size=0x04000000
+ rc=0x00000000
+RAW raw_p36 size=0x04000000
+ rc=0x00000000
+RAW raw_p37 size=0x01fff000
+ rc=0x00000000
+RAW raw_p38 size=0x00001000
+ rc=0x00000000
+RAW raw_p39 size=0x01fff000
+ rc=0x00000000
+RAW raw_p40 size=0x00001000
+ rc=0x00000000
+RAW raw_p41 size=0x04800000
+ rc=0x00000000
+RAW raw_p42 size=0xffffffb5
+ rc=0xfffffffe
+RAW raw_p43 size=0x40000000
+ rc=0x00000000
+RAW raw_p44 size=0xffffffb5
+ rc=0xfffffffe
+RAW raw_p45 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p46 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p47 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p48 size=0xffffffff
+ rc=0xffffffff
+=== initial dump done
+CMD write /storage/emulated/legacy/recovery_new.img /dev/block/platform/msm_sdcc.1/by-name/recovery
+write bytes=0x01fff000
+CMD dump /dev/block/platform/msm_sdcc.1/by-name/recovery recovery_check
+dump rc=0x00000000
+=== vold daemon3 start
+ctx=u:r:vold:s0
+READ /proc/cmdline: androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 androidboot.imagetype=sfi build_number=AAA787 trace_event=sched:sched_switch,irq:irq_handler_entry androidboot.emmc=true androidboot.serialno=1160724779 androidboot.baseband=msm mdss_mdp.panel=1:dsi:0bbry,mdss_dsi_panorama_1440p_cmd androidboot.hardware=qcom androidboot.binfo.hwid=0xf5b242c3 androidboot.binfo.rev=131076 androidboot.binfo.name=oslorow androidboot.binfo.product=oslo androidboot.binfo.variant=row androidboot.binfo.model=Unknown androidboot.binfo.model_num=Unknown androidboot.binfo.svnumber=0 androidboot.binfo.bsis_type=bsis_pka androidboot.binfo.bbss_insecure=false androidboot.binfo.bbss_wp_type=power-on androidboot.binfo.backup_bc_ver=AAA625 androidboot.binfo.primary_bc_ver=AAA787 loglevel=2
+
+mkdir rc=0xffffffef
+outbase=/storage/emulated/legacy/rootdump/
+LS /dev/block/platform/msm_sdcc.1/by-name
+  userdata
+  cache
+  system
+  modem
+  recoverysig
+  recovery
+  bootsig
+  boot
+  oemspare
+  oem
+  ares
+  crypto
+  persist
+  spare
+  rcause
+  bcota
+  frp
+  metadata
+  ssd
+  fsg
+  boardidsig
+  boardid
+  prdidsig
+  prdid
+  bkup_ddr
+  ddr
+  nvuser
+  perm
+  blog
+  modemst2
+  modemst1
+  fsc
+  sdi
+  tz
+  rpm
+  sbl1
+  aboot
+  calback_b
+  dmi_b
+  calwork_b
+  nvram
+  pad
+  mct_b
+  gsign
+LS /sys/pathtrust
+  open err=0xfffffffe
+BN userdata size=0xffffffb5
+ rc=0xfffffffe
+BN cache size=0x40000000
+BN system size=0xffffffb5
+ rc=0xfffffffe
+BN modem size=0x04800000
+BN recoverysig size=0x00001000
+BN recovery size=0x01fff000
+BN bootsig size=0x00001000
+BN boot size=0x01fff000
+BN oemspare size=0x04000000
+BN oem size=0x04000000
+BN ares size=0x00001000
+BN crypto size=0x01fff000
+BN persist size=0x02000000
+BN spare size=0x00c00000
+BN rcause size=0x01000000
+BN bcota size=0x00400000
+BN frp size=0xffffffff
+ rc=0xffffffff
+BN metadata size=0x00100000
+BN ssd size=0xffffffff
+ rc=0xffffffff
+BN fsg size=0xffffffff
+ rc=0xffffffff
+BN boardidsig size=0x00001000
+BN boardid size=0xffffffff
+ rc=0xffffffff
+BN prdidsig size=0x00001000
+BN prdid size=0xffffffff
+ rc=0xffffffff
+BN bkup_ddr size=0x00008000
+BN ddr size=0x00008000
+BN nvuser size=0xffffffff
+ rc=0xffffffff
+BN perm size=0xffffffff
+ rc=0xffffffff
+BN blog size=0xffffffff
+ rc=0xffffffff
+BN modemst2 size=0xffffffff
+ rc=0xffffffff
+BN modemst1 size=0xffffffff
+ rc=0xffffffff
+BN fsc size=0xffffffff
+ rc=0xffffffff
+BN sdi size=0x00080000
+BN tz size=0x00080000
+BN rpm size=0x00080000
+BN sbl1 size=0x00100000
+BN aboot size=0x00400000
+BN calback_b size=0xffffffff
+ rc=0xffffffff
+BN dmi_b size=0x02000000
+BN calwork_b size=0x01c00000
+BN nvram size=0xffffffff
+ rc=0xffffffff
+BN pad size=0x0000a000
+BN mct_b size=0xffffffff
+ rc=0xffffffff
+BN gsign size=0x00000c00
+BN count=0x0000001c
+RAW raw_p1 size=0x00000c00
+ rc=0x00000000
+RAW raw_p2 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p3 size=0x0000a000
+ rc=0x00000000
+RAW raw_p4 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p5 size=0x01c00000
+ rc=0x00000000
+RAW raw_p6 size=0x02000000
+ rc=0x00000000
+RAW raw_p7 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p8 size=0x00400000
+ rc=0x00000000
+RAW raw_p9 size=0x00100000
+ rc=0x00000000
+RAW raw_p10 size=0x00080000
+ rc=0x00000000
+RAW raw_p11 size=0x00080000
+ rc=0x00000000
+RAW raw_p12 size=0x00080000
+ rc=0x00000000
+RAW raw_p13 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p14 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p15 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p16 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p17 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p18 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p19 size=0x00008000
+ rc=0x00000000
+RAW raw_p20 size=0x00008000
+ rc=0x00000000
+RAW raw_p21 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p22 size=0x00001000
+ rc=0x00000000
+RAW raw_p23 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p24 size=0x00001000
+ rc=0x00000000
+RAW raw_p25 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p26 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p27 size=0x00100000
+ rc=0x00000000
+RAW raw_p28 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p29 size=0x00400000
+ rc=0x00000000
+RAW raw_p30 size=0x01000000
+ rc=0x00000000
+RAW raw_p31 size=0x00c00000
+ rc=0x00000000
+RAW raw_p32 size=0x02000000
+ rc=0x00000000
+RAW raw_p33 size=0x01fff000
+ rc=0x00000000
+RAW raw_p34 size=0x00001000
+ rc=0x00000000
+RAW raw_p35 size=0x04000000
+ rc=0x00000000
+RAW raw_p36 size=0x04000000
+ rc=0x00000000
+RAW raw_p37 size=0x01fff000
+ rc=0x00000000
+RAW raw_p38 size=0x00001000
+ rc=0x00000000
+RAW raw_p39 size=0x01fff000
+ rc=0x00000000
+RAW raw_p40 size=0x00001000
+ rc=0x00000000
+RAW raw_p41 size=0x04800000
+ rc=0x00000000
+RAW raw_p42 size=0xffffffb5
+ rc=0xfffffffe
+RAW raw_p43 size=0x40000000
+ rc=0x00000000
+RAW raw_p44 size=0xffffffb5
+ rc=0xfffffffe
+RAW raw_p45 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p46 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p47 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p48 size=0xffffffff
+ rc=0xffffffff
+=== initial dump done
+CMD exec /system/bin/sh -c /sdcard/unlock.sh
+exec rc fork=0x00001566
+CMD write /storage/emulated/legacy/backup_bootchain_wp-power_on_secure.pkg /dev/block/platform/msm_sdcc.1/by-name/bcota
+write bytes=0x00345038
+CMD dump /dev/block/platform/msm_sdcc.1/by-name/bcota bcota_check
+dump rc=0x00000000
+CMD exec /system/bin/setprop debug.zz_test 1
+exec rc fork=0x00001b2e
+CMD read /storage/emulated/legacy/unlock.sh
+READ /storage/emulated/legacy/unlock.sh: echo step1_start > /storage/emulated/legacy/unlock_status.txt
+cat /storage/emulated/legacy/backup_bootchain_wp-power_on_secure.pkg > /dev/block/platform/msm_sdcc.1/by-name/bcota
+echo step2_bcota_written >> /storage/emulated/legacy/unlock_status.txt
+setprop sys.powerctl reboot,oem-0x81
+echo step3_prop_set >> /storage/emulated/legacy/unlock_status.txt
+
+CMD exec /system/bin/setprop vold.zz 1
+exec rc fork=0x00001ff9
+CMD exec /system/bin/setprop sys.powerctl reboot,oem-0x81
+exec rc fork=0x000020f4
+=== vold daemon3 start
+ctx=u:r:vold:s0
+READ /proc/cmdline: androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 androidboot.imagetype=sfi build_number=AAA787 trace_event=sched:sched_switch,irq:irq_handler_entry androidboot.emmc=true androidboot.serialno=1160724779 androidboot.baseband=msm mdss_mdp.panel=1:dsi:0bbry,mdss_dsi_panorama_1440p_cmd androidboot.hardware=qcom androidboot.binfo.hwid=0xf5b242c3 androidboot.binfo.rev=131076 androidboot.binfo.name=oslorow androidboot.binfo.product=oslo androidboot.binfo.variant=row androidboot.binfo.model=Unknown androidboot.binfo.model_num=Unknown androidboot.binfo.svnumber=0 androidboot.binfo.bsis_type=bsis_pka androidboot.binfo.bbss_insecure=false androidboot.binfo.bbss_wp_type=power-on androidboot.binfo.backup_bc_ver=AAA625 androidboot.binfo.primary_bc_ver=AAA787 loglevel=2
+
+mkdir rc=0xffffffef
+outbase=/storage/emulated/legacy/rootdump/
+LS /dev/block/platform/msm_sdcc.1/by-name
+  userdata
+  cache
+  system
+  modem
+  recoverysig
+  recovery
+  bootsig
+  boot
+  oemspare
+  oem
+  ares
+  crypto
+  persist
+  spare
+  rcause
+  bcota
+  frp
+  metadata
+  ssd
+  fsg
+  boardidsig
+  boardid
+  prdidsig
+  prdid
+  bkup_ddr
+  ddr
+  nvuser
+  perm
+  blog
+  modemst2
+  modemst1
+  fsc
+  sdi
+  tz
+  rpm
+  sbl1
+  aboot
+  calback_b
+  dmi_b
+  calwork_b
+  nvram
+  pad
+  mct_b
+  gsign
+LS /sys/pathtrust
+  open err=0xfffffffe
+BN userdata size=0xffffffb5
+ rc=0xfffffffe
+BN cache size=0x40000000
+BN system size=0xffffffb5
+ rc=0xfffffffe
+BN modem size=0x04800000
+BN recoverysig size=0x00001000
+BN recovery size=0x01fff000
+BN bootsig size=0x00001000
+BN boot size=0x01fff000
+BN oemspare size=0x04000000
+BN oem size=0x04000000
+BN ares size=0x00001000
+BN crypto size=0x01fff000
+BN persist size=0x02000000
+BN spare size=0x00c00000
+BN rcause size=0x01000000
+BN bcota size=0x00400000
+BN frp size=0xffffffff
+ rc=0xffffffff
+BN metadata size=0x00100000
+BN ssd size=0xffffffff
+ rc=0xffffffff
+BN fsg size=0xffffffff
+ rc=0xffffffff
+BN boardidsig size=0x00001000
+BN boardid size=0xffffffff
+ rc=0xffffffff
+BN prdidsig size=0x00001000
+BN prdid size=0xffffffff
+ rc=0xffffffff
+BN bkup_ddr size=0x00008000
+BN ddr size=0x00008000
+BN nvuser size=0xffffffff
+ rc=0xffffffff
+BN perm size=0xffffffff
+ rc=0xffffffff
+BN blog size=0xffffffff
+ rc=0xffffffff
+BN modemst2 size=0xffffffff
+ rc=0xffffffff
+BN modemst1 size=0xffffffff
+ rc=0xffffffff
+BN fsc size=0xffffffff
+ rc=0xffffffff
+BN sdi size=0x00080000
+BN tz size=0x00080000
+BN rpm size=0x00080000
+BN sbl1 size=0x00100000
+BN aboot size=0x00400000
+BN calback_b size=0xffffffff
+ rc=0xffffffff
+BN dmi_b size=0x02000000
+BN calwork_b size=0x01c00000
+BN nvram size=0xffffffff
+ rc=0xffffffff
+BN pad size=0x0000a000
+BN mct_b size=0xffffffff
+ rc=0xffffffff
+BN gsign size=0x00000c00
+BN count=0x0000001c
+RAW raw_p1 size=0x00000c00
+ rc=0x00000000
+RAW raw_p2 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p3 size=0x0000a000
+ rc=0x00000000
+RAW raw_p4 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p5 size=0x01c00000
+ rc=0x00000000
+RAW raw_p6 size=0x02000000
+ rc=0x00000000
+RAW raw_p7 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p8 size=0x00400000
+ rc=0x00000000
+RAW raw_p9 size=0x00100000
+ rc=0x00000000
+RAW raw_p10 size=0x00080000
+ rc=0x00000000
+RAW raw_p11 size=0x00080000
+ rc=0x00000000
+RAW raw_p12 size=0x00080000
+ rc=0x00000000
+RAW raw_p13 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p14 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p15 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p16 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p17 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p18 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p19 size=0x00008000
+ rc=0x00000000
+RAW raw_p20 size=0x00008000
+ rc=0x00000000
+RAW raw_p21 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p22 size=0x00001000
+ rc=0x00000000
+RAW raw_p23 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p24 size=0x00001000
+ rc=0x00000000
+RAW raw_p25 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p26 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p27 size=0x00100000
+ rc=0x00000000
+RAW raw_p28 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p29 size=0x00400000
+ rc=0x00000000
+RAW raw_p30 size=0x01000000
+ rc=0x00000000
+RAW raw_p31 size=0x00c00000
+ rc=0x00000000
+RAW raw_p32 size=0x02000000
+ rc=0x00000000
+RAW raw_p33 size=0x01fff000
+ rc=0x00000000
+RAW raw_p34 size=0x00001000
+ rc=0x00000000
+RAW raw_p35 size=0x04000000
+ rc=0x00000000
+RAW raw_p36 size=0x04000000
+ rc=0x00000000
+RAW raw_p37 size=0x01fff000
+ rc=0x00000000
+RAW raw_p38 size=0x00001000
+ rc=0x00000000
+RAW raw_p39 size=0x01fff000
+ rc=0x00000000
+RAW raw_p40 size=0x00001000
+ rc=0x00000000
+RAW raw_p41 size=0x04800000
+ rc=0x00000000
+RAW raw_p42 size=0xffffffb5
+ rc=0xfffffffe
+RAW raw_p43 size=0x40000000
+ rc=0x00000000
+RAW raw_p44 size=0xffffffb5
+ rc=0xfffffffe
+RAW raw_p45 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p46 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p47 size=0xffffffff
+ rc=0xffffffff
+RAW raw_p48 size=0xffffffff
+ rc=0xffffffff
+=== initial dump done

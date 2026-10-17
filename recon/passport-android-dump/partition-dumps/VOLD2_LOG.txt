@@ -1,0 +1,179 @@
+=== vold daemon2 start
+ctx=u:r:shell:s0
+read open err=0xfffffff3
+=== vold daemon2 start
+ctx=u:r:vold:s0
+READ /proc/cmdline: androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 androidboot.imagetype=sfi build_number=AAA787 trace_event=sched:sched_switch,irq:irq_handler_entry androidboot.emmc=true androidboot.serialno=1160724779 androidboot.baseband=msm mdss_mdp.panel=1:dsi:0bbry,mdss_dsi_panorama_1440p_cmd androidboot.hardware=qcom androidboot.binfo.hwid=0xf5b242c3 androidboot.binfo.rev=131076 androidboot.binfo.name=oslorow androidboot.binfo.product=oslo androidboot.binfo.variant=row androidboot.binfo.model=Unknown androidboot.binfo.model_num=Unknown androidboot.binfo.svnumber=0 androidboot.binfo.bsis_type=bsis_pka androidboot.binfo.bbss_insecure=false androidboot.binfo.bbss_wp_type=power-on androidboot.binfo.backup_bc_ver=AAA625 androidboot.binfo.primary_bc_ver=AAA787 loglevel=2
+
+sd mounted=0x00000001
+outbase=/storage/sdcard1/rootdump/
+LS /dev/block
+  mmcblk1
+  dm-1
+  vold
+  dm-0
+  mmcblk0p44
+  mmcblk0p43
+  mmcblk0p42
+  mmcblk0p41
+  mmcblk0p40
+  mmcblk0p39
+  mmcblk0p38
+  mmcblk0p37
+  mmcblk0p36
+  mmcblk0p35
+  mmcblk0p34
+  mmcblk0p33
+  mmcblk0p32
+  mmcblk0p31
+  mmcblk0p30
+  mmcblk0p29
+  mmcblk0p28
+  mmcblk0p27
+  mmcblk0p26
+  mmcblk0p25
+  mmcblk0p24
+  mmcblk0p23
+  mmcblk0p22
+  mmcblk0p21
+  mmcblk0p20
+  mmcblk0p19
+  mmcblk0p18
+  mmcblk0p17
+  mmcblk0p16
+  mmcblk0p15
+  mmcblk0p14
+  mmcblk0p13
+  mmcblk0p12
+  mmcblk0p11
+  mmcblk0p10
+  mmcblk0rpmb
+  mmcblk0p9
+  mmcblk0p8
+  mmcblk0p7
+  mmcblk0p6
+  mmcblk0p5
+  mmcblk0p4
+  mmcblk0p3
+  mmcblk0p2
+  mmcblk0p1
+  platform
+  mmcblk0
+  bootdevice
+  ram15
+  ram14
+  ram13
+  ram12
+  ram11
+  ram10
+  loop7
+  loop6
+  loop5
+  loop4
+  loop3
+  loop2
+  loop1
+  loop0
+  ram9
+  ram8
+  ram7
+  ram6
+  ram5
+  ram4
+  ram3
+  ram2
+  ram1
+  ram0
+LS /dev/block/platform/msm_sdcc.1/by-name
+  userdata
+  cache
+  system
+  modem
+  recoverysig
+  recovery
+  bootsig
+  boot
+  oemspare
+  oem
+  ares
+  crypto
+  persist
+  spare
+  rcause
+  bcota
+  frp
+  metadata
+  ssd
+  fsg
+  boardidsig
+  boardid
+  prdidsig
+  prdid
+  bkup_ddr
+  ddr
+  nvuser
+  perm
+  blog
+  modemst2
+  modemst1
+  fsc
+  sdi
+  tz
+  rpm
+  sbl1
+  aboot
+  calback_b
+  dmi_b
+  calwork_b
+  nvram
+  pad
+  mct_b
+  gsign
+LS /sys/pathtrust
+  open err=0xfffffffe
+skip userdata r=0xfffffffe
+skip cache r=0xfffffffd
+skip system r=0xfffffffe
+skip modem r=0xfffffffd
+skip recoverysig r=0xfffffffd
+skip recovery r=0xfffffffd
+skip bootsig r=0xfffffffd
+skip boot r=0xfffffffd
+skip oemspare r=0xfffffffd
+skip oem r=0xfffffffd
+skip ares r=0xfffffffd
+skip crypto r=0xfffffffd
+skip persist r=0xfffffffd
+skip spare r=0xfffffffd
+skip rcause r=0xfffffffd
+skip bcota r=0xfffffffd
+skip frp r=0xffffffff
+skip metadata r=0xfffffffd
+skip ssd r=0xffffffff
+skip fsg r=0xffffffff
+skip boardidsig r=0xfffffffd
+skip boardid r=0xffffffff
+skip prdidsig r=0xfffffffd
+skip prdid r=0xffffffff
+skip bkup_ddr r=0xfffffffd
+skip ddr r=0xfffffffd
+skip nvuser r=0xffffffff
+skip perm r=0xffffffff
+skip blog r=0xffffffff
+skip modemst2 r=0xffffffff
+skip modemst1 r=0xffffffff
+skip fsc r=0xffffffff
+skip sdi r=0xfffffffd
+skip tz r=0xfffffffd
+skip rpm r=0xfffffffd
+skip sbl1 r=0xfffffffd
+skip aboot r=0xfffffffd
+skip calback_b r=0xffffffff
+skip dmi_b r=0xfffffffd
+skip calwork_b r=0xfffffffd
+skip nvram r=0xffffffff
+skip pad r=0xfffffffd
+skip mct_b r=0xffffffff
+skip gsign r=0xfffffffd
+by-name dumped count=0x00000000
+=== initial dump done
