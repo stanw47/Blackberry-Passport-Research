@@ -1,0 +1,26 @@
+
+session62 bcota/BCB read: start
+  /dev/block/platform/msm_sdcc.1/by-name/bcota  open=0x00000003
+    dumped=0x00400000
+  /dev/block/platform/msm_sdcc.1/by-name/metadata  open=0x00000003
+    dumped=0x00100000
+  /dev/block/platform/msm_sdcc.1/by-name/frp  open=0xfffffff3
+  /dev/block/platform/msm_sdcc.1/by-name/spare  open=0x00000003
+    dumped=0x00800000
+  /dev/block/platform/msm_sdcc.1/by-name/ssd  open=0xfffffff3
+  /dev/block/platform/msm_sdcc.1/by-name/pad  open=0x00000003
+    dumped=0x0000a000
+  /dev/block/platform/msm_sdcc.1/by-name/ares  open=0x00000003
+    dumped=0x00001000
+  /dev/block/platform/msm_sdcc.1/by-name/gsign  open=0x00000003
+    dumped=0x00000c00
+  /dev/block/platform/msm_sdcc.1/by-name/fsc  open=0xfffffff3
+  /dev/block/platform/msm_sdcc.1/by-name/fsg  open=0xfffffff3
+  /dev/block/platform/msm_sdcc.1/by-name/misc  open=0xfffffffe
+  /proc/cmdline  open=0x00000003
+    dumped=0x0000033b
+  /proc/partitions  open=0x00000003
+    dumped=0x000006e6
+  /sys/reset_region/reset  open=0xfffffff3
+dmesg size=0xfffffff3
+session62 bcota/BCB read: done

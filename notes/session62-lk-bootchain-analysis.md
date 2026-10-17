@@ -464,3 +464,52 @@ system/dm-verity signature.
 ⇒ A **live** `bcota`/BCB re-read (to confirm the staged image is still present
 *now*) needs the VOLD-domain root payload (microSD dance) or the RAM loader; the
 shell domain cannot see it.
+
+### 6h. (2c) LIVE re-read via vold-root payload — results
+
+Tool: `tools/session62-bcota-android/` (`bcota_read.c` → `bcota_read`, 8032 B;
+`deploy.ps1`). Delivered as before (Dirty-COW `fsck_msdos`, SD eject/reinsert →
+vold root). Read-only; run log `bc_read_log.txt`.
+
+- **Live `bcota` (4 MiB, p29) still contains the full inactive insecure AAA624
+  package** — 3 428 408/3 428 408 bytes **identical** to `bc_insecure.pkg`
+  (100.00%), zero-padded to 4 MiB. So the staged image is present *now* and has
+  not been committed.
+- **Exact partition map** (from `/sys/class/block/mmcblk0pN/uevent PARTNAME`):
+
+  ```
+  p1 gsign  p2 mct_b  p3 pad  p4 nvram  p5 calwork_b  p6 dmi_b  p7 calback_b
+  p8 aboot  p9 sbl1  p10 rpm  p11 tz  p12 sdi  p13 fsc  p14 modemst1  p15 modemst2
+  p16 blog  p17 perm  p18 nvuser  p19 ddr  p20 bkup_ddr  p21 prdid  p22 prdidsig
+  p23 boardid  p24 boardidsig  p25 fsg  p26 ssd  p27 metadata  p28 frp
+  p29 bcota(4M)  p30 rcause  p31 spare(12M)  p32 persist  p33 crypto  p34 ares
+  p35 oem  p36 oemspare  p37 boot  p38 bootsig  p39 recovery  p40 recoverysig
+  p41 modem  p42 system  p43 cache  p44 userdata   (+ mmcblk0rpmb)
+  ```
+
+  **There is no `misc` and no `bcb` partition.**
+- **BCB candidates read-out:** `metadata` (p27) is the **dm-crypt crypto footer**
+  (`aes-cbc-essiv:sha256`, `SystemLocale`, `en-US`) — *not* a BCB. `spare`,
+  `pad`, `ares`, `gsign` are all-zero. `frp`, `ssd`, `fsc`, `fsg` are `EACCES`
+  even to vold; `misc` `ENOENT`; `/sys/reset_region/reset` `EACCES`; `klogctl`
+  size `EACCES`.
+- **LK BCB mechanics** (`aboot.img`, bases `0x100C0000`/`0x100C4000`): a group of
+  functions at file `0x19C00`/`0x19C94`/`0x19D68` read/write a **0x440-byte BCB**
+  via the **`perm`** partition (also references `modemst1`; error strings
+  `ERROR: No misc partition found`, `Could not read BCB`, `Could not write BCB`,
+  volume name `bootcontrolblock`). So the BCB is a 1088-byte block kept in
+  `perm`/`modemst1`, not a dedicated partition.
+- **LK `update-bootchain` handler** at file `~0x9300–0x968C`: reads the staged
+  image, validates `Invalid image count (%d)` / `Image header outside of valid
+  range`, then `Updating backup bootchain (%d B)` / `Writing '%s'` /
+  `Update image not found` / `Primary BC: images = %d, size = %d`, targeting
+  **`phyboot1`** (the backup boot area). This is the routine that would commit
+  the staged AAA624 into the backup boot area.
+- **Why nothing applied:** the backup boot area still reports `AAA625` while the
+  staged image is the **older** `AAA624`; the Android-side `bkup_bc_update`
+  gates on a newer-version comparison, so an older staged image is ignored. To
+  use it, the version gate must be bypassed (a forced/insecure-marked update),
+  not merely staged.
+
+New artifacts: `tools/session62-bcota-android/{bcota_read.c,build.sh,deploy.ps1}`
++ `pulled/` (bcota/metadata/spare/… dumps, cmdline/partitions logs).
