@@ -63,3 +63,38 @@ The tool embeds a full msm8974-class RAM loader. Its strings (in `.rdata`):
 2. Confirm the flash range the tool backs up (whole user area? MCT-driven?) and
    whether `boot0` (MCT `$2B`) is included.
 3. Decide with the user whether to run it read-only against the attached oslo.
+
+--------------------------------------------------------------------------------
+## ADDENDUM — how to ENTER BootROM (the 5–10 s window + RED LED)
+
+The tool's own logic (x86, `0x401630`): it checks **once** for the BootROM device
+(`0FCA:0001`) at launch; if absent → `system("pause")` → `"Not in bootrom!"` →
+`"Unplug usb!"` → exit. It does **not** poll. So the device must already be
+enumerating as `0001` when the tool starts.
+
+The entry behaviour is documented by the reverse-engineered **`ivoszbg/bb-usbdl`**:
+
+> "On boot, the device checks whenever it's connected to a USB host. If it is,
+> you get a **5 to 10 seconds gap** where it's waiting for a mode command, and if
+> it doesn't receive any, the device continues with the boot flow. You'll know
+> you're there when the **notification LED is red**. For testing, you can just
+> disconnect the battery and unplug/replug the usb cable."
+
+Boot flow (same project): `PBL → BBSS → BOOT0 (proprietary SBL1/2/3 replacement,
+contains the RAMLoader restoration protocol) → STARTUP.BIN → IFS`. The
+autoloader/BBTool both speak this RAMLoader protocol.
+
+**Procedure to reach `0FCA:0001` on the oslo (Android) unit:**
+1. Power the device **fully OFF** (no adb; hold power ~15 s).
+2. Keep a USB host connected (the PC).
+3. Power it on / plug it in → **within 5–10 s the LED goes RED** = BootROM
+   `0FCA:0001` window (waiting for a mode command).
+4. The host tool must send its mode command **inside that window** (BBTool's
+   embedded ram-image; `bblink`'s `SetMode`), or the device continues booting.
+5. **Never interrupt** the handshake (abort = full device security wipe).
+
+So BBTool must be **launched while the device is in the LED-red window** (the tool
+checks once) — or use our `bblink.py`, whose `connect()` handles the transition
+(`reboot any non-BootROM product → connect PID 1 → SetMode(1)`) more robustly than
+the single-shot exe. Our `loader_8D002C0A-00.bin` (Passport RAM loader) is on disk
+at `F:\Passport-Android\boot0-step\loaders\`.
