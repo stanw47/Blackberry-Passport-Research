@@ -1,0 +1,24 @@
+
+session62 root_probe: start
+status copy=0x000002cb
+ctx copy=0x0000000c
+kallsyms copy=0x00200000
+config copy=0xfffffffe
+version copy=0x0000007b
+selinux/enforce RW open=0xfffffff3
+selinux/enforce RO open=0x00000003
+selinux/policy  RO open=0xfffffff3
+selinux/checkreqprot RW open=0xfffffff3
+kernel/hotplug WO open=0xfffffff3
+kernel/hotplug RW open=0xfffffff3
+kernel/kptr_restrict WO open=0xfffffff3
+kernel/modules_disabled WO open=0xfffffff3
+kernel/uevent (uevent_helper) open=0xfffffff3
+boot RO open=0x0000000c
+boot RW open=0x0000000e
+system RW open=0x0000000f
+mmcblk0 RW open=0xfffffff3
+selinux/enforce=0 ow=0xfffffff3
+kernel/kptr_restrict=0 ow=0xfffffff3
+kernel/hotplug=marker ow=0xfffffff3
+session62 root_probe: done

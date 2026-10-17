@@ -1,0 +1,10 @@
+id
+cat /proc/self/attr/current
+echo VERSION
+cat /proc/version
+echo MOUNTS
+grep -E "system|cache|persist|data" /proc/mounts
+echo BOOTHEAD
+dd if=/dev/block/platform/msm_sdcc.1/by-name/boot bs=1 count=32 2>/dev/null | od -An -tx1
+echo CAPS
+grep CapEff /proc/self/status

@@ -513,3 +513,59 @@ vold root). Read-only; run log `bc_read_log.txt`.
 
 New artifacts: `tools/session62-bcota-android/{bcota_read.c,build.sh,deploy.ps1}`
 + `pulled/` (bcota/metadata/spare/… dumps, cmdline/partitions logs).
+
+### 7. Root: vold-domain root demonstrated and made driveable
+
+Goal pivot: "Possible to gain root? Keep powering towards that."
+
+**7a. Prior LPE attempts reviewed.** On-device `iovyroot` (CVE-2015-1805,
+zxz0O0) logs show its kernel r/w primitive never lands: the diagnostic
+`syscall(17) = -1` and `prepare_kernel_cred(0) -> cred = 0xffffffff`, uid stays
+2000. The `uevent_helper` (hotplug) hijack was also attempted
+(`uevent_helper[0] <- 7379732f` = `"/sys…"`). Dirty COW (CVE-2016-5195) remains
+the only working primitive (it hijacks `/system/bin/fsck_msdos`).
+
+**7b. Capability probe (round 1).** `root_probe.c` runs as **Uid 0,
+CapEff/CapBnd = ffffffffffffffff, ctx `u:r:vold:s0`**. `/proc/kallsyms` is
+readable but **addresses are zeroed** (kptr_restrict=2). Block devices openable
+**O_RDWR**: `boot` (fd 14), `system` (fd 15) — and earlier live writes proved
+`recovery` and `bcota` writable. Denied (EACCES): `/sys/fs/selinux/{enforce,
+checkreqprot,policy}`, `/proc/sys/kernel/{hotplug,kptr_restrict,modules_disabled}`,
+`/dev/block/mmcblk0`. `/proc/config.gz` ENOENT.
+
+**7c. Escape-surface probe (round 2).** `root_probe2.c`: `/sys/kernel/
+uevent_helper` EACCES; `/proc/sys/kernel/core_pattern` EACCES;
+`/proc/sys/kernel/modprobe` **ENOENT (no CONFIG_MODULES / no modprobe_path)**;
+`/sys/fs/selinux/load` EACCES; `/data/security` and `/data/security/current`
+**absent** (no reload-policy path); `socket(AF_INET)`/`AF_INET6` EACCES,
+`socket(AF_UNIX)` OK. → every classic root→unconfined escalator is
+SELinux-closed and there is no module autoload.
+
+**7d. Usable root shell (round 3).** `root_shell.c`:
+`execve("/system/bin/sh","-c",…)` from the vold payload **succeeds** and stays
+`uid=0(root) gid=0(root) context=u:r:vold:s0`, `CapEff=ffffffffffffffff`
+(exit 0). So arbitrary commands run as root + full caps in the vold domain.
+`/fstab.qcom`: `/system` ext4 `ro,trusted` with **`verify=/system_signature,
+wait`** (dm-verity, `/dev/block/dm-0`); `/data` = `/dev/block/dm-1`
+(`encryptable=footer`); `cache`/`persist` are plain ext4 **rw** (not verity).
+`/cache` write succeeds (`rm` denied). Full `mmcblk0pN` map re-confirmed.
+
+**7e. Resident root daemon.** `root_daemon.c` → `root_daemon`: delivered once by
+the SD dance, daemonizes, polls `/storage/emulated/legacy/rd_cmd`, execs each
+line as uid 0, writes stdout+stderr to `rd_out`, rc to `rd_stat`, heartbeat in
+`rd_alive`; `RQUIT` stops it. Verified live (`beat=0x16`, `ok rc=0x0`, output
+captured). Gives an interactive root shell with **no further SD reinserts**
+until reboot (the fsck_msdos patch is page-cache only).
+
+**7f. Assessment.** Root is **achieved and driveable** (uid 0 + full caps), but
+not yet *unconfined*: the SELinux domain stays `vold`, all policy/sysctl
+escapes are denied, there are no modules, and the iovyroot kernel primitive is
+broken. Persistent/unconfined root — or the actual bootloader unlock — still
+requires either (i) a working kernel r/w primitive for this 3.4-grsec kernel,
+or (ii) the insecure-bootchain path (write `bcota` from root, bypass the
+newer-only version gate, reboot reason `oem-0x81` → LK `update-bootchain` →
+`phyboot1`), with the standing BootROM wipe risk on any in-band step.
+
+New artifacts: `tools/session62-bcota-android/{root_probe,root_probe2,
+root_shell,root_daemon}.c` + built payloads, `rd_cmd*.txt`,
+`pulled/rp_{log,status,context,version}.txt`.

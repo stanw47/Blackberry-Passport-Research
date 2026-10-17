@@ -1,0 +1,14 @@
+echo FSTAB
+cat /fstab.qcom
+echo BYNAME
+ls -la /dev/block/platform/msm_sdcc.1/by-name/
+echo READPERM
+dd if=/dev/block/platform/msm_sdcc.1/by-name/perm bs=512 count=2 2>&1 | wc -c
+echo READMST1
+dd if=/dev/block/platform/msm_sdcc.1/by-name/modemst1 bs=512 count=2 2>&1 | wc -c
+echo CACHEWRITE
+echo s62roottest > /cache/s62test && cat /cache/s62test && rm /cache/s62test
+echo MODULES
+ls -la /system/lib/modules 2>&1
+echo SECPOL
+ls -la /data /data/security 2>&1
