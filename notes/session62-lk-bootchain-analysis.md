@@ -306,3 +306,114 @@ LK/BBSS text logs** (those are not routed here).
 - Analysers (scratch): `Temp/opencode/lk_strings.py`, `find_refs24.py`,
   `scan_low24.py`, `solve_targets.py`, `find_movw.py`, `xrefs.py`, `disasm.py`,
   `grepstr.py`. LK base = `0x100BB000`.
+
+-----------------------------------------------------------------------------
+## 6. Addendum — switchboot handler disassembly + backup-chain state (read-only)
+
+### 6a. Base correction (supersedes §0/§1's single `0x100BB000`)
+
+`aboot.img` is a **multi-segment flatten**: the VA↔file delta differs per module,
+so a single global base resolves only part of the refs. Per-region bases verified
+by resolving the stack canary (`0x101CC8B8`) and the string table:
+
+| file region | working base | evidence |
+|---|---|---|
+| `~0x1a700–0x1ac00` (`oem` dispatcher) | `0x100C0000` | §2 strings resolve |
+| `~0x1e800–0x1fd00` (charger/NV/switchboot) | `0x100C4000` | canary→off `0x1088B8`; strings→off `0xAxxxx` |
+| `~0x22a00–0x22e40` (bootstats/NV helpers) | `0x100C0000` | canary→off `0x10C8B8`; strings→off `0xBxxxx` |
+
+### 6b. switchboot core function (file `0x1F888`, base `0x100C4000`)
+
+Reconstructed control flow (strings → §2a):
+
+1. Save canary, call `0x2C0`/`0x9814` to read the current boot-area record.
+2. `ldrb [cur]`; **toggle**: `1→2`, `2→1`; else `failed to get current boot
+   partition`.
+3. Copy a 16-byte GPT entry from a `.data` table (`0x101724B4`) into a local.
+4. `bl 0xA3E8(newpart)` = switch host to that boot area; `!=0` ⇒
+   `cannot switchboot from current partition`.
+5. `malloc(0x4000)`, read the partition sectors.
+6. Validate the destination carries `rimboot` ⇒ else
+   `destination partition does not contain rimboot`.
+7. `bl 0xA448([cur])` = make boot partition bootable ⇒
+   `Switching to boot partition %d` (on failure `failed to make boot bootable`).
+8. Restore: `Failed setting boot partition back to USER` /
+   `failed to get current boot partition`; propagate errors
+   `No GPT in this partition %d`, `Failed reading boot partition %d`,
+   `Failed setting boot partition %d`.
+
+Wrapper at `0x1FAC0` calls `0x1F888` and reports `Switchboot failed`. The
+best-effort **getter trampolines** at file `0x1EA50` (returns **2**) and `0x1EA8C`
+(returns **1**) both tail-branch into the state fn at `0x1E894`.
+
+### 6c. Backup-bootchain writer (file `0x1F61C`, base `0x100C4000`)
+
+Prints `Updating backup bootchain (%d B)`; checks the `Security:` flag and the
+HWI region at offset `0x4400` (`Invalid HWI partition`, `GPT header not found`);
+selects the boot area, writes the staged image, re-selects (errors
+`failed to switch to the boot partition` / `failed to switch to the user
+partition`). This is the routine `update-bootchain` drives when the BCB says an
+update is available (§2a/§3c).
+
+### 6d. `oem` command registration table (file `0x1FC08`, base `0x100C4000`)
+
+A list of `add_cmd(name, handler)` pairs (handler = VA in the command-
+implementation module):
+
+```
+oem switchboot          -> 0x100E2A64     oem ddrinfo    -> 0x100E2A28
+oem info                -> 0x100E26AC     oem bootlog    -> 0x100E265C
+oem disable-charger-scr -> 0x100E2BC0     oem grswipe    -> 0x100E5C3C
+is-password-set         -> 0x100E326C     (securewipe /
+Switchboot failed       -> 0x100E3A88      enable-usb-reset also present)
+```
+
+Note: these handler VAs resolve to file offsets only modulo the (still-unknown)
+base of that module, so exact bodies beyond the switchboot writer above were not
+chased further.
+
+### 6e. NV / bootstats helper cluster (file `0x22A98–0x22E40`, base `0x100C0000`)
+
+Register get/set primitives (`0x879D0`/`0x87A48`), `Bootstats not cached.
+Reading again`, cached boot-partition parsers (`0x22F94`/`0x22FDC`), and an NV
+name reader printing `Security:` / `NV %s is %s` / `Could not %s %s` — i.e. the
+plumbing behind `oem info` / `oem getvarp:`.
+
+### 6f. **(2) Read-only verification of backup / insecure-bootchain state — DONE**
+
+Live device (no writes), `adb shell getprop`:
+
+```
+ro.boot.binfo.primary_bc_ver = AAA787      ro.boot.binfo.backup_bc_ver = AAA625
+ro.boot.binfo.bbss_insecure  = false       ro.boot.binfo.bbss_wp_type  = power-on
+ro.boot.imagetype = sfi     ro.boot.verity = active   android.software.verified_boot = 1
+```
+
+`/system/vendor/backup_bootchain/` contains exactly two world-readable pkgs
+(pulled, hashed):
+
+| file | version (hdr) | size | SHA256 |
+|---|---|---|---|
+| `backup_bootchain_insecure.pkg` | **AAA624** | 3 428 408 | `A5553DBE…B7CE8` |
+| `backup_bootchain_wp-power_on_secure.pkg` | **AAA625** | 3 428 408 | `A175F174…BF134` |
+
+Same size; 388 diff runs / ~112 KB differ (the signed image payloads +
+signatures). Pkg header = `magic 0x779D7ECE | size 0x00345038 | hdrver 1 |
+"AAA6xx"`; body holds a **GPT** (`EFI PART` at `0x238` + backup GPT at `0x82DC`,
+sub-GPTs `0x61828`/`0x645D8`/`0x3049C8`), an `ABBC` container and
+`bbss`/`rimboot` strings ⇒ a full backup-boot-area image (hwi, bbss, sbl1r, tzr,
+rpmr, sdir, abootr), consistent with `parts_secure/`.
+
+**Conclusion:** the installed backup boot area is the **SECURE** chain
+(`backup_bc_ver=AAA625`) and `bbss_insecure=false` — **no insecure chain is
+staged**. The insecure **AAA624** package *is* present but is **older** than what
+is in the backup area; `bkup_bc_update` only auto-upgrades when the package is
+**newer**, so staging AAA624 alone may be treated as stale and skipped. This is
+the concrete caveat on the §3c unlock route (may need a forced/insecure-marked
+update rather than relying on the version-compare path).
+
+`by-name` is still not listable as `shell` (uid 2000, EACCES); the VOLD-domain
+root payload / RAM-loader remain the only readers. No write was performed.
+
+New scratch: `Temp/opencode/ann.py` (base+range annotated disasm),
+`bc_insecure.pkg` / `bc_secure.pkg`, `pkdcmp.py`, `pkdscan.py`.
