@@ -111,3 +111,38 @@ user-area `aboot` LK (993 400 B, `46e1369e…`). So the backup chain carries a
    *user* partition and the *boot* partition (`failed to switch to the user
    partition` / `Failed setting boot partition back to USER`) — the exact
    default/active source is the missing fact.
+
+--------------------------------------------------------------------------------
+## 8. RESULT (offline BBSS) — the primary chain is in the boot area (boot0)
+
+`mmcInit` (`0xf8050da0`) opens **three MMC handles** into a global array
+(`get_handle` = `0xf805d564`):
+
+```
+handles[i] = get_handle(device = 0, partition = i)      for i = 0, 1, 2
+```
+
+The boot-partition detector (`0xf8050f1c`) walks `handles[0..2]`, `mmcGetDeviceInfo`
+each, and returns the first whose device-info byte at **`+0x24`** is set;
+otherwise it **defaults to index 1** and logs
+`boot partition detection failure; default BOOT0`. **So index 1 == BOOT0**, i.e.
+the handles are ordered `0 = user area, 1 = boot0, 2 = boot1` (eMMC partition
+order). `bbss_load_sbl` then reads the SBL from that partition's GPT
+(`0xf8050f60(boot_idx, sbl_guid, 0)`), and the primary/backup SBL come from the
+**active boot-area partition**.
+
+⇒ **The primary chain (PBL → BBSS → SBL → LK/`abootr`) is read from the eMMC boot
+area (boot0).** The user-area `aboot`/`sbl1` (2 MiB / 512 KiB, OS-**writable**)
+are the **alternate** copy that the LK's `switchboot` can select
+(`failed to switch to the user partition` / `Failed setting boot partition back to
+USER`).
+
+**Consequences for the oslo → LOS route:**
+- A user-area `aboot` write **alone** does not change the default chain (the boot
+  area is what boots).
+- To make the user area boot the chain, the boot source must be switched
+  (LK `switchboot` → **denied in fastboot**), or the boot area written
+  (BootROM / official-updater lane; `0x2019` NV gate).
+- Even then, the SBL authenticates the LK (§64), so a custom LK still needs the
+  insecure chain/anchor. The single OS-writable lever (user-area `aboot`/`sbl1`)
+  is not the default load path.
