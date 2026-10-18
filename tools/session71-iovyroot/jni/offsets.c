@@ -437,7 +437,7 @@ struct offsets offsets[] = {
 	{ "unknown-1", "Linux version 3.4.0-grsec-g0ea3e38 (ec_agent@br605cnc) (gcc version 4.8 (GCC) ) #1 SMP PREEMPT Sun Apr 5 17:23:36 EDT 2015",
 	  { (void*)FSYNC_OFFSET(0xc10a5fe4) },
 	  (void*)0xc107c2ac, (void*)0xc107c198, (void*)0xc0f647d8, (void*)0x0,
-	  (void*)0xc109ca40 },
+	  (void*)0xc109ca40, (void*)0xc0f64f9c },
 };
 
 #endif /* (__LP64__) */

