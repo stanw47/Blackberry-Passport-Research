@@ -85,6 +85,15 @@ recon/passport-android-dump/vendor/firmware/
 # --- build.prop captures (session69) - keep ---
 !recon/build-props/**
 
+# --- oslo FULL user-area eMMC backup (session73, 2026-10-18) - keep raw (boot chain + identity) ---
+!recon/passport-android-dump/emmc-full-backup/
+!recon/passport-android-dump/emmc-full-backup/dumps/
+!recon/passport-android-dump/emmc-full-backup/dumps/*.img
+!recon/passport-android-dump/emmc-full-backup/bootarea/
+!recon/passport-android-dump/emmc-full-backup/bootarea/*.img
+# system.img (2.5 GiB) exceeds GitHub's 100 MB/file limit - keep local only
+recon/passport-android-dump/emmc-full-backup/dumps/system.img
+
 # --- local-only, non-public research intel (do NOT publish) ---
 notes/private/
 *.private.md
